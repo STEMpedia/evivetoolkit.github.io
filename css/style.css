@@ -103,17 +103,17 @@ a.navbar-brand {
 	border-color:none;
 }
 .navbar-nav>li:hover {
-	background-color:#000;
+	background-color:#111;
 }
 .banner {
 	background:url(../images/1.jpg) no-repeat;
 	min-height:600px;
 	background-position:center;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-o-background-size:cover;
-	-moz-background-size:cover;
-	-ms-background-size:cover;
+	background-size:100% 120%;
+	-webkit-background-size:100% 100%;
+	-o-background-size:80% 100%;
+	-moz-background-size:80% 100%;
+	-ms-background-size:80% 100%;
 	position:relative;
 }
 .banner-content {
@@ -373,7 +373,7 @@ a.right.carousel-control {
 .team {
 	background-color:#fff;
 	padding:3em 0;
-	background:url(../images/team.jpg) no-repeat;
+	background:url(../images/campus.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100%;
@@ -383,7 +383,7 @@ a.right.carousel-control {
 }
 .team h3 {
 	text-align:center;
-	color:#fff;
+	color:#000;
 	text-transform:uppercase;
 	font-size:40px;
 	font-family: 'Varela Round', sans-serif;
@@ -394,14 +394,14 @@ a.right.carousel-control {
 	text-align: center;
 }
 .placeholders h5  {
-	color:#fff;
+	color:#000;
     font-size: 25px;
     font-weight:500;
 	font-family: 'Varela Round', sans-serif;
 	padding: 25px 0 15px;
 }
 .placeholders p {
-	color:#fff;
+	color:#000;
 	font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 17px;
