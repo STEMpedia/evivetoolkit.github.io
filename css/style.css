@@ -106,14 +106,14 @@ a.navbar-brand {
 	background-color:#111;
 }
 .banner {
-	background:url(../images/1.jpg) no-repeat;
+	background:url(../images/1.png) no-repeat;
 	min-height:600px;
 	background-position:center;
-	background-size:100% 120%;
-	-webkit-background-size:100% 100%;
-	-o-background-size:80% 100%;
-	-moz-background-size:80% 100%;
-	-ms-background-size:80% 100%;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
 	position:relative;
 }
 .banner-content {
