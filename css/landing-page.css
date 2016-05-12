@@ -115,7 +115,7 @@ h6 {
 }
 
 .comingsoon-name {
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 400;
 	letter-spacing: 0.5px;
 }
@@ -123,7 +123,7 @@ h6 {
 .indiegogo-name {
 	text-transform: uppercase;
 	color: #eb1478;
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 800;
 	letter-spacing: -1px;
 	text-shadow: 2px 2px 2px rgba(235,20,120,0.2);
