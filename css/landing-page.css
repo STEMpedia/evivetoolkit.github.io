@@ -190,10 +190,10 @@ h6 {
 	background:url(../img/campus.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size:100% 100%;
-	-webkit-background-size:100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
+    background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size:  cover;
 }
 .team h3 {
 	text-align:center;
