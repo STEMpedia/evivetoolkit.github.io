@@ -162,9 +162,9 @@ h6 {
 }
 
 .banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/footer.png) no-repeat center center;
+    padding: 40px 0;
+    color: #111;
+    background: #fafafa;
     background-size: cover;
 }
 
@@ -285,3 +285,101 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+
+.animated {
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated._3times {
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+}
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}

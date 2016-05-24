@@ -7,7 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="evive: Bring your projects to life. It is an open source embedded platform for all age groups to help them learn, build, debug their robotics, embedded and other projects. With an Arduino Mega at its' heart, evive offers a unique menu-based visual interface to make projects, which removes the need to re-program the Arduino repeatedly. evive offers the world of IoT, with power supplies, sensory and actuator support in one small portable kit.">
     <meta name="author" content="Agilo Technologies">
-    <meta name="keywords" content="evive, arduino, arduino projects, learn, make, robotics, embedded, iot" />
+    <meta name="keywords" content="evive, arduino, arduino projects, learn, make, robotics, embedded, iot, iit kanpur, iit kanpur evive, technology" />
+    <meta property="fb:page_id" content="211519409232010">
+    <meta property="og:site_name" content="Evive">
     <link rel="icon" href="images/favicon.ico">
 	<title>evive: Bring your projects to life!</title>
 		
@@ -61,7 +63,7 @@
 	</head>
 	
 	
-	<body>
+	<body onscroll="scrolled()">
 		<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -133,7 +135,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-lg-offset-3">
 					<div class="subscribe wow fadeInUp">
-						<form class="form-inline" role="form" action="http://evive.us13.list-manage.com/subscribe/post?u=be8f997ef5db27944559c6598&amp;id=bc4935bb71" target="_blank" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+						<form class="form-inline animated _3times rubberBand" role="form" action="http://evive.us13.list-manage.com/subscribe/post?u=be8f997ef5db27944559c6598&amp;id=bc4935bb71" target="_blank" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
 							<div class="form-group">
 								<label class="sr-only" for="mce-EMAIL">Subscribe to get updates on our campaign!</label>
 								<input type="email" value="" name="EMAIL" placeholder="Enter your email..." class="email form-control" id="mce-EMAIL" required>
@@ -443,7 +445,7 @@
 		<h3 class="slideanim">Meet Our Team: Agilo Technologies</h3>
 		<div class="row placeholders">
 			<div class="col-xs-6 col-sm-3 placeholder">
-				<img src="img/akshat.jpg" width="200" height="200" class="img-responsive slideanim" alt="Akshat Agarwal">
+				<img data-src="img/akshat.jpg" width="200" height="200" class="img-responsive slideanim" alt="Akshat Agarwal">
 				<a href="http://home.iitk.ac.in/~agakshat/" target="_blank"><h5 class="slideanim">Akshat Agarwal</h5></a>
 				<p class="slideanim">Co-founder</p>
 				<div class="social-icons">
@@ -452,7 +454,7 @@
 				</div>
 			</div>
             <div class="col-xs-6 col-sm-3 placeholder">
-				<img src="img/abhishek.jpg" width="200" height="200" class="img-responsive slideanim" alt="Abhishek Sharma">
+				<img data-src="img/abhishek.jpg" width="200" height="200" class="img-responsive slideanim" alt="Abhishek Sharma">
 				<h5 class="slideanim">Abhishek Sharma</h5>
 				<p class="slideanim">Co-founder</p>
 				<div class="social-icons">
@@ -461,7 +463,7 @@
 				</div>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-				<img src="img/dhrupal.jpg" width="200" height="200" class="img-responsive slideanim" alt="Dhrupal R Shah">
+				<img data-src="img/dhrupal.jpg" width="200" height="200" class="img-responsive slideanim" alt="Dhrupal R Shah">
 				<a href="http://home.iitk.ac.in/~dhrupal/" target="_blank"><h5 class="slideanim">Dhrupal R Shah</h5></a>
 				<p class="slideanim">Co-founder</p>
 				<div class="social-icons">
@@ -470,7 +472,7 @@
 				</div>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-				<img src="img/pankaj.jpg" width="200" height="200" class="img-responsive slideanim" alt="Pankaj Verma">
+				<img data-src="img/pankaj.jpg" width="200" height="200" class="img-responsive slideanim" alt="Pankaj Verma">
 				<h5 class="slideanim">Pankaj Verma</h5>
 				<p class="slideanim">Co-founder</p>
 				<div class="social-icons">
@@ -485,8 +487,8 @@
 	
 	<a  name="connect"></a>
     <div class="banner">
-    		<div class="container">
-    	    	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fevivetoolkit&width=131&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="131" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    		<div class="container" style="text-align: center;">
+    	    	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fevivetoolkit&width=131&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="200" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     	    </div>
         <div class="container">
 
@@ -562,10 +564,24 @@
 
     <!-- Bootstrap Core JavaScript -->
     <!--<script src="js/bootstrap.min.js"></script>-->
-
+<script type="text/javascript">
+	var prevScrollTop=0;
+	var scrolled=function(){
+		var s=window.scrollTop;
+		
+	}
+	function init(){
+		var a=$('[data-src]');
+		var b=a.length;
+		for(var i=0;i<b;i++){
+			console.log(a[i]);
+			$(a[i]).attr('src',$(a[i]).attr('data-src'))
+		}
+	}
+	init();
+</script>
 </body>
 
 </html>
 	</body>
 </html>
-	
