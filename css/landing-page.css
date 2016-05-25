@@ -164,13 +164,13 @@ h6 {
 .banner {
     padding: 40px 0;
     color: #111;
-    background: #fafafa;
+    background: #f8f8f8;
     background-size: cover;
 }
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
     font-size: 3em;
 }
 
