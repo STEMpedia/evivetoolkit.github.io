@@ -1,15 +1,59 @@
 <!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-	<meta charset="utf-8">
-	<title>Create A Simple Responsive Portfolio Page with Filtering and Hover Effect</title>
-	<meta name="description" content="In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter &amp; sort plugin called MixItUp.">
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--  The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags  -->
+    <meta name="description" content="evive: Bring your projects to life. It is an open source embedded platform for all age groups to help them learn, build, debug their robotics, embedded and other projects. With an Arduino Mega at its' heart, evive offers a unique menu-based visual interface to make projects, which removes the need to re-program the Arduino repeatedly. evive offers the world of IoT, with power supplies, sensory and actuator support in one small portable kit."/>
+    <meta name="author" content="Agilo Technologies"/>
+    <meta name="keywords" content="evive, toolkit, arduino, arduino projects, learn, make, robotics, embedded, iot, iit kanpur, iit kanpur evive, technology"/>
+    <meta property="fb:page_id" content="211519409232010"/>
+    <meta property="og:site_name" content="evive"/>
+    <link rel="icon" href="images/favicon.ico"/>
+	<title>evive: Bring your projects to life!</title>
+		
+    <!--  Bootstrap core CSS  -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+		
+	<!--  Custom CSS  -->
+    <link href="css/landing-page.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="simple_files/normalize.css">
-	<link rel="stylesheet" href="simple_files/layout.css">
+    		
+	<script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!--  Custom Fonts  -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
+	
+	<link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"/>
+	<style type="text/css"></style>
+	
+	<!--  Nasalization font  -->
+	<link rel="stylesheet" href="fonts/nasalization/stylesheet.css" type="text/css" charset="utf-8"/>
+	<style type="text/css">
+	.lbd{
+		font-family: nasalizationregular;
+		color: white;
+	}
+	</style>
+	<!--  ./Nasalization font  -->
+	
+	<!-- Google Analytics tracking ID  -->
+	<script></script>
+	<!--  ./Tracking  -->
+	
+	<!--  Carousel 
+	<style>
+	  .carousel-inner > .item > img,
+	  .carousel-inner > .item > a > img {
+		  width: 70%;
+		  margin: auto;
+	  }
+  </style> -->
+  
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
@@ -32,7 +76,7 @@
     			  filter: '.filter'	
     		  },
     		  load: {
-      		  filter: '.app'  
+      		  filter: '.app, .card, .icon, .logo, .web'  
       		}     
 				});								
 			
@@ -46,218 +90,82 @@
 		
 	});	
 	</script>
+ 
+  
+	</head>
+	
+	
+	<body onscroll="scrolled()">
+		
+<span itemscope itemtype="http://schema.org/Product"><nav itemprop="brand" itemscope itemtype="http://schema.org/Brand" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!--  Brand and toggle get grouped for better mobile display  -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#about"><img itemprop="logo" src="img/evive_logo.png" alt="evive"/></a>
+            </div>
+            <!--  Collect the nav links, forms, and other content for toggling  -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">Home</a>
+                    </li>
+					<li>
+                        <a href="#features">Features</a>
+                    </li>
+					<li>
+						<a href="#techspecs">Tech Specs</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="http://blog.evive.cc" target="_blank">Blog</a>
+                    </li>                    
+					<li>
+                        <a href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a href="#connect">Connect</a>
+                    </li>
+                   	<li>
+                        <a href="files/evive_Press_Kit.rar">Press Kit</a>
+                    </li>
+                </ul>
+            </div>
+            <!--  /.navbar-collapse  -->
+        </div>
+        <!--  /.container  -->
+    
+<meta itemprop="name" content="evive"></nav>
 
-</head>
-<body>
-
-
-
-	<div class="container">
-
+	<div class="content-section-b-nopad">
+<br>
+<br>
+<br>
+			<div class="col-sm-4 col-sm-offset-0">
+				<blockquote><h1><a href="files/evive_specifications.pdf" target="_blank" style="text-decoration: none">Tech Specs</a></h1></blockquote>
+			</div>
+<br>
+		        <div class="container">
 		<ul id="filters" class="clearfix">
-			<li><span class="filter" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
-			<li><span class="filter active" data-filter=".app">App</span></li>
+			<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
+			<li><span class="filter" data-filter=".app">App</span></li>
 			<li><span class="filter" data-filter=".card">Card</span></li>
 			<li><span class="filter" data-filter=".icon">Icon</span></li>
 			<li><span class="filter" data-filter=".logo">Logo</span></li>
 			<li><span class="filter" data-filter=".web">Web</span></li>
-            <li><span class="filter" data-filter=".project">project</span></li>
 		</ul>
 
 		<div id="portfoliolist">
-			
-			<div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Claims Admin</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Item two</a></li>
-                        <li><a href="#">Item three</a></li>
-                        <li><a href="#">Item four</a></li>
-                        <li><a href="#">Item five</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>Project Title goes here</h2>
-                   <p>the description of the project will go here p tag project one goes here. </p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Wires</a></li>
-                        <li><a href="#">Visuals</a></li>
-                   </ul>
-				</div>
-			</div>
-            
-           
-        
-            
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>h2 project one goes here</h2>
-                   <p> p tag project one goes here</p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Item two</a></li>
-                        <li><a href="#">Item three</a></li>
-                        <li><a href="#">Item four</a></li>
-                        <li><a href="#">Item five</a></li>
-                   </ul>
-				</div>
-
-			</div>
-            
-            
-            <div data-bound="" class="portfolio project" data-cat="project">
-				<div class="portfolio-wrapper">	
-                	<h2>h2 project one goes here</h2>
-                   <p> p tag project one goes here</p>
-                   <ul id="navlist">
-                        <li id="active"><a href="#" id="current">Item one</a></li>
-                        <li><a href="#">Item two</a></li>
-                        <li><a href="#">Item three</a></li>
-                        <li><a href="#">Item four</a></li>
-                        <li><a href="#">Item five</a></li>
-                   </ul>
-				</div>
-
-			</div>
-            
-          
-            
-            
 
 			<div style="display: inline-block;" data-bound="" class="portfolio app" data-cat="app">
 				<div class="portfolio-wrapper">			
@@ -563,8 +471,110 @@
 										
 			
 		</div>
-		
-	</div><!-- container -->
 
 
+
+
+
+
+
+
+                
+                </div>
+	</div>
+
+	<!--  connect  -->
+	
+	<a name="connect"></a>
+    <div class="banner">
+    		<div class="container" style="text-align: center;">
+    	    	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fevivetoolkit&width=131&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" width="200" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+    	    </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2>Connect with evive</h2>
+                </div>
+                <div class="col-lg-7">
+                    <ul class="list-inline banner-social-buttons">
+						<li>
+                            <a href="mailto:evivetoolkit@gmail.com" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-envelope-square fa-fw"></i> <span class="network-name">Mail</span></a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/evivetoolkit" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/evivetoolkit/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+        <!--  /.container  -->
+
+    </div>
+    <!--  /.banner  -->
+	
+    <!--  Footer  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#about">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="#techspecs">Tech Specs</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+						<li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+	                    <li>
+                        <a href="http://blog.evive.cc" target="_blank">Blog</a>
+    	                </li>                            
+                        <li class="footer-menu-divider">⋅</li>                        
+						<li>
+                            <a href="#team">Team</a>
+                        </li>
+						<li class="footer-menu-divider">⋅</li>
+						<li>
+                            <a href="#connect">Connect</a>
+                        </li>
+						<li class="footer-menu-divider">⋅</li>
+                        <li>
+                        	<a href="files/evive_Press_Kit.rar">Press Kit</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright © Agilo Technologies 2016. All Rights Reserved</p>
+                </div>
+				<div class="col-lg-3 col-lg-offset-1">
+					<img class="img-responsive" src="img/license.png" alt="evive licenses"/>
+				</div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  jQuery  -->
+
+    <!--  Bootstrap Core JavaScript  -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+<script type="text/javascript"></script>
+
+
+
+	
 </body></html>
