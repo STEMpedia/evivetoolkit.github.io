@@ -19,7 +19,7 @@
 	<!--  Custom CSS  -->
     <link href="css/landing-page.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
-	<link rel="stylesheet" href="simple_files/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
     		
 	<script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -58,8 +58,8 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
 	<![endif]-->
-	<script src="simple_files/jquery-2.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="simple_files/jquery.js"></script>
+	<script src="js/jquery-2.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 	
 	<script type="text/javascript">
 	$(function () {
@@ -76,7 +76,7 @@
     			  filter: '.filter'	
     		  },
     		  load: {
-      		  filter: '.app, .card, .icon, .logo, .web'  
+      		  filter: '.power, .hardware, .visual, .plug, .sense, .comm, .arduino, .physical, .more, .web'  
       		}     
 				});								
 			
@@ -157,43 +157,74 @@
 <br>
 		        <div class="container">
 		<ul id="filters" class="clearfix">
-			<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
-			<li><span class="filter" data-filter=".app">App</span></li>
-			<li><span class="filter" data-filter=".card">Card</span></li>
-			<li><span class="filter" data-filter=".icon">Icon</span></li>
-			<li><span class="filter" data-filter=".logo">Logo</span></li>
-			<li><span class="filter" data-filter=".web">Web</span></li>
+			<li><span class="filter active" data-filter=".power, .hardware, .visual, .plug, .sense, .comm, .arduino, .physical, .more">All</span></li>
+			<li><span class="filter" data-filter=".power">Power</span></li>
+			<li><span class="filter" data-filter=".hardware">Hardware Interaction</span></li>
+			<li><span class="filter" data-filter=".visual">User Interface</span></li>
+			<li><span class="filter" data-filter=".plug">Plug&amp;Play Devices</span></li>
+			<li><span class="filter" data-filter=".sense">Sensing</span></li>            
+			<li><span class="filter" data-filter=".comm">IoT</span></li>
+			<li><span class="filter" data-filter=".arduino">Arduino</span></li>    
+			<li><span class="filter" data-filter=".physical">Physical</span></li>                    
+			<li><span class="filter" data-filter=".more">More</span></li>            
 		</ul>
 
 		<div id="portfoliolist">
 
-			<div style="display: inline-block;" data-bound="" class="portfolio app" data-cat="app">
+<!--			<div style="display: inline-block;" data-bound="" class="portfolio power" data-cat="power">
 				<div class="portfolio-wrapper">			
-					<img src="simple_files/1_004.jpg" alt="">
+					<img src="img/techSpecs/power/usb.png" alt="">
 					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
-							<span class="text-category">APP</span>
+						<div class="label-text-1">
+							<span class="text-title">USB B-Type</span><br>
+                            <span class="text-title">Upto 1M Baud rate</span>
+<!--							<span class="text-category">APP</span>
                         </div>
 						<div class="label-bg"></div>
-                   
 					</div>
-                                                           
 				</div>
-				<p class="fixedLabel">dsvdsvsdvsd</p>      
-			</div>		
-			
-			<div data-bound="" class="portfolio web" data-cat="web">
-				<div class="portfolio-wrapper">						
-					<img src="simple_files/4_002.jpg" alt="">
+				<p class="fixedLabel">USB</p>      
+			</div>	-->	
+
+			<div data-bound="" class="portfolio power comm" data-cat="power comm">
+				<div class="portfolio-wrapper">			
+					<img src="img/techSpecs/power/usb.png" alt="">
 					<div class="label">
-						<div class="label-text">
-							<a class="text-title">Sonor's Design</a>
-							<span class="text-category">Web design</span>
+						<div class="label-text-2">
+							<span class="text-title">USB B-Type</span><br>
+                            <span class="text-title">Power, Charging, Communication</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">USB</p>      
+			</div>	
+
+			<div style="display: inline-block;" data-bound="" class="portfolio power" data-cat="power">
+				<div class="portfolio-wrapper">			
+					<img src="img/techSpecs/power/powerIn.png" alt="">
+					<div class="label">
+						<div class="label-text-2">
+							<span class="text-title">DC Jack or Header Pins</span><br>
+                            <span class="text-title">Voltage range 5-30V</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">Power Input</p>      
+			</div>	
+            			
+			<div data-bound="" class="portfolio power" data-cat="power">
+				<div class="portfolio-wrapper">						
+					<img src="img/techSpecs/arduinoShieldStack/io3v3.png" alt="">
+					<div class="label">
+						<div class="label-text-1">
+							<span class="text-title">Upto 3A</span><br>
 						</div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
+				<p class="fixedLabel">5V Supply</p>                   
 			</div>				
 			
 			<div data-bound="" class="portfolio card" data-cat="card">

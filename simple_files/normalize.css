@@ -170,13 +170,13 @@ strong {
     font-weight: bold;
 }
 
-blockquote {
+/*blockquote {
     padding: 0.5em 30px;
     margin-left:30px;
     font-style:italic;
     border-left:5px solid;
     border-color:#cc0000;
-}
+}*/
 
 /*
  * Addresses styling not present in Safari 5 and Chrome.

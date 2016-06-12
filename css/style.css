@@ -19,7 +19,7 @@
 		color:#666;
 		cursor: pointer;}
 	
-	#filters li span.active {background: #e95a44;color:#fff;}
+	#filters li span.active {background:#337AB7;color:#fff;}
  
 #portfoliolist .portfolio {
 	-webkit-box-sizing: border-box;
@@ -30,14 +30,15 @@
 	margin:2px;
 	
 	display:none;
-	padding:2px 6px;
+	padding:5px 5px 2px 5px;
 	float:left;
 	overflow:hidden;
 	border:1px solid #ccc;
 	background-color:#fff;
-	height:200px;
-	border-radius:2px;
-	border-top:6px solid #fff;}
+/*	height:200px;*/
+	border-radius:6px;
+/*	border-top:6px solid #fff;*/
+	}
 
 /*#portfoliolist .portfolio:hover {border-top:6px solid #cc0000;}*/
 
@@ -95,7 +96,7 @@
 	}
 
 		.portfolio .label-bg {
-			background: #e95a44;
+			background: #2a518d;
 			width: 100%;
 			height:100%;
 			position: absolute;
@@ -103,13 +104,20 @@
 			left:0;
 		}
 	
-		.portfolio .label-text {
+		.portfolio .label-text-1 {
+			color:#fff;
+			position: relative;
+			z-index:500;
+			padding:12px 8px;
+		}	
+		
+		.portfolio .label-text-2 {
 			color:#fff;
 			position: relative;
 			z-index:500;
 			padding:5px 8px;
 		}
-			
+		
 			.portfolio .text-category {
 				display:block;
 				font-size:9px;
@@ -126,9 +134,9 @@
   .portfolio .fixedLabel{
 	  
 		width: 100%;
-		height:24px;
-		margin-bottom:2px;
-		padding-top:2px;
+		height:26px;
+		margin-bottom: 3px;
+		padding-top:4px;
 		font-size:16px;
 		background:#1C75BC;
 		color: #fff;
