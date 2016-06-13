@@ -6,7 +6,12 @@
 	margin:1%;
 	padding:0;
 	list-style:none;
+	background:#F8F8F8;
 }
+
+	#filters ul{
+		display:table;
+	}
 
 	#filters li {
 		float:left;
@@ -18,6 +23,10 @@
 		text-decoration:none;
 		color:#666;
 		cursor: pointer;}
+
+	#filters li span:hover {
+		background:#E0E0E0;
+	}
 	
 	#filters li span.active {
 		background:#337AB7;
