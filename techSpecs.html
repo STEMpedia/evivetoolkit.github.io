@@ -148,12 +148,16 @@
 	<br>
 	<br>
 	<br>
+
+		 <div class="container">
+         
+			<div class="row">
 			<div class="col-sm-4 col-sm-offset-0">
-				<blockquote><h1><a href="files/evive_specifications.pdf" target="_blank" style="text-decoration: none">Tech Specs</a></h1></blockquote>
+				<h1><a href="files/evive_specifications.pdf" target="_blank" style="text-decoration: none">Tech Specs</a></h1>
 			</div>
-<br>
-		        <div class="container">
-		<ul id="filters" class="clearfix">
+            <div class="col-sm-8 col-sm-offset-0" style="text-align:right">
+            <br>
+			<ul id="filters" class="clearfix">
 			<li><span class="filter active" data-filter=".power, .hardware, .visual, .plug, .sense, .comm, .arduino, .physical, .more">All</span></li>
 			<li><span class="filter" data-filter=".power">Power</span></li>
 			<li><span class="filter" data-filter=".hardware">Hardware Interaction</span></li>
@@ -161,11 +165,16 @@
 			<li><span class="filter" data-filter=".plug">Plug &amp; Play Devices</span></li>
 			<li><span class="filter" data-filter=".sense">Sensing</span></li>            
 			<li><span class="filter" data-filter=".comm">Communication</span></li>
-			<li><span class="filter" data-filter=".arduino">Processing</span></li>    
+			<li><span class="filter" data-filter=".arduino">Processing</span></li>
+			<li><span class="filter" data-filter=".software">Softwares</span></li>            
 			<li><span class="filter" data-filter=".physical">Physical</span></li>                    
 			<li><span class="filter" data-filter=".more">More</span></li>            
-		</ul>
-
+			</ul>
+			</div>
+			</div>         
+		</div>
+        
+        <div class="container"><!--style="margin-left:1%;margin-right:1%;">-->
 		<div id="portfoliolist">
         
 			<div class="portfolio power" data-cat="power">
@@ -198,7 +207,7 @@
 
 			<div class="portfolio power comm" data-cat="power comm">
 				<div class="portfolio-wrapper">
-					<img src="img/techSpecs/power/usb.png" alt="">
+					<img src="img/techSpecs/power/usb.png" alt="Arduino USB">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
 							<span>USB B-Type</span><br>
@@ -209,20 +218,88 @@
 				</div>
 				<p class="fixedLabel">USB</p>
 			</div>
-           
-			<div data-bound="" class="portfolio power" data-cat="power">
+
+			<div class="portfolio power" data-cat="power">
+				<div class="portfolio-wrapper">
+					<img src="img/techSpecs/power/powerSwitch.png" alt="evive power switch">
+					<div style="display:block;" class="label">
+						<div class="label-text-1">
+							<span>Internal or External power mode</span><br>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">Power Switch</p>      
+			</div>
+
+			<div class="portfolio power" data-cat="power">
+				<div class="portfolio-wrapper">
+					<img src="img/techSpecs/power/varVoltage.png" alt="evive variable supply">
+					<div style="display:block" class="label">
+						<div class="label-text-2">
+							<span>Adjustable voltage output via knob</span><br>
+                            <span>Upto 3A</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">Variable Voltage Supply</p>      
+			</div>
+
+			<div class="portfolio power" data-cat="power">
+				<div class="portfolio-wrapper">
+					<img src="img/techSpecs/power/5v.png" alt="evive 5V power">
+					<div style="display:block;" class="label">
+						<div class="label-text-1">
+							<span>Upto 3A</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">5V Supply</p>      
+			</div>
+
+			<div class="portfolio power" data-cat="power">
 				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/arduinoShieldStack/io3v3.png" alt="">
+					<img src="img/techSpecs/power/3v3.png" alt="evive 3.3V power">
 					<div class="label">
 						<div class="label-text-1">
-							<span>Upto 3A</span><br>
+							<span>Upto 800mA</span><br>
 						</div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">5V Supply</p>                   
+				<p class="fixedLabel">3.3V Supply</p>                   
 			</div>				
-			
+
+			<div class="portfolio power" data-cat="power">
+				<div class="portfolio-wrapper">						
+					<img src="img/techSpecs/power/batCharge.png" alt="Battery charge">
+					<div class="label">
+						<div class="label-text-1">
+							<span>Charge via USB/battery/wall adapter</span><br>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">Charging</p>
+			</div>
+
+			<div class="portfolio power staticImg" data-cat="power">
+				<img src="img/techSpecs/power/ledPower.png" alt="power led">
+				<p class="fixedLabel">Power Indicator</p>
+			</div>
+
+			<div class="portfolio power staticImg" data-cat="power">
+				<img src="img/techSpecs/power/ledCharge.png" alt="charging led">
+				<p class="fixedLabel">Charging Indicator</p>
+			</div>
+
+			<div class="portfolio power staticImg" data-cat="power">
+				<img src="img/techSpecs/power/resetButton.png" alt="evive reset">
+				<p class="fixedLabel">Reset Switch</p>
+			</div>            
+
 			<div data-bound="" class="portfolio card" data-cat="card">
 				<div class="portfolio-wrapper">			
 					<img src="simple_files/1_003.jpg" alt="">
