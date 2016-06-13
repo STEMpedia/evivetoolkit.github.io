@@ -94,12 +94,10 @@
   
 	</head>
 	
-	
-	<body onscroll="scrolled()">
-		
-<span itemscope itemtype="http://schema.org/Product"><nav itemprop="brand" itemscope itemtype="http://schema.org/Brand" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
-            <!--  Brand and toggle get grouped for better mobile display  -->
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -110,9 +108,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#about"><img itemprop="logo" src="img/evive_logo.png" alt="evive"/></a>
+                <a class="navbar-brand topnav" href="#about"><img src="img/evive_logo.png" alt="evive"></a>
             </div>
-            <!--  Collect the nav links, forms, and other content for toggling  -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -141,16 +139,15 @@
                     </li>
                 </ul>
             </div>
-            <!--  /.navbar-collapse  -->
+            <!-- /.navbar-collapse -->
         </div>
-        <!--  /.container  -->
-    
-<meta itemprop="name" content="evive"></nav>
+        <!-- /.container -->
+    </nav>
 
 	<div class="content-section-b-nopad">
-<br>
-<br>
-<br>
+	<br>
+	<br>
+	<br>
 			<div class="col-sm-4 col-sm-offset-0">
 				<blockquote><h1><a href="files/evive_specifications.pdf" target="_blank" style="text-decoration: none">Tech Specs</a></h1></blockquote>
 			</div>
@@ -161,65 +158,64 @@
 			<li><span class="filter" data-filter=".power">Power</span></li>
 			<li><span class="filter" data-filter=".hardware">Hardware Interaction</span></li>
 			<li><span class="filter" data-filter=".visual">User Interface</span></li>
-			<li><span class="filter" data-filter=".plug">Plug&amp;Play Devices</span></li>
+			<li><span class="filter" data-filter=".plug">Plug &amp; Play Devices</span></li>
 			<li><span class="filter" data-filter=".sense">Sensing</span></li>            
-			<li><span class="filter" data-filter=".comm">IoT</span></li>
-			<li><span class="filter" data-filter=".arduino">Arduino</span></li>    
+			<li><span class="filter" data-filter=".comm">Communication</span></li>
+			<li><span class="filter" data-filter=".arduino">Processing</span></li>    
 			<li><span class="filter" data-filter=".physical">Physical</span></li>                    
 			<li><span class="filter" data-filter=".more">More</span></li>            
 		</ul>
 
 		<div id="portfoliolist">
-
-<!--			<div style="display: inline-block;" data-bound="" class="portfolio power" data-cat="power">
-				<div class="portfolio-wrapper">			
-					<img src="img/techSpecs/power/usb.png" alt="">
-					<div class="label">
-						<div class="label-text-1">
-							<span class="text-title">USB B-Type</span><br>
-                            <span class="text-title">Upto 1M Baud rate</span>
-<!--							<span class="text-category">APP</span>
-                        </div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-				<p class="fixedLabel">USB</p>      
-			</div>	-->	
-
-			<div data-bound="" class="portfolio power comm" data-cat="power comm">
-				<div class="portfolio-wrapper">			
-					<img src="img/techSpecs/power/usb.png" alt="">
-					<div class="label">
+        
+			<div class="portfolio power" data-cat="power">
+				<div class="portfolio-wrapper">
+					<img src="img/techSpecs/power/powerIn.png" alt="evive power input">
+					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span class="text-title">USB B-Type</span><br>
-                            <span class="text-title">Power, Charging, Communication</span>
-                        </div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-				<p class="fixedLabel">USB</p>      
-			</div>	
-
-			<div style="display: inline-block;" data-bound="" class="portfolio power" data-cat="power">
-				<div class="portfolio-wrapper">			
-					<img src="img/techSpecs/power/powerIn.png" alt="">
-					<div class="label">
-						<div class="label-text-2">
-							<span class="text-title">DC Jack or Header Pins</span><br>
-                            <span class="text-title">Voltage range 5-30V</span>
+							<span>DC Jack or Header Pins</span><br>
+                            <span>Voltage range 5-30V</span>
                         </div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
 				<p class="fixedLabel">Power Input</p>      
-			</div>	
-            			
+			</div>
+
+			<div class="portfolio power" data-cat="power">
+				<div class="portfolio-wrapper">
+					<img src="img/techSpecs/power/liBattery.png" alt="evive battery">
+					<div style="display:block;" class="label">
+						<div class="label-text-2">
+							<span>2600mAh Li Ion battery</span><br>
+                            <span>Upto 4.5 hours life</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">Inbuilt Battery</p>      
+			</div>
+
+			<div class="portfolio power comm" data-cat="power comm">
+				<div class="portfolio-wrapper">
+					<img src="img/techSpecs/power/usb.png" alt="">
+					<div style="display:block;" class="label">
+						<div class="label-text-2">
+							<span>USB B-Type</span><br>
+                            <span>Power, Charging, Communication</span>
+                        </div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">USB</p>
+			</div>
+           
 			<div data-bound="" class="portfolio power" data-cat="power">
 				<div class="portfolio-wrapper">						
 					<img src="img/techSpecs/arduinoShieldStack/io3v3.png" alt="">
 					<div class="label">
 						<div class="label-text-1">
-							<span class="text-title">Upto 3A</span><br>
+							<span>Upto 3A</span><br>
 						</div>
 						<div class="label-bg"></div>
 					</div>
