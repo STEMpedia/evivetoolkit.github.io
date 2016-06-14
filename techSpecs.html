@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--  The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags  -->
-    <meta name="description" content="evive is an open source embedded platform. For maker community, evive is a One-Stop solution. It is loaded with tons of features to help you learn, build, debug your robots, embedded and other projects. evive is developed for all: students, children, makers, hobbyist, hackers, researchers. Main features includes inbiult Li-ion battery, TFT screen, very prescise ADC, motor driver, Wi-Fi/XBee/Bluetooth adapter, tiny breadboard. Its mini Oscilloscope, function generator (with DAC) and SD card support are very useful for sensing, measurement and debugging. Powered by Arduino MEGA."/>
+    <meta name="description" content="evive is an open source embedded platform. It is loaded with tons of features to help you learn, build, debug your robots, embedded and other projects. evive is developed for all: students, children, educators, hobbyist, hackers and researchers. For the maker community, evive is an One-Stop solution. Main features includes inbiult Li-ion battery, TFT screen, very prescise ADC, motor driver, Wi-Fi/XBee/Bluetooth adapter, tiny breadboard. Its mini Oscilloscope, function generator (with DAC) and SD card support are very useful for sensing, measurement and debugging. Powered by Arduino MEGA."/>
     <meta name="author" content="Agilo Technologies"/>
-    <meta name="keywords" content="evive, toolkit, arduino, technical, specification, make, learn robotics, embedded, hack, iot, iit kanpur"/>
+    <meta name="keywords" content="evive, toolkit, arduino, technical, specification, power, sensing, oscilloscope, tft, iot, indiegogo, iit"/>
     <meta property="fb:page_id" content="211519409232010"/>
     <meta property="og:site_name" content="evive"/>
     <link rel="icon" href="images/favicon.ico"/>
@@ -109,7 +109,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#about"><img src="img/evive_logo.png" alt="evive"></a>
+                <a class="navbar-brand topnav" href="#about"><img src="img/evive_logo.png" alt="evive logo"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -179,11 +179,11 @@
         <!--Power-->
 			<div class="portfolio power first" data-cat="power first">
 				<div class="portfolio-wrapper">
-					<img src="img/techSpecs/power/powerIn.png" alt="evive power input">
+					<img src="img/techSpecs/power/powerIn.png" alt="evive power jack input">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
 							<span>DC Jack or Header Pins</span><br>
-                            <span>Voltage range 5-30V</span>
+                            <span>Voltage range 5-30V DC</span>
                         </div>
 						<div class="label-bg"></div>
 					</div>
@@ -193,7 +193,7 @@
 
 			<div class="portfolio power first" data-cat="power first">
 				<div class="portfolio-wrapper">
-					<img src="img/techSpecs/power/liBattery.png" alt="evive battery">
+					<img src="img/techSpecs/power/liBattery.png" alt="evive li battery">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
 							<span>2600mAh Li Ion battery</span><br>
@@ -211,7 +211,7 @@
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
 							<span>USB B-Type</span><br>
-                            <span>Power, Charging, Communication</span>
+                            <span>Power | Charging | Communication</span>
                         </div>
 						<div class="label-bg"></div>
 					</div>
@@ -224,7 +224,7 @@
 					<img src="img/techSpecs/power/powerSwitch.png" alt="evive power switch">
 					<div style="display:block;" class="label">
 						<div class="label-text-1">
-							<span>Internal or External power mode</span><br>
+							<span>Internal and External power modes</span><br>
                         </div>
 						<div class="label-bg"></div>
 					</div>
@@ -272,36 +272,18 @@
 				<p class="fixedLabel">3.3V Supply</p>                   
 			</div>				
 
-<!--		<div class="portfolio power" data-cat="power">
-				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/power/batCharge.png" alt="Battery charge">
-					<div style="display:block;" class="label">
-						<div class="label-text-1">
-							<span>Charge via USB/battery/wall adapter</span><br>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-				<p class="fixedLabel">Charging</p>
-			</div>-->
-
 			<div class="portfolio power" data-cat="power">
 				<div class="portfolio-wrapper">						
 					<img src="img/techSpecs/power/indicators.png" alt="led">
 					<div style="display:block;" class="label">
 						<div class="label-text-1">
-							<span>Power and Charging LED</span><br>
+							<span>Power and Charging LEDs</span><br>
 						</div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
 				<p class="fixedLabel">Indicators</p>
 			</div>
-
-<!--			<div class="portfolio power staticImg" data-cat="power">
-				<img src="img/techSpecs/power/ledCharge.png" alt="charging led">
-				<p class="fixedLabel">Charging Indicator</p>
-			</div>-->
 
 			<div class="portfolio power staticImg" data-cat="power">
 				<img src="img/techSpecs/power/resetButton.png" alt="evive reset">
@@ -313,7 +295,7 @@
 					<img src="img/techSpecs/power/revPol.png" alt="reverse polarity">
 					<div style="display:block;" class="label">
 						<div class="label-text-1">
-							<span>Protection for reverse polarity input</span>
+							<span>Protection from reverse polarity input</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -326,13 +308,13 @@
 					<img src="img/techSpecs/power/overCurrent.png" alt="Overcurrent Protection">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Protection for overcurrent</span><br>
+							<span>Protection from overcurrent</span><br>
                             <span>using resettable fuse</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Overcurrent Portection</p>
+				<p class="fixedLabel">Overcurrent Protection</p>
 			</div>
 
 			<div class="portfolio power" data-cat="power">
@@ -340,8 +322,8 @@
 					<img src="img/techSpecs/power/overVoltage.png" alt="Overvoltage Protection">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Protection for higher voltage input</span><br>
-                            <span>than 30V</span>
+							<span>Protection from higher voltage</span><br>
+                            <span>input than 30V DC</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -355,7 +337,7 @@
 					<img src="img/techSpecs/hardwareInteraction/joyStick.png" alt="arduino joystick">
 					<div style="display:block;" class="label">
 						<div class="label-text-1">
-							<span>5-way navigation key</span>
+							<span>5-Way Navigation Key</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -368,7 +350,7 @@
 					<img src="img/techSpecs/hardwareInteraction/potentiometer.png" alt="potentiometer">
 					<div style="display:block;" class="label">
 						<div class="label-text-1">
-							<span>Two B103 type Potentiometers</span>
+							<span>Two B103 Type Potentiometers</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -381,7 +363,7 @@
 					<img src="img/techSpecs/hardwareInteraction/slideSwitch.png" alt="slide switch">
 					<div style="display:block;" class="label">
 						<div class="label-text-1">
-							<span>Two 3 Position SPDT switches</span>
+							<span>Two 3 Position SPDT Switches</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -394,7 +376,7 @@
 					<img src="img/techSpecs/hardwareInteraction/tactileSwitch.png" alt="tactile switch">
 					<div style="display:block;" class="label">
 						<div class="label-text-1">
-							<span>Two Tactile/Push buttons</span>
+							<span>Two Tactile/Push Buttons</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -404,7 +386,7 @@
 
 			<div class="portfolio first" data-cat="first">
 				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/hardwareInteraction/joyTactPot.png" alt="tactile joystick tactile slide">
+					<img src="img/techSpecs/hardwareInteraction/joyTactPot.png" alt="tactile joystick tactile slide switch">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
 							<span>2 Tactile Switches, 2 Potentiometers,</span><br>
@@ -448,10 +430,11 @@
 
             <div class="portfolio user first" data-cat="user first">
 				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/more/buzzer.png" alt="arduino buzzer">
+					<img src="img/techSpecs/more/buzzer.png" alt="arduino speaker buzzer">
 					<div style="display:block;" class="label">
-						<div class="label-text-1">
-							<span>2kHz to 10kHz beeps and tones</span>
+						<div class="label-text-2">
+							<span>2kHz to 10kHz</span><br>
+                            <span>Beeps, tones and melodies!</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -464,8 +447,8 @@
 					<img src="img/techSpecs/plugAndPlay/ledDir.png" alt="led">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Two Bi-color LEDs</span><br>
-							<span>LED on Pin 13</span>                            
+							<span>LED on Pin 13</span><br>
+							<span>Two bi-color LEDs</span>                            
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -479,8 +462,8 @@
 					<img src="img/techSpecs/plugAndPlay/motor.png" alt="arduino motor">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Directly plug upto 2 motors</span><br>
-                            <span>max 1A/channel | Upto 30V</span>
+							<span>Directly plug upto 2 Motors</span><br>
+                            <span>Max 1A/channel | Upto 30V</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -493,8 +476,8 @@
 					<img src="img/techSpecs/plugAndPlay/stepper.png" alt="arduino stepper">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Any 4 wire stepper motor</span><br>
-                            <span>max 1A current rating</span>
+							<span>Any 4 wire Stepper Motor</span><br>
+                            <span>Max 1A current rating</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -507,7 +490,7 @@
 					<img src="img/techSpecs/plugAndPlay/relay.png" alt="relay">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Directly connect 2 relays</span><br>
+							<span>Directly connect 2 Relays</span><br>
                             <span>Upto 30V</span>
 						</div>
 						<div class="label-bg"></div>
@@ -521,7 +504,7 @@
 					<img src="img/techSpecs/plugAndPlay/servo.png" alt="servo">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Drive 2 servos directly</span><br>
+							<span>Drive 2 Servos</span><br>
                             <span>Adjustable voltage upto 30V</span>
 						</div>
 						<div class="label-bg"></div>
@@ -535,8 +518,8 @@
 					<img src="img/techSpecs/plugAndPlay/motorDriver.png" alt="motor driver">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Port for 2 motor drivers</span><br>
-                            <span>Gnd | 5V | PWM | Dir1 | Dir2</span>
+							<span>Port for 2 Motor Drivers</span><br>
+                            <span>GND | 5V | PWM | Dir1 | Dir2</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -549,21 +532,36 @@
 					<img src="img/techSpecs/plugAndPlay/pneumatics.png" alt="pneumatics">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>Control 2 solenoids</span><br>
+							<span>Control 2 Solenoids</span><br>
                             <span>Upto 30V rating</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
 				<p class="fixedLabel">Drive Pneumatics</p>
+			</div>            
+
+            <div class="portfolio plug" data-cat="plug">
+				<div class="portfolio-wrapper">						
+					<img src="img/techSpecs/plugAndPlay/voltageRange.png" alt="voltage range">
+					<div style="display:block;" class="label">
+						<div class="label-text-2">
+							<span>Compatibility for controlling</span><br>
+                            <span>device rated for 1.25V to 30V DC</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+				<p class="fixedLabel">Voltage Range</p>
 			</div>
 
             <div class="portfolio plug first" data-cat="plug first">
 				<div class="portfolio-wrapper">						
 					<img src="img/techSpecs/arduinoShieldStack/breadBoard.png" alt="breadboard">
 					<div style="display:block;" class="label">
-						<div class="label-text-1">
-                        	<span>170Pins for prototyping</span>
+						<div class="label-text-2">
+                        	<span>170Pins Solderless Breadboard</span><br>
+                            <span>for Prototyping</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -588,16 +586,16 @@
             <!--sense-->
             <div class="portfolio sense first" data-cat="sense first">
 				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/sensing/ADC.png" alt="ADC">
+					<img src="img/techSpecs/sensing/ADC.png" alt="high speed ADC">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>IC: ADE7912</span><br>
-                            <span>&#177;30V | &#177;5V | &#177;3A</span>
+							<span>&#177;30V | &#177;5V | &#177;3A</span><br>
+                            <span>Upto 75kHz | IC: ADE7912</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Two 24bit ADC</p>
+				<p class="fixedLabel">Two 24-bit ADCs</p>
 			</div>
 
             <div class="portfolio sense first" data-cat="sense first">
@@ -605,7 +603,7 @@
 					<img src="img/techSpecs/sensing/babyOscilloscope.png" alt="Mini Oscilloscope">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>2 Channel with accuracy upto 3mV</span><br>
+							<span>2 Channels | 3mV and 3mA Accuracy </span><br>
                             <span>Sensing range upto 1kHz, &#177;30V, 3A</span>
 						</div>
 						<div class="label-bg"></div>
@@ -646,13 +644,13 @@
 					<img src="img/techSpecs/sensing/DAC.png" alt="DAC">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-                            <span>12bit | IC: MCP4725</span><br>
-							<span>Sine, Square, Saw, Triangular wave</span>
+							<span>Sine, Square, Saw, Triangular waves</span><br>
+                            <span>IIC interface | IC: MCP4725</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">DAC</p>
+				<p class="fixedLabel">12-bit DAC</p>
 			</div>
             
             <!--communication-->
@@ -768,7 +766,7 @@
 				<p class="fixedLabel">Dimensions</p>
 			</div>
 
-            <div class="portfolio physical" data-cat="physical">
+            <div class="portfolio physical staticImg" data-cat="physical">
 				<img src="img/techSpecs/physical/weigth.png" alt="evive weight">
 				<p class="fixedLabel">Weight</p>
 			</div>
