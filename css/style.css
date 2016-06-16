@@ -29,7 +29,7 @@
 	}
 	
 	#filters li span.active {
-		background:#337AB7;
+/*		background:#337AB7;*/
 		color:#fff;}
  
 #portfoliolist .portfolio {
@@ -53,6 +53,105 @@
 
 /*#portfoliolist .portfolio:hover {border-top:6px solid #cc0000;}*/
 
+	.power{
+			background:#9b59b6;
+	}
+	
+	.power-label-bg{
+			background:#b07cc6;
+	}
+	
+	.power-active span.active{
+		background:#9b59b6;
+	}
+
+	.hardware{
+			background:#26c6da;
+	}
+	
+	.hardware-label-bg{
+			background:#51d1e1;
+	}
+	
+	.hardware-active span.active{
+			background:#26c6da;
+	}	
+	
+	.plug{
+			background:#1abc9c;
+	}
+	
+	.plug-label-bg{
+			background:#47c9af;
+	}
+
+	.plug-active span.active{
+			background:#1abc9c;
+	}		
+
+	.user{
+			background:#e64336;
+	}
+	
+	.user-label-bg{
+			background:#eb685e;
+	}
+
+	.user-active span.active{
+			background:#e64336;
+	}	
+
+	.sense{
+			background:#ff4081;
+	}
+	
+	.sense-label-bg{
+			background:#ff669a;
+	}
+	
+	.sense-active span.active{
+			background:#ff4081;
+	}
+	
+	.comm{
+			background:#fb8c00;
+	}
+	
+	.comm-label-bg{
+			background:#ffa637;
+	}	
+
+	.comm-active span.active{
+			background:#fb8c00;
+	}
+
+	.arduino{
+			background:#1C75BC;
+	}
+	
+	.arduino-label-bg{
+			background:#2c90e0;
+	}
+
+	.arduino-active span.active{
+			background:#1C75BC;
+	}	
+	
+	.physical{
+			background:#889697;
+	}
+	
+	.physical-label-bg{
+			background:#929fa0;
+	}	
+
+	.physical-active span.active{
+			background:#889697;
+	}
+	
+	.all-active span.active{
+		background: #34495e;
+	}
 
 	.portfolio-wrapper {
 		overflow:hidden;
@@ -120,7 +219,7 @@
 	}
 
 		.portfolio .label-bg {
-			background:#2c90e0; /*#2a518d*/
+			/*background:#2c90e0;*/ /*#2a518d*/
 			width: 100%;
 			height:100%;
 			position: absolute;
@@ -141,7 +240,7 @@
 			z-index:500;
 			padding:4px 0px;
 		}
-
+		
 			.portfolio .text-category {
 				display:block;
 				font-size:9px;
@@ -159,14 +258,14 @@
   }    
   
   /*                    */
-  .portfolio .fixedLabel{
+  .portfolio .fixed-label{
 	  
 		width: 100%;
 		height:26px;
 		margin-bottom: 3px;
 		padding-top:2px;
 		font-size:16px;
-		background:#1C75BC;
+/*		background:#1C75BC;*/
 		color: #fff;
 		text-align:center;
   }
