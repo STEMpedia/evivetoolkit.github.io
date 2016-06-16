@@ -109,7 +109,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#about"><img src="img/evive_logo.png" alt="evive logo"></a>
+                <a class="navbar-brand topnav" href="index.html"><img src="img/evive_logo.png" alt="evive logo"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -159,15 +159,15 @@
             <div class="col-sm-7 col-sm-offset-0">
             <br>
 			<ul id="filters" class="clearfix">
-				<li><span class="filter" data-filter=".power">Power</span></li>
-				<li><span class="filter" data-filter=".hardware">Hardware Interaction</span></li>
-				<li><span class="filter" data-filter=".plug">Plug &amp; Play Devices</span></li>
-				<li><span class="filter" data-filter=".user">User Interface</span></li>
-				<li><span class="filter" data-filter=".sense">Sense &amp; Log</span></li> 
-				<li><span class="filter" data-filter=".comm">Communication</span></li>
-				<li><span class="filter" data-filter=".arduino">&emsp;Arduino&emsp;</span></li>
-				<li><span class="filter" data-filter=".physical">&emsp;Physical&emsp;</span></li>
-				<li><span class="filter active" data-filter=".power, .hardware, .plug, .user, .sense, .comm, .arduino, .physical">All</span></li>
+				<li class="power-active"><span class="filter" data-filter=".power">&emsp;Power&emsp;</span></li>
+				<li class="hardware-active"><span class="filter" data-filter=".hardware">Hardware Interaction</span></li>
+				<li class="plug-active"><span class="filter" data-filter=".plug">Plug &amp; Play Devices</span></li>
+				<li class="user-active"><span class="filter" data-filter=".user">User Interface</span></li>
+				<li class="sense-active"><span class="filter" data-filter=".sense">&emsp;DAQ&emsp;</span></li> 
+				<li class="comm-active"><span class="filter" data-filter=".comm">Communication</span></li>
+				<li class="arduino-active"><span class="filter" data-filter=".arduino">&emsp;Arduino&emsp;</span></li>
+				<li class="physical-active"><span class="filter" data-filter=".physical">&emsp;Physical&emsp;</span></li>
+				<li class="all-active"><span class="filter" data-filter=".power, .hardware, .plug, .user, .sense, .comm, .arduino, .physical">&emsp;All&emsp;</span></li>
 			</ul>
 			</div>
 			</div>         
@@ -185,10 +185,10 @@
 							<span>DC Jack or Header Pins</span><br>
                             <span>Voltage range 5-30V DC</span>
                         </div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Power Input</p>      
+				<p class="fixed-label power">Power Input</p>      
 			</div>
 
 			<div class="portfolio power first" data-cat="power first">
@@ -199,13 +199,13 @@
 							<span>2600mAh Li Ion battery</span><br>
                             <span>Upto 4.5 hours life</span>
                         </div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Inbuilt Battery</p>      
+				<p class="fixed-label power">Inbuilt Battery</p>      
 			</div>
 
-			<div class="portfolio power comm first" data-cat="power comm first">
+			<div class="portfolio power first" data-cat="power first">
 				<div class="portfolio-wrapper">
 					<img src="img/techSpecs/power/usb.png" alt="Arduino USB">
 					<div style="display:block;" class="label">
@@ -213,10 +213,10 @@
 							<span>USB B-Type</span><br>
                             <span>Power | Charging | Communication</span>
                         </div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">USB</p>
+				<p class="fixed-label power">USB</p>
 			</div>
 
 			<div class="portfolio power" data-cat="power">
@@ -226,10 +226,10 @@
 						<div class="label-text-1">
 							<span>Internal and External power modes</span><br>
                         </div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Power Switch</p>      
+				<p class="fixed-label power">Power Switch</p>      
 			</div>
 
 			<div class="portfolio power first" data-cat="power first">
@@ -240,10 +240,10 @@
 							<span style="text-wrap:unrestricted">Adjustable voltage output via knob</span><br>
                             <span>Upto 3A</span>
                         </div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Variable Voltage Supply</p>      
+				<p class="fixed-label power">Variable Voltage Supply</p>      
 			</div>
 
 			<div class="portfolio power" data-cat="power">
@@ -253,10 +253,10 @@
 						<div class="label-text-1">
 							<span>Upto 3A</span>
                         </div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">5V Supply</p>      
+				<p class="fixed-label power">5V Supply</p>      
 			</div>
 
 			<div class="portfolio power" data-cat="power">
@@ -266,10 +266,10 @@
 						<div class="label-text-1">
 							<span>Upto 800mA</span><br>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">3.3V Supply</p>                   
+				<p class="fixed-label power">3.3V Supply</p>                   
 			</div>				
 
 			<div class="portfolio power" data-cat="power">
@@ -279,15 +279,15 @@
 						<div class="label-text-1">
 							<span>Power and Charging LEDs</span><br>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Indicators</p>
+				<p class="fixed-label power">Indicators</p>
 			</div>
 
 			<div class="portfolio power staticImg" data-cat="power">
 				<img src="img/techSpecs/power/resetButton.png" alt="evive reset">
-				<p class="fixedLabel">Reset Switch</p>
+				<p class="fixed-label power">Reset Switch</p>
 			</div>
 
 			<div class="portfolio power first" data-cat="power first">
@@ -298,10 +298,10 @@
 							<span>Protection from reverse</span><br>
                             <span>polarity input</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Reverse Polarity Shield</p>
+				<p class="fixed-label power">Reverse Polarity Shield</p>
 			</div>
 
 			<div class="portfolio power" data-cat="power">
@@ -312,10 +312,10 @@
 							<span>Protection from overcurrent</span><br>
                             <span>using resettable fuse</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Overcurrent Protection</p>
+				<p class="fixed-label power">Overcurrent Protection</p>
 			</div>
 
 			<div class="portfolio power" data-cat="power">
@@ -326,24 +326,24 @@
 							<span>Protection from higher voltage</span><br>
                             <span>input than 30V DC</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg power-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Overvoltage Protection</p>
+				<p class="fixed-label power">Overvoltage Protection</p>
 			</div>
 
         <!--Hardware Interaction-->
-			<div class="portfolio hardware user" data-cat="hardware user">
+			<div class="portfolio hardware" data-cat="hardware">
 				<div class="portfolio-wrapper">						
 					<img src="img/techSpecs/hardwareInteraction/joyStick.png" alt="arduino joystick">
 					<div style="display:block;" class="label">
 						<div class="label-text-1">
 							<span>5-Way Navigation Key</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg hardware-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Joystick</p>
+				<p class="fixed-label hardware">Joystick</p>
 			</div>
 
 			<div class="portfolio hardware" data-cat="hardware">
@@ -353,10 +353,10 @@
 						<div class="label-text-1">
 							<span>Two B103 Type Potentiometers</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg hardware-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Potentiometers</p>
+				<p class="fixed-label hardware">Potentiometers</p>
 			</div>
 
 			<div class="portfolio hardware" data-cat="hardware">
@@ -366,10 +366,10 @@
 						<div class="label-text-1">
 							<span>Two 3 Position SPDT Switches</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg hardware-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Slide Switches</p>
+				<p class="fixed-label hardware">Slide Switches</p>
 			</div>    
 
 			<div class="portfolio hardware" data-cat="hardware">
@@ -379,10 +379,10 @@
 						<div class="label-text-1">
 							<span>Two Tactile/Push Buttons</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg hardware-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Tactile Switches</p>
+				<p class="fixed-label hardware">Tactile Switches</p>
 			</div>
 
 			<div class="portfolio first" data-cat="first">
@@ -393,10 +393,24 @@
 							<span>2 Tactile Switches, 2 Potentiometers,</span><br>
                             <span>Joystick and 2 Slide Switches</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg hardware-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Switches | Pots | Joystick</p>
+				<p class="fixed-label hardware">Switches | Pots | Joystick</p>
+			</div>
+
+            <div class="portfolio hardware first" data-cat="hardware first">
+				<div class="portfolio-wrapper">						
+					<img src="img/techSpecs/hardwareInteraction/breadboard.png" alt="breadboard">
+					<div style="display:block;" class="label">
+						<div class="label-text-2">
+                        	<span>170Pins Solderless Breadboard</span><br>
+                            <span>for Prototyping</span>
+						</div>
+						<div class="label-bg hardware-label-bg"></div>
+					</div>
+				</div>
+				<p class="fixed-label hardware">Tiny Breadboard</p>
 			</div>
             
             <!--User -->
@@ -408,10 +422,10 @@
 							<span>1.8" SPI based TFT, 160X128px</span><br>
                             <span>18-bit colour</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg user-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">TFT Screen</p>
+				<p class="fixed-label user">TFT Screen</p>
 			</div>
 
 <!-- Add link of menu based control -->
@@ -423,38 +437,51 @@
 							<span>List of functions to perform tasks</span><br>
                             <span>like motor control, sensing</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg user-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">evive's Menu</p>
+				<p class="fixed-label user">evive's Menu</p>
+			</div>
+
+			<div class="portfolio user" data-cat="user">
+				<div class="portfolio-wrapper">						
+					<img src="img/techSpecs/userInterface/joystick.png" alt="arduino joystick">
+					<div style="display:block;" class="label">
+						<div class="label-text-1">
+							<span>5-Way Navigation Key</span>
+						</div>
+						<div class="label-bg user-label-bg"></div>
+					</div>
+				</div>
+				<p class="fixed-label user">Joystick</p>
 			</div>
 
             <div class="portfolio user first" data-cat="user first">
 				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/more/buzzer.png" alt="arduino speaker buzzer">
+					<img src="img/techSpecs/userInterface/buzzer.png" alt="arduino speaker buzzer">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
 							<span>2kHz to 10kHz</span><br>
                             <span>Beeps, tones and melodies!</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg user-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Buzzer</p>
+				<p class="fixed-label user">Buzzer</p>
 			</div>
 
             <div class="portfolio user" data-cat="user">
 				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/plugAndPlay/ledDir.png" alt="led">
+					<img src="img/techSpecs/userInterface/ledDir.png" alt="led">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
 							<span>LED on Pin 13</span><br>
 							<span>Two bi-color LEDs</span>                            
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg user-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">LEDs</p>
+				<p class="fixed-label user">LEDs</p>
 			</div>                      
 
 	        <!--plug&play-->
@@ -466,10 +493,10 @@
 							<span>Directly plug upto 2 Motors</span><br>
                             <span>Max 1A/channel | Upto 30V</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Plug Motors</p>
+				<p class="fixed-label plug">Plug Motors</p>
 			</div>
 			
             <div class="portfolio plug" data-cat="plug">
@@ -480,10 +507,10 @@
 							<span>Any 4 wire Stepper Motor</span><br>
                             <span>Max 1A current rating</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Connect Stepper Motor</p>
+				<p class="fixed-label plug">Connect Stepper Motor</p>
 			</div>
 
             <div class="portfolio plug" data-cat="plug">
@@ -494,10 +521,10 @@
 							<span>Directly connect 2 Relays</span><br>
                             <span>Upto 30V</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Switch Relays</p>
+				<p class="fixed-label plug">Switch Relays</p>
 			</div>       
 
             <div class="portfolio plug" data-cat="plug">
@@ -508,10 +535,10 @@
 							<span>Drive 2 Servos</span><br>
                             <span>Adjustable voltage upto 30V</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Control Servos</p>
+				<p class="fixed-label plug">Control Servos</p>
 			</div>
 
             <div class="portfolio plug" data-cat="plug">
@@ -522,10 +549,10 @@
 							<span>Port for 2 Motor Drivers</span><br>
                             <span>GND | 5V | PWM | Dir1 | Dir2</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Attach Motor Drivers</p>
+				<p class="fixed-label plug">Attach Motor Drivers</p>
 			</div>
             
             <div class="portfolio plug" data-cat="plug">
@@ -536,10 +563,10 @@
 							<span>Control 2 Solenoids</span><br>
                             <span>Upto 30V rating</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Drive Pneumatics</p>
+				<p class="fixed-label plug">Drive Pneumatics</p>
 			</div>            
 
             <div class="portfolio plug" data-cat="plug">
@@ -550,26 +577,25 @@
 							<span>Compatibility for controlling</span><br>
                             <span>device rated for 1.25V to 30V DC</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Voltage Range</p>
+				<p class="fixed-label plug">Voltage Range</p>
 			</div>
 
-            <div class="portfolio plug first" data-cat="plug first">
+            <div class="portfolio plug" data-cat="plug">
 				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/arduinoShieldStack/breadBoard.png" alt="breadboard">
+					<img src="img/techSpecs/plugAndPlay/breadBoardMount.png" alt="breadboard">
 					<div style="display:block;" class="label">
-						<div class="label-text-2">
-                        	<span>170Pins Solderless Breadboard</span><br>
-                            <span>for Prototyping</span>
+						<div class="label-text-1">
+                        	<span>Attach any number of Breadboards</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Tiny Breadboard</p>
-			</div>
-                    
+				<p class="fixed-label plug">Breadboard Mounts</p>
+			</div>            
+
             <div class="portfolio first" data-cat="first">
 				<div class="portfolio-wrapper">						
 					<img src="img/techSpecs/plugAndPlay/motorServoStepper.png" alt="plug and play">
@@ -578,12 +604,12 @@
                         	<span>Directly Plug 2 motors, servos</span><br>
                             <span>solenoids, relays or stepper</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg plug-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Motors | Stepper | Servos</p>
+				<p class="fixed-label plug">Motors | Stepper | Servos</p>
 			</div>
-			
+
             <!--sense-->
             <div class="portfolio sense first" data-cat="sense first">
 				<div class="portfolio-wrapper">						
@@ -593,24 +619,24 @@
 							<span>&#177;30V | &#177;5V | &#177;3A</span><br>
                             <span>Upto 75kHz | IC: ADE7912</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg sense-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Two 24-bit ADCs</p>
+				<p class="fixed-label sense">Two 24-bit ADCs</p>
 			</div>
 
             <div class="portfolio sense first" data-cat="sense first">
 				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/sensing/babyOscilloscope.png" alt="Mini Oscilloscope">
+					<img src="img/techSpecs/sensing/babyOscilloscope.png" alt="arduino Oscilloscope">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-							<span>2 Channels | 3mV and 3mA Accuracy </span><br>
-                            <span>Sensing range upto 1kHz, &#177;30V, 3A</span>
+							<span>2 Channels | Upto 1kHz</span><br>
+                            <span>Sensing range &#177;30V, &#177;3A</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg sense-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Mini Oscilloscope</p>
+				<p class="fixed-label sense">Mini Oscilloscope</p>
 			</div>
 
             <div class="portfolio sense first" data-cat="sense first">
@@ -621,10 +647,10 @@
 							<span>YYMMDD, Day, hh:mm:ss</span><br>
                             <span>IC: PCF8563</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg sense-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Real Time Clock</p>
+				<p class="fixed-label sense">Real Time Clock</p>
 			</div>
 
             <div class="portfolio sense first" data-cat="sense first">
@@ -634,10 +660,10 @@
 						<div class="label-text-1">
 							<span>2GB to 32GB micro SD card</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg sense-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">SD card slot</p>
+				<p class="fixed-label sense">SD card slot</p>
 			</div>
 
             <div class="portfolio sense first" data-cat="sense first">
@@ -648,11 +674,52 @@
 							<span>Sine, Square, Saw, Triangular waves</span><br>
                             <span>IIC interface | IC: MCP4725</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg sense-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">12-bit DAC</p>
+				<p class="fixed-label sense">12-bit DAC</p>
 			</div>
+
+            <div class="portfolio sense" data-cat="sense">
+				<div class="portfolio-wrapper">						
+					<img src="img/techSpecs/sensing/senseRange3A.png" alt="ammeter">
+					<div style="display:block;" class="label">
+						<div class="label-text-2">
+							<span>3mA Accuracy </span><br>
+                            <span>Range upto 3A</span>
+						</div>
+						<div class="label-bg sense-label-bg"></div>
+					</div>
+				</div>
+				<p class="fixed-label sense">Ammeter</p>
+			</div>            
+
+            <div class="portfolio sense" data-cat="sense">
+				<div class="portfolio-wrapper">						
+					<img src="img/techSpecs/sensing/senseRange30V.png" alt="voltmeter">
+					<div style="display:block;" class="label">
+						<div class="label-text-2">
+							<span>Upto 3mV Accuracy </span><br>
+                            <span>Range upto &#177;5V/&#177;30V</span>
+						</div>
+						<div class="label-bg sense-label-bg"></div>
+					</div>
+				</div>
+				<p class="fixed-label sense">Voltmeter</p>
+			</div> 
+            
+            <div class="portfolio sense" data-cat="sense">
+				<div class="portfolio-wrapper">
+					<img src="img/techSpecs/sensing/senseCables.png" alt="DMM cables">
+					<div style="display:block;" class="label">
+						<div class="label-text-1">
+							<span>Two 4mm Banana plugs</span>
+						</div>
+						<div class="label-bg sense-label-bg"></div>
+					</div>
+				</div>
+				<p class="fixed-label sense">Testing Leads</p>
+			</div>            
             
             <!--communication-->
             <div class="portfolio comm" data-cat="comm">
@@ -663,10 +730,10 @@
                         	<span>For IoT applications</span><br>
                             <span>ESP8266-12E</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg comm-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Wi-Fi Adapter</p>
+				<p class="fixed-label comm">Wi-Fi Adapter</p>
 			</div>
 
             <div class="portfolio comm" data-cat="comm">
@@ -677,10 +744,10 @@
                         	<span>Connect XBee to 10pin </span><br>
                             <span>2mm pitch headers</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg comm-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">XBee Adapter</p>
+				<p class="fixed-label comm">XBee Adapter</p>
 			</div>
 
             <div class="portfolio comm" data-cat="comm">
@@ -690,10 +757,24 @@
 						<div class="label-text-1">
                         	<span>Compatible with HC05</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg comm-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Bluetooth Adapter</p>
+				<p class="fixed-label comm">Bluetooth Adapter</p>
+			</div>
+
+			<div class="portfolio comm" data-cat="comm">
+				<div class="portfolio-wrapper">
+					<img src="img/techSpecs/communication/usb.png" alt="Arduino USB">
+					<div style="display:block;" class="label">
+						<div class="label-text-2">
+							<span>USB B-Type</span><br>
+                            <span>Upto 1M Baud rate</span>
+                        </div>
+						<div class="label-bg comm-label-bg"></div>
+					</div>
+				</div>
+				<p class="fixed-label comm">USB</p>
 			</div>
             
             <div class="portfolio first" data-cat="first">
@@ -704,10 +785,10 @@
                         	<span>Adapters for XBee,</span><br>
                             <span>ESP8266-12E, HC-05</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg comm-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Wi-Fi | XBee | Bluetooth</p>
+				<p class="fixed-label comm">Wi-Fi | XBee | Bluetooth</p>
 			</div>
             
 			<!--processing-->
@@ -719,10 +800,10 @@
                         	<span>Powered by Arduino MEGA</span><br>
                             <span>2560 R3</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg arduino-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Arduino MEGA</p>
+				<p class="fixed-label arduino">Arduino MEGA</p>
 			</div>
 
             <div class="portfolio arduino" data-cat="arduino">
@@ -733,10 +814,10 @@
                         	<span>8-bit AVR CPU | 16MHz</span><br>
                             <span>5V VCC | Flash 256kB</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg arduino-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">ATmega 2560</p>
+				<p class="fixed-label arduino">ATmega 2560</p>
 			</div>        
 
             <div class="portfolio arduino" data-cat="arduino">
@@ -747,10 +828,10 @@
                         	<span>14+14 Digital I/O Pins</span><br>
                             <span>5V TTL</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg arduino-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">28 Digital I/O Pins</p>
+				<p class="fixed-label arduino">28 Digital I/O Pins</p>
 			</div>  
 
             <div class="portfolio arduino" data-cat="arduino">
@@ -761,20 +842,20 @@
                         	<span>6+4 Analog Input Pins</span><br>
                             <span>0-5V</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg arduino-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">10 Analog Input Pins</p>
+				<p class="fixed-label arduino">10 Analog Input Pins</p>
 			</div>
 
             <div class="portfolio arduino staticImg" data-cat="arduino">
 					<img src="img/techSpecs/arduinoShieldStack/PWM.png" alt="Arduino pwm">
-				<p class="fixedLabel">14+3 PWM Pins</p>
+				<p class="fixed-label arduino">14+3 PWM Pins</p>
 			</div>            
 
             <div class="portfolio arduino staticImg" data-cat="arduino">
 					<img src="img/techSpecs/arduinoShieldStack/interrupt.png" alt="Arduino interrupt">
-				<p class="fixedLabel">6 Interrupt Pins</p>
+				<p class="fixed-label arduino">6 Interrupt Pins</p>
 			</div>
 
             <div class="portfolio arduino" data-cat="arduino">
@@ -785,10 +866,10 @@
                         	<span>Bidirectional Logic level shifter</span><br>
                             <span>5V &#8596; 3.3V</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg arduino-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Two 3.3V Digital I/O</p>
+				<p class="fixed-label arduino">Two 3.3V Digital I/O</p>
 			</div>      
 
             <div class="portfolio arduino" data-cat="arduino">
@@ -799,20 +880,20 @@
                         	<span>4 Serial Ports</span><br>
                             <span>Upto 1M Baud rate</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg arduino-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Serial Interface</p>
+				<p class="fixed-label arduino">Serial Interface</p>
 			</div>  
 
             <div class="portfolio arduino staticImg" data-cat="arduino">
 					<img src="img/techSpecs/arduinoShieldStack/IIC.png" alt="Arduino I2C IIC">
-				<p class="fixedLabel">I2C Bus</p>
+				<p class="fixed-label arduino">I2C Bus</p>
 			</div> 
 
             <div class="portfolio arduino staticImg" data-cat="arduino">
 					<img src="img/techSpecs/arduinoShieldStack/SPI.png" alt="Arduino SPI">
-				<p class="fixedLabel">SPI Communication</p>
+				<p class="fixed-label arduino">SPI Communication</p>
 			</div>
 
             <div class="portfolio arduino" data-cat="arduino">
@@ -820,13 +901,13 @@
 					<img src="img/techSpecs/arduinoShieldStack/arduinoShieldStack.png" alt="arduino shields">
 					<div style="display:block;" class="label">
 						<div class="label-text-2">
-                        	<span>Attach lots fo Arduino MEGA shields</span><br>
+                        	<span>Stack Arduino UNO/MEGA shields</span><br>
                             <span>Note: Arduino UNO Pinouts</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg arduino-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Shield Stack Space</p>
+				<p class="fixed-label arduino">Shield Stack Space</p>
 			</div>
 
         	<!--physical-->
@@ -837,28 +918,15 @@
 						<div class="label-text-1">
                         	<span>Compact design</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg physical-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Dimensions</p>
+				<p class="fixed-label physical">Dimensions</p>
 			</div>
 
             <div class="portfolio physical staticImg" data-cat="physical">
-				<img src="img/techSpecs/physical/weigth.png" alt="evive weight">
-				<p class="fixedLabel">Weight</p>
-			</div>
-
-            <div class="portfolio physical" data-cat="physical">
-				<div class="portfolio-wrapper">						
-					<img src="img/techSpecs/physical/breadBoardMount.png" alt="breadboard">
-					<div style="display:block;" class="label">
-						<div class="label-text-1">
-                        	<span>Attach any number of Breadboards</span>
-						</div>
-						<div class="label-bg"></div>
-					</div>
-				</div>
-				<p class="fixedLabel">Breadboard Mounts</p>
+				<img src="img/techSpecs/physical/weight.png" alt="evive weight">
+				<p class="fixed-label physical">Weight</p>
 			</div>
 
             <div class="portfolio physical first" data-cat="physical first">
@@ -868,10 +936,10 @@
 						<div class="label-text-1">
                         	<span>Mount evive with 4mm nuts</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg physical-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Mounting holes</p>
+				<p class="fixed-label physical">Mounting holes</p>
 			</div>          
 
             <div class="portfolio physical" data-cat="physical">
@@ -881,10 +949,10 @@
 						<div class="label-text-1">
                         	<span>For Longer life and preformance</span>
 						</div>
-						<div class="label-bg"></div>
+						<div class="label-bg physical-label-bg"></div>
 					</div>
 				</div>
-				<p class="fixedLabel">Cooling vents</p>
+				<p class="fixed-label physical">Cooling vents</p>
 			</div>
 
 		</div>
@@ -907,10 +975,10 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5">
-                    <h2>Connect with evive</h2>
+                <div class="col-lg-4">
+                    <h2  style="font-size:2.5em">Connect with evive</h2>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-8">
                     <ul class="list-inline banner-social-buttons">
 						<li>
                             <a href="mailto:evivetoolkit@gmail.com" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-envelope-square fa-fw"></i> <span class="network-name">Mail</span></a>
@@ -919,11 +987,17 @@
                             <a href="https://facebook.com/evivetoolkit" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/evivetoolkit/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <a href="https://plus.google.com/100165102308738166814" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-google-plus-square fa-fw"></i> <span class="network-name">Google +</span></a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            <a href="http://blog.evive.cc/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-rss-square fa-fw"></i> <span class="network-name">Blog</span></a>
+                        </li>                        
+                        <li>
+                            <a href="https://github.com/evivetoolkit/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
+<!--                        <li>
+                            <a href="#" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>-->
                     </ul>
                 </div>
             </div>
