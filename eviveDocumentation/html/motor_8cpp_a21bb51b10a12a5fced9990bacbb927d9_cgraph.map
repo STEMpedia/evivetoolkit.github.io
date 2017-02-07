@@ -1,0 +1,7 @@
+<map id="controlMotor" name="controlMotor">
+<area shape="rect" id="node2" href="$class_motor.html#a81fada8275a8cd70805a9808314e7bee" title="Motor::moveMotor" alt="" coords="166,5,293,32"/>
+<area shape="rect" id="node4" href="$class_slide_switch.html#a5c9f61ec4369f17e176d948ad74fc3ab" title="SlideSwitch::readPin1" alt="" coords="155,56,304,83"/>
+<area shape="rect" id="node5" href="$class_slide_switch.html#ada186df3375d7dcd7dac6470c9832830" title="SlideSwitch::readPin2" alt="" coords="155,107,304,133"/>
+<area shape="rect" id="node6" href="$class_potentiometer.html#ac992f846228fddede6d86d6ffa1be9b6" title="Potentiometer::getValue" alt="" coords="148,157,311,184"/>
+<area shape="rect" id="node3" href="$class_motor.html#aea0ccda5c88406ca40b2d2283eab9114" title="Motor::changePWM" alt="" coords="359,5,497,32"/>
+</map>

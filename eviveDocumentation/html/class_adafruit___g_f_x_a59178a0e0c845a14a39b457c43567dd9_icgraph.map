@@ -1,0 +1,12 @@
+<map id="Adafruit_GFX::setTextColor" name="Adafruit_GFX::setTextColor">
+<area shape="rect" id="node2" href="$screen_implementation_8h.html#af1fa449cd5ccc125ba9af9147b83d615" title="vvrUpdate" alt="" coords="287,5,365,32"/>
+<area shape="rect" id="node3" href="$screen_implementation_8h.html#a4c6b06d393bb2a3102db531e4beaeab8" title="lcd_implementation\l_text_and_background_color" alt="" coords="232,57,420,98"/>
+<area shape="rect" id="node4" href="$screen_implementation_8h.html#ad1e3a4dee091aab44fda5c56de6f0ebc" title="lcd_implementation\l_control_status_motor" alt="" coords="251,122,401,163"/>
+<area shape="rect" id="node5" href="$screen_implementation_8h.html#a0a9b5f6d54a1e180061423c25785e9f0" title="lcd_implementation\l_control_status_servo" alt="" coords="252,187,400,229"/>
+<area shape="rect" id="node6" href="$screen_implementation_8h.html#a21856890864e14206b8bf0bb4f6466d8" title="lcd_implementation\l_control_status_stepper" alt="" coords="245,253,407,294"/>
+<area shape="rect" id="node7" href="$screen_implementation_8h.html#a7ba1eab2349a7b954feff9aee5155f89" title="lcd_control_status\l_template" alt="" coords="262,318,390,359"/>
+<area shape="rect" id="node8" href="$screen_implementation_8h.html#a943be3b2d4985761a33c2d8982519ff7" title="lcd_sensing_status\l_template" alt="" coords="259,383,393,425"/>
+<area shape="rect" id="node9" href="$screen_implementation_8h.html#adcc9e5bb6c51ac4d92f862ec34852327" title="lcd_implementation\l_sensing_status" alt="" coords="259,449,393,490"/>
+<area shape="rect" id="node10" href="$screen_implementation_8h.html#a549b2576ed0410b4a8ecc5a1cf67bd8c" title="evive_oscilloscope" alt="" coords="262,515,390,541"/>
+<area shape="rect" id="node11" href="$screen_implementation_8h.html#a2fe91ca8669227b8f13e44e01fa609f3" title="lcd_implementation\l_dac_template" alt="" coords="259,566,393,607"/>
+</map>

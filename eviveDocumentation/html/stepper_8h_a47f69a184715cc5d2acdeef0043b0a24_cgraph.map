@@ -1,0 +1,6 @@
+<map id="controlStepper" name="controlStepper">
+<area shape="rect" id="node2" href="$class_button.html#a5f5c0d23ab0e5387b861e68019a7e85d" title="Button::read" alt="" coords="188,5,281,32"/>
+<area shape="rect" id="node3" href="$class_slide_switch.html#a5c9f61ec4369f17e176d948ad74fc3ab" title="SlideSwitch::readPin1" alt="" coords="160,56,309,83"/>
+<area shape="rect" id="node4" href="$class_stepper.html#a23f1ada8f077bcb8691009648cf29f27" title="Stepper::step" alt="" coords="185,107,285,133"/>
+<area shape="rect" id="node5" href="$class_slide_switch.html#ada186df3375d7dcd7dac6470c9832830" title="SlideSwitch::readPin2" alt="" coords="160,157,309,184"/>
+</map>

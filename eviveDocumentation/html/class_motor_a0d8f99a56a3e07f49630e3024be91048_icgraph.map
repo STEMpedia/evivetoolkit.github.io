@@ -1,0 +1,4 @@
+<map id="Motor::getDirection" name="Motor::getDirection">
+<area shape="rect" id="node2" href="$class_motor.html#a17a9259b14a7e71ae625f47ec8ef0178" title="Motor::isFree" alt="" coords="193,5,292,32"/>
+<area shape="rect" id="node3" href="$class_motor.html#a7429cc5bd67dd69077008674eda80f2d" title="Motor::isLocked" alt="" coords="185,56,300,83"/>
+</map>

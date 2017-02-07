@@ -1,0 +1,12 @@
+<map id="addMotor12" name="addMotor12">
+<area shape="rect" id="node2" href="$motor_8cpp.html#a4ad9639dfcff0a9210935a370924c942" title="addMotor1" alt="" coords="144,31,227,57"/>
+<area shape="rect" id="node11" href="$motor_8cpp.html#ae06000112295c81330c349eda7d35bde" title="addMotor2" alt="" coords="144,81,227,108"/>
+<area shape="rect" id="node3" href="$class_motor.html#a6726cda4183f9b9f4fd3d8af52d9e87d" title="Motor::attachMotor" alt="" coords="275,5,407,32"/>
+<area shape="rect" id="node4" href="$action_8cpp.html#a462fcfe09d5b0eed6afad76cd5ee64d7" title="actionAdd" alt="" coords="301,56,381,83"/>
+<area shape="rect" id="node5" href="$motor_8cpp.html#a21bb51b10a12a5fced9990bacbb927d9" title="controlMotor" alt="" coords="293,107,388,133"/>
+<area shape="rect" id="node6" href="$class_motor.html#a81fada8275a8cd70805a9808314e7bee" title="Motor::moveMotor" alt="" coords="473,31,599,57"/>
+<area shape="rect" id="node8" href="$class_slide_switch.html#a5c9f61ec4369f17e176d948ad74fc3ab" title="SlideSwitch::readPin1" alt="" coords="461,81,611,108"/>
+<area shape="rect" id="node9" href="$class_slide_switch.html#ada186df3375d7dcd7dac6470c9832830" title="SlideSwitch::readPin2" alt="" coords="461,132,611,159"/>
+<area shape="rect" id="node10" href="$class_potentiometer.html#ac992f846228fddede6d86d6ffa1be9b6" title="Potentiometer::getValue" alt="" coords="455,183,617,209"/>
+<area shape="rect" id="node7" href="$class_motor.html#aea0ccda5c88406ca40b2d2283eab9114" title="Motor::changePWM" alt="" coords="665,31,804,57"/>
+</map>

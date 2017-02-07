@@ -1,0 +1,475 @@
+\hypertarget{screen_8cpp}{}\section{screen.\+cpp File Reference}
+\label{screen_8cpp}\index{screen.\+cpp@{screen.\+cpp}}
+{\ttfamily \#include \char`\"{}screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screen\+Implementation.\+h\char`\"{}}\newline
+Include dependency graph for screen.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{screen_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{screen_8cpp_a0aad88d363ddbe40d3e2e5022c4a3bcd}{L\+C\+D\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES}~11
+\item 
+\#define \hyperlink{screen_8cpp_ab496ff292249739c727cadf6577c397f}{L\+C\+D\+\_\+\+C\+L\+I\+C\+K\+ED}~(\hyperlink{navkey_8h_ad8cb515065450c9ef93ea8dfe6f67065}{menu\+Move}==2)
+\item 
+\#define \hyperlink{screen_8cpp_a57bf65669d0dcfe1dc5bab6e42729989}{E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+E\+P\+S\+\_\+\+P\+E\+R\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+EM}~1
+\item 
+\#define \hyperlink{screen_8cpp_a350610dad5a6f8a447419b868b41e86a}{E\+N\+C\+O\+D\+E\+R\+\_\+\+P\+U\+L\+S\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+T\+EP}~1
+\item 
+\#define \hyperlink{screen_8cpp_a0ff5ee3258e7fe02496202d623cdb21b}{S\+T\+A\+R\+T\+\_\+\+M\+E\+NU}()
+\item 
+\#define \hyperlink{screen_8cpp_a398c56951184891d234bb6919e023bfd}{M\+E\+N\+U\+\_\+\+I\+T\+EM}(type,  label,  args...)
+\item 
+\#define \hyperlink{screen_8cpp_aaa86537496ae13f10f55a39d1354cc41}{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+D\+U\+M\+MY}()~do \{ \+\_\+menu\+Item\+Nr++; \} while(0)
+\item 
+\#define \hyperlink{screen_8cpp_a8ac7d9f33094c800001237de60df061a}{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+IT}(type,  label,  args...)~\hyperlink{screen_8cpp_a398c56951184891d234bb6919e023bfd}{M\+E\+N\+U\+\_\+\+I\+T\+EM}(setting\+\_\+edit\+\_\+ \#\# type, label, P\+S\+TR(label) , \#\# args )
+\item 
+\#define \hyperlink{screen_8cpp_aecce07ab7c836867a796f4ef84012154}{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+I\+T\+\_\+\+C\+A\+L\+L\+B\+A\+CK}(type,  label,  args...)~\hyperlink{screen_8cpp_a398c56951184891d234bb6919e023bfd}{M\+E\+N\+U\+\_\+\+I\+T\+EM}(setting\+\_\+edit\+\_\+callback\+\_\+ \#\# type, label, P\+S\+TR(label) , \#\# args )
+\item 
+\#define \hyperlink{screen_8cpp_a3701039fcffd70fa6a6b14bbfdb51121}{E\+N\+D\+\_\+\+M\+E\+NU}()
+\item 
+\#define \hyperlink{screen_8cpp_a80ee254eee79b1e87cce6f7109f2ebf0}{E\+X\+I\+T\+\_\+\+M\+E\+NU}(args)~\hyperlink{screen_8cpp_a41d50c013fa2dbd71727145bf0ebbcab}{back\+\_\+menu\+\_\+process}(args)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t}) ()
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{screen_8cpp_a41d50c013fa2dbd71727145bf0ebbcab}{back\+\_\+menu\+\_\+process} (\hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t} \hyperlink{screen_implementation_8h_a5190c2430948b52c07719395f142c8a2}{data})
+\item 
+void \hyperlink{screen_8cpp_a310b61cd41fbc836ed6a78d4deb8e7dd}{lcd\+\_\+update} ()
+\item 
+void \hyperlink{screen_8cpp_ad27cd675b9288970a481cedcb47dca1c}{nav\+Key\+Interrupt\+Center\+Press} ()
+\item 
+bool \hyperlink{screen_8cpp_a08ff51bb30afce631ae475662fbae6f7}{lcd\+\_\+clicked} ()
+\item 
+void \hyperlink{screen_8cpp_ac23e73124dc9fabae95671fe71d074a6}{lcd\+\_\+init} ()
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a37605e1694bb466fe0e250d1d203c13c}{ftostr3} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_afc9680ca77ad693a897ac493db9bdde1}{ftostr4sign} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_ad4e9be0f3b54c757febc36ea5761589e}{itostr2} (const uint8\+\_\+t \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a332dd5de9497bce94ec31c4087890abf}{ftostr31} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a0a2ab190278a5d44a67ecb056b5ed868}{ftostr31ns} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_ab938e6b37de2aae37737d08cf31dfe8b}{ftostr32} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a0e6a7c84559785cbf2ffc7b6726cf989}{ftostr43} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_ae5430e7aa2999b4c30cfda75f1e3d1be}{ftostr12ns} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a8f516a8bdfbe02b20fd7e22e7acc69e8}{ftostr32sp} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a258c6bab8def1e5e3d4ad6d694850b6c}{itostr31} (const int \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a13b0325be1a27be97b63a9172f9c9c54}{itostr3} (const int \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a77813d20b712208fef34af869a70c9a4}{itostr3left} (const int \&xx)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a92d66b6872b38bf1fa84304266d2488f}{itostr4} (const int \&xx)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a11f766834935b5f1b78c330c69a63102}{itostr4sign} (const int \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_a16e36b1629d645e307182ff9ca5823db}{ftostr5} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_af7a273ca44d509bea67114d0422df15c}{ftostr51} (const float \&x)
+\item 
+char $\ast$ \hyperlink{screen_8cpp_adca508472241c71f45fc76507c45c84a}{ftostr52} (const float \&x)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{screen_8cpp_a09240d0929ffbae4a52a8e9e177892c4}{last\+Status\+Update\+Time} = 0
+\item 
+uint8\+\_\+t \hyperlink{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}{current\+Menu\+View\+Offset} =0
+\item 
+int8\+\_\+t \hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoder\+Position}
+\item 
+\hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t} \hyperlink{screen_8cpp_acfbeb0a7b94e085a51d11ebbd84e1720}{current\+Menu} = lcd\+\_\+home\+\_\+menu
+\item 
+uint8\+\_\+t \hyperlink{screen_8cpp_ae2328649a34b19cad320968ac63a02be}{lcd\+Draw\+Update} = 2
+\item 
+\hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t} \hyperlink{screen_8cpp_abd0ed6748e0b429f612377cdb904e195}{prev\+Menu} =N\+U\+LL
+\item 
+uint16\+\_\+t \hyperlink{screen_8cpp_a769496d17723ad0c64469326d62ff2e4}{prev\+Encoder\+Position}
+\item 
+\hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t} \hyperlink{screen_8cpp_aff8e2f756c699b0b678bd60b9f27961a}{callback\+Func}
+\item 
+char \hyperlink{screen_8cpp_a243ef3aabc6f19f53e52ec67709d5cfa}{conv} \mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{screen_8cpp_a350610dad5a6f8a447419b868b41e86a}\label{screen_8cpp_a350610dad5a6f8a447419b868b41e86a}} 
+\index{screen.\+cpp@{screen.\+cpp}!E\+N\+C\+O\+D\+E\+R\+\_\+\+P\+U\+L\+S\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+T\+EP@{E\+N\+C\+O\+D\+E\+R\+\_\+\+P\+U\+L\+S\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+T\+EP}}
+\index{E\+N\+C\+O\+D\+E\+R\+\_\+\+P\+U\+L\+S\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+T\+EP@{E\+N\+C\+O\+D\+E\+R\+\_\+\+P\+U\+L\+S\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+T\+EP}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{E\+N\+C\+O\+D\+E\+R\+\_\+\+P\+U\+L\+S\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+T\+EP}{ENCODER\_PULSES\_PER\_STEP}}
+{\footnotesize\ttfamily \#define E\+N\+C\+O\+D\+E\+R\+\_\+\+P\+U\+L\+S\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+T\+EP~1}
+
+\mbox{\Hypertarget{screen_8cpp_a57bf65669d0dcfe1dc5bab6e42729989}\label{screen_8cpp_a57bf65669d0dcfe1dc5bab6e42729989}} 
+\index{screen.\+cpp@{screen.\+cpp}!E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+E\+P\+S\+\_\+\+P\+E\+R\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+EM@{E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+E\+P\+S\+\_\+\+P\+E\+R\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+EM}}
+\index{E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+E\+P\+S\+\_\+\+P\+E\+R\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+EM@{E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+E\+P\+S\+\_\+\+P\+E\+R\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+EM}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+E\+P\+S\+\_\+\+P\+E\+R\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+EM}{ENCODER\_STEPS\_PER\_MENU\_ITEM}}
+{\footnotesize\ttfamily \#define E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+E\+P\+S\+\_\+\+P\+E\+R\+\_\+\+M\+E\+N\+U\+\_\+\+I\+T\+EM~1}
+
+\mbox{\Hypertarget{screen_8cpp_a3701039fcffd70fa6a6b14bbfdb51121}\label{screen_8cpp_a3701039fcffd70fa6a6b14bbfdb51121}} 
+\index{screen.\+cpp@{screen.\+cpp}!E\+N\+D\+\_\+\+M\+E\+NU@{E\+N\+D\+\_\+\+M\+E\+NU}}
+\index{E\+N\+D\+\_\+\+M\+E\+NU@{E\+N\+D\+\_\+\+M\+E\+NU}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{E\+N\+D\+\_\+\+M\+E\+NU}{END\_MENU}}
+{\footnotesize\ttfamily \#define E\+N\+D\+\_\+\+M\+E\+NU(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (\hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoderPosition} >= \_menuItemNr) \{\(\backslash\)
+      lcdDrawUpdate=2; \(\backslash\)
+      encoderPosition = 0; \(\backslash\)
+      currentMenuViewOffset=0; \(\backslash\)
+      \_lineNr=0;\(\backslash\)
+    \}\(\backslash\)
+        else \textcolor{keywordflow}{if} (\hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoderPosition}<0) \{\(\backslash\)
+        \textcolor{comment}{/*Serial.print("End Else 0 encoder position: ");\(\backslash\)}
+\textcolor{comment}{        Serial.println(encoderPosition);*/}\(\backslash\)
+      lcdDrawUpdate=2; \(\backslash\)
+      encoderPosition=\_menuItemNr-1; \(\backslash\)
+      currentMenuViewOffset=(\hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoderPosition}-\hyperlink{screen_8cpp_a0aad88d363ddbe40d3e2e5022c4a3bcd}{LCD\_NUM\_LINES}+1>0)?
+      \hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoderPosition}-\hyperlink{screen_8cpp_a0aad88d363ddbe40d3e2e5022c4a3bcd}{LCD\_NUM\_LINES}+1:
+      \hyperlink{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}{currentMenuViewOffset};\(\backslash\)
+      \_lineNr=0;\(\backslash\)
+    \}\(\backslash\)
+    else \textcolor{keywordflow}{if} (\hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoderPosition} >= \hyperlink{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}{currentMenuViewOffset} + 
+      \hyperlink{screen_8cpp_a0aad88d363ddbe40d3e2e5022c4a3bcd}{LCD\_NUM\_LINES}) \{ \(\backslash\)
+      currentMenuViewOffset = \hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoderPosition}  - \hyperlink{screen_8cpp_a0aad88d363ddbe40d3e2e5022c4a3bcd}{LCD\_NUM\_LINES} + 1; \(\backslash\)
+      lcdDrawUpdate = 2; \(\backslash\)
+      \_lineNr = \hyperlink{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}{currentMenuViewOffset} - 1; \(\backslash\)
+      \_drawLineNr = -1; \} \(\backslash\)
+        \} \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+\mbox{\Hypertarget{screen_8cpp_a80ee254eee79b1e87cce6f7109f2ebf0}\label{screen_8cpp_a80ee254eee79b1e87cce6f7109f2ebf0}} 
+\index{screen.\+cpp@{screen.\+cpp}!E\+X\+I\+T\+\_\+\+M\+E\+NU@{E\+X\+I\+T\+\_\+\+M\+E\+NU}}
+\index{E\+X\+I\+T\+\_\+\+M\+E\+NU@{E\+X\+I\+T\+\_\+\+M\+E\+NU}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{E\+X\+I\+T\+\_\+\+M\+E\+NU}{EXIT\_MENU}}
+{\footnotesize\ttfamily \#define E\+X\+I\+T\+\_\+\+M\+E\+NU(\begin{DoxyParamCaption}\item[{}]{args }\end{DoxyParamCaption})~\hyperlink{screen_8cpp_a41d50c013fa2dbd71727145bf0ebbcab}{back\+\_\+menu\+\_\+process}(args)}
+
+\mbox{\Hypertarget{screen_8cpp_ab496ff292249739c727cadf6577c397f}\label{screen_8cpp_ab496ff292249739c727cadf6577c397f}} 
+\index{screen.\+cpp@{screen.\+cpp}!L\+C\+D\+\_\+\+C\+L\+I\+C\+K\+ED@{L\+C\+D\+\_\+\+C\+L\+I\+C\+K\+ED}}
+\index{L\+C\+D\+\_\+\+C\+L\+I\+C\+K\+ED@{L\+C\+D\+\_\+\+C\+L\+I\+C\+K\+ED}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{L\+C\+D\+\_\+\+C\+L\+I\+C\+K\+ED}{LCD\_CLICKED}}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+C\+L\+I\+C\+K\+ED~(\hyperlink{navkey_8h_ad8cb515065450c9ef93ea8dfe6f67065}{menu\+Move}==2)}
+
+\mbox{\Hypertarget{screen_8cpp_a0aad88d363ddbe40d3e2e5022c4a3bcd}\label{screen_8cpp_a0aad88d363ddbe40d3e2e5022c4a3bcd}} 
+\index{screen.\+cpp@{screen.\+cpp}!L\+C\+D\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES@{L\+C\+D\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES}}
+\index{L\+C\+D\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES@{L\+C\+D\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{L\+C\+D\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES}{LCD\_NUM\_LINES}}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+N\+U\+M\+\_\+\+L\+I\+N\+ES~11}
+
+\mbox{\Hypertarget{screen_8cpp_a398c56951184891d234bb6919e023bfd}\label{screen_8cpp_a398c56951184891d234bb6919e023bfd}} 
+\index{screen.\+cpp@{screen.\+cpp}!M\+E\+N\+U\+\_\+\+I\+T\+EM@{M\+E\+N\+U\+\_\+\+I\+T\+EM}}
+\index{M\+E\+N\+U\+\_\+\+I\+T\+EM@{M\+E\+N\+U\+\_\+\+I\+T\+EM}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{M\+E\+N\+U\+\_\+\+I\+T\+EM}{MENU\_ITEM}}
+{\footnotesize\ttfamily \#define M\+E\+N\+U\+\_\+\+I\+T\+EM(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{label,  }\item[{}]{args... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_aaa86537496ae13f10f55a39d1354cc41}\label{screen_8cpp_aaa86537496ae13f10f55a39d1354cc41}} 
+\index{screen.\+cpp@{screen.\+cpp}!M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+D\+U\+M\+MY@{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+D\+U\+M\+MY}}
+\index{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+D\+U\+M\+MY@{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+D\+U\+M\+MY}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+D\+U\+M\+MY}{MENU\_ITEM\_DUMMY}}
+{\footnotesize\ttfamily \#define M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+D\+U\+M\+MY(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~do \{ \+\_\+menu\+Item\+Nr++; \} while(0)}
+
+\mbox{\Hypertarget{screen_8cpp_a8ac7d9f33094c800001237de60df061a}\label{screen_8cpp_a8ac7d9f33094c800001237de60df061a}} 
+\index{screen.\+cpp@{screen.\+cpp}!M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+IT@{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+IT}}
+\index{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+IT@{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+IT}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+IT}{MENU\_ITEM\_EDIT}}
+{\footnotesize\ttfamily \#define M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+IT(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{label,  }\item[{}]{args... }\end{DoxyParamCaption})~\hyperlink{screen_8cpp_a398c56951184891d234bb6919e023bfd}{M\+E\+N\+U\+\_\+\+I\+T\+EM}(setting\+\_\+edit\+\_\+ \#\# type, label, P\+S\+TR(label) , \#\# args )}
+
+\mbox{\Hypertarget{screen_8cpp_aecce07ab7c836867a796f4ef84012154}\label{screen_8cpp_aecce07ab7c836867a796f4ef84012154}} 
+\index{screen.\+cpp@{screen.\+cpp}!M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+I\+T\+\_\+\+C\+A\+L\+L\+B\+A\+CK@{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+I\+T\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}
+\index{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+I\+T\+\_\+\+C\+A\+L\+L\+B\+A\+CK@{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+I\+T\+\_\+\+C\+A\+L\+L\+B\+A\+CK}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+I\+T\+\_\+\+C\+A\+L\+L\+B\+A\+CK}{MENU\_ITEM\_EDIT\_CALLBACK}}
+{\footnotesize\ttfamily \#define M\+E\+N\+U\+\_\+\+I\+T\+E\+M\+\_\+\+E\+D\+I\+T\+\_\+\+C\+A\+L\+L\+B\+A\+CK(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{label,  }\item[{}]{args... }\end{DoxyParamCaption})~\hyperlink{screen_8cpp_a398c56951184891d234bb6919e023bfd}{M\+E\+N\+U\+\_\+\+I\+T\+EM}(setting\+\_\+edit\+\_\+callback\+\_\+ \#\# type, label, P\+S\+TR(label) , \#\# args )}
+
+\mbox{\Hypertarget{screen_8cpp_a0ff5ee3258e7fe02496202d623cdb21b}\label{screen_8cpp_a0ff5ee3258e7fe02496202d623cdb21b}} 
+\index{screen.\+cpp@{screen.\+cpp}!S\+T\+A\+R\+T\+\_\+\+M\+E\+NU@{S\+T\+A\+R\+T\+\_\+\+M\+E\+NU}}
+\index{S\+T\+A\+R\+T\+\_\+\+M\+E\+NU@{S\+T\+A\+R\+T\+\_\+\+M\+E\+NU}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{S\+T\+A\+R\+T\+\_\+\+M\+E\+NU}{START\_MENU}}
+{\footnotesize\ttfamily \#define S\+T\+A\+R\+T\+\_\+\+M\+E\+NU(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+        \textcolor{comment}{/*Serial.print("Start encoder position: ");\(\backslash\)}
+\textcolor{comment}{        Serial.println(encoderPosition);\(\backslash\)}
+\textcolor{comment}{        Serial.print("Start Current menu view offset: ");\(\backslash\)}
+\textcolor{comment}{        Serial.println(currentMenuViewOffset);*/}\(\backslash\)
+    if (\hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoderPosition} < \hyperlink{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}{currentMenuViewOffset}) 
+      \hyperlink{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}{currentMenuViewOffset} = \hyperlink{screen_8cpp_aa56ab567ff60605413e177d5bf025709}{encoderPosition};\(\backslash\)
+    uint8\_t \_lineNr = \hyperlink{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}{currentMenuViewOffset}, \_menuItemNr;\(\backslash\)
+    bool wasClicked = \hyperlink{screen_8cpp_ab496ff292249739c727cadf6577c397f}{LCD\_CLICKED}; \(\backslash\)
+    for(uint8\_t \_drawLineNr = 0; \_drawLineNr < \hyperlink{screen_8cpp_a0aad88d363ddbe40d3e2e5022c4a3bcd}{LCD\_NUM\_LINES}; \_drawLineNr++, \_lineNr++) \{ \(\backslash\)
+        \_menuItemNr = 0;
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}\label{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}} 
+\index{screen.\+cpp@{screen.\+cpp}!menu\+Func\+\_\+t@{menu\+Func\+\_\+t}}
+\index{menu\+Func\+\_\+t@{menu\+Func\+\_\+t}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{menu\+Func\+\_\+t}{menuFunc\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ menu\+Func\+\_\+t) ()}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{screen_8cpp_a41d50c013fa2dbd71727145bf0ebbcab}\label{screen_8cpp_a41d50c013fa2dbd71727145bf0ebbcab}} 
+\index{screen.\+cpp@{screen.\+cpp}!back\+\_\+menu\+\_\+process@{back\+\_\+menu\+\_\+process}}
+\index{back\+\_\+menu\+\_\+process@{back\+\_\+menu\+\_\+process}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{back\+\_\+menu\+\_\+process()}{back\_menu\_process()}}
+{\footnotesize\ttfamily void back\+\_\+menu\+\_\+process (\begin{DoxyParamCaption}\item[{\hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t}}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_ae5430e7aa2999b4c30cfda75f1e3d1be}\label{screen_8cpp_ae5430e7aa2999b4c30cfda75f1e3d1be}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr12ns@{ftostr12ns}}
+\index{ftostr12ns@{ftostr12ns}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr12ns()}{ftostr12ns()}}
+{\footnotesize\ttfamily char$\ast$ ftostr12ns (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_a37605e1694bb466fe0e250d1d203c13c}\label{screen_8cpp_a37605e1694bb466fe0e250d1d203c13c}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr3@{ftostr3}}
+\index{ftostr3@{ftostr3}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr3()}{ftostr3()}}
+{\footnotesize\ttfamily char$\ast$ ftostr3 (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{screen_8cpp_a37605e1694bb466fe0e250d1d203c13c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{screen_8cpp_a332dd5de9497bce94ec31c4087890abf}\label{screen_8cpp_a332dd5de9497bce94ec31c4087890abf}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr31@{ftostr31}}
+\index{ftostr31@{ftostr31}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr31()}{ftostr31()}}
+{\footnotesize\ttfamily char$\ast$ ftostr31 (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_a0a2ab190278a5d44a67ecb056b5ed868}\label{screen_8cpp_a0a2ab190278a5d44a67ecb056b5ed868}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr31ns@{ftostr31ns}}
+\index{ftostr31ns@{ftostr31ns}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr31ns()}{ftostr31ns()}}
+{\footnotesize\ttfamily char$\ast$ ftostr31ns (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_ab938e6b37de2aae37737d08cf31dfe8b}\label{screen_8cpp_ab938e6b37de2aae37737d08cf31dfe8b}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr32@{ftostr32}}
+\index{ftostr32@{ftostr32}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr32()}{ftostr32()}}
+{\footnotesize\ttfamily char$\ast$ ftostr32 (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_a8f516a8bdfbe02b20fd7e22e7acc69e8}\label{screen_8cpp_a8f516a8bdfbe02b20fd7e22e7acc69e8}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr32sp@{ftostr32sp}}
+\index{ftostr32sp@{ftostr32sp}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr32sp()}{ftostr32sp()}}
+{\footnotesize\ttfamily char$\ast$ ftostr32sp (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_a0e6a7c84559785cbf2ffc7b6726cf989}\label{screen_8cpp_a0e6a7c84559785cbf2ffc7b6726cf989}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr43@{ftostr43}}
+\index{ftostr43@{ftostr43}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr43()}{ftostr43()}}
+{\footnotesize\ttfamily char$\ast$ ftostr43 (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_afc9680ca77ad693a897ac493db9bdde1}\label{screen_8cpp_afc9680ca77ad693a897ac493db9bdde1}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr4sign@{ftostr4sign}}
+\index{ftostr4sign@{ftostr4sign}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr4sign()}{ftostr4sign()}}
+{\footnotesize\ttfamily char$\ast$ ftostr4sign (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{screen_8cpp_afc9680ca77ad693a897ac493db9bdde1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{screen_8cpp_a16e36b1629d645e307182ff9ca5823db}\label{screen_8cpp_a16e36b1629d645e307182ff9ca5823db}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr5@{ftostr5}}
+\index{ftostr5@{ftostr5}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr5()}{ftostr5()}}
+{\footnotesize\ttfamily char$\ast$ ftostr5 (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_af7a273ca44d509bea67114d0422df15c}\label{screen_8cpp_af7a273ca44d509bea67114d0422df15c}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr51@{ftostr51}}
+\index{ftostr51@{ftostr51}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr51()}{ftostr51()}}
+{\footnotesize\ttfamily char$\ast$ ftostr51 (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_adca508472241c71f45fc76507c45c84a}\label{screen_8cpp_adca508472241c71f45fc76507c45c84a}} 
+\index{screen.\+cpp@{screen.\+cpp}!ftostr52@{ftostr52}}
+\index{ftostr52@{ftostr52}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{ftostr52()}{ftostr52()}}
+{\footnotesize\ttfamily char$\ast$ ftostr52 (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_ad4e9be0f3b54c757febc36ea5761589e}\label{screen_8cpp_ad4e9be0f3b54c757febc36ea5761589e}} 
+\index{screen.\+cpp@{screen.\+cpp}!itostr2@{itostr2}}
+\index{itostr2@{itostr2}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{itostr2()}{itostr2()}}
+{\footnotesize\ttfamily char$\ast$ itostr2 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_a13b0325be1a27be97b63a9172f9c9c54}\label{screen_8cpp_a13b0325be1a27be97b63a9172f9c9c54}} 
+\index{screen.\+cpp@{screen.\+cpp}!itostr3@{itostr3}}
+\index{itostr3@{itostr3}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{itostr3()}{itostr3()}}
+{\footnotesize\ttfamily char$\ast$ itostr3 (\begin{DoxyParamCaption}\item[{const int \&}]{x }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{screen_8cpp_a13b0325be1a27be97b63a9172f9c9c54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{screen_8cpp_a258c6bab8def1e5e3d4ad6d694850b6c}\label{screen_8cpp_a258c6bab8def1e5e3d4ad6d694850b6c}} 
+\index{screen.\+cpp@{screen.\+cpp}!itostr31@{itostr31}}
+\index{itostr31@{itostr31}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{itostr31()}{itostr31()}}
+{\footnotesize\ttfamily char$\ast$ itostr31 (\begin{DoxyParamCaption}\item[{const int \&}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_a77813d20b712208fef34af869a70c9a4}\label{screen_8cpp_a77813d20b712208fef34af869a70c9a4}} 
+\index{screen.\+cpp@{screen.\+cpp}!itostr3left@{itostr3left}}
+\index{itostr3left@{itostr3left}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{itostr3left()}{itostr3left()}}
+{\footnotesize\ttfamily char$\ast$ itostr3left (\begin{DoxyParamCaption}\item[{const int \&}]{xx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_a92d66b6872b38bf1fa84304266d2488f}\label{screen_8cpp_a92d66b6872b38bf1fa84304266d2488f}} 
+\index{screen.\+cpp@{screen.\+cpp}!itostr4@{itostr4}}
+\index{itostr4@{itostr4}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{itostr4()}{itostr4()}}
+{\footnotesize\ttfamily char$\ast$ itostr4 (\begin{DoxyParamCaption}\item[{const int \&}]{xx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_a11f766834935b5f1b78c330c69a63102}\label{screen_8cpp_a11f766834935b5f1b78c330c69a63102}} 
+\index{screen.\+cpp@{screen.\+cpp}!itostr4sign@{itostr4sign}}
+\index{itostr4sign@{itostr4sign}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{itostr4sign()}{itostr4sign()}}
+{\footnotesize\ttfamily char$\ast$ itostr4sign (\begin{DoxyParamCaption}\item[{const int \&}]{x }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{screen_8cpp_a11f766834935b5f1b78c330c69a63102_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{screen_8cpp_a08ff51bb30afce631ae475662fbae6f7}\label{screen_8cpp_a08ff51bb30afce631ae475662fbae6f7}} 
+\index{screen.\+cpp@{screen.\+cpp}!lcd\+\_\+clicked@{lcd\+\_\+clicked}}
+\index{lcd\+\_\+clicked@{lcd\+\_\+clicked}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{lcd\+\_\+clicked()}{lcd\_clicked()}}
+{\footnotesize\ttfamily bool lcd\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{screen_8cpp_ac23e73124dc9fabae95671fe71d074a6}\label{screen_8cpp_ac23e73124dc9fabae95671fe71d074a6}} 
+\index{screen.\+cpp@{screen.\+cpp}!lcd\+\_\+init@{lcd\+\_\+init}}
+\index{lcd\+\_\+init@{lcd\+\_\+init}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{lcd\+\_\+init()}{lcd\_init()}}
+{\footnotesize\ttfamily void lcd\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{screen_8cpp_ac23e73124dc9fabae95671fe71d074a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{screen_8cpp_a310b61cd41fbc836ed6a78d4deb8e7dd}\label{screen_8cpp_a310b61cd41fbc836ed6a78d4deb8e7dd}} 
+\index{screen.\+cpp@{screen.\+cpp}!lcd\+\_\+update@{lcd\+\_\+update}}
+\index{lcd\+\_\+update@{lcd\+\_\+update}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{lcd\+\_\+update()}{lcd\_update()}}
+{\footnotesize\ttfamily void lcd\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{screen_8cpp_a310b61cd41fbc836ed6a78d4deb8e7dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{screen_8cpp_a310b61cd41fbc836ed6a78d4deb8e7dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{screen_8cpp_ad27cd675b9288970a481cedcb47dca1c}\label{screen_8cpp_ad27cd675b9288970a481cedcb47dca1c}} 
+\index{screen.\+cpp@{screen.\+cpp}!nav\+Key\+Interrupt\+Center\+Press@{nav\+Key\+Interrupt\+Center\+Press}}
+\index{nav\+Key\+Interrupt\+Center\+Press@{nav\+Key\+Interrupt\+Center\+Press}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{nav\+Key\+Interrupt\+Center\+Press()}{navKeyInterruptCenterPress()}}
+{\footnotesize\ttfamily void nav\+Key\+Interrupt\+Center\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{screen_8cpp_ad27cd675b9288970a481cedcb47dca1c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{screen_8cpp_aff8e2f756c699b0b678bd60b9f27961a}\label{screen_8cpp_aff8e2f756c699b0b678bd60b9f27961a}} 
+\index{screen.\+cpp@{screen.\+cpp}!callback\+Func@{callback\+Func}}
+\index{callback\+Func@{callback\+Func}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{callback\+Func}{callbackFunc}}
+{\footnotesize\ttfamily \hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t} callback\+Func}
+
+\mbox{\Hypertarget{screen_8cpp_a243ef3aabc6f19f53e52ec67709d5cfa}\label{screen_8cpp_a243ef3aabc6f19f53e52ec67709d5cfa}} 
+\index{screen.\+cpp@{screen.\+cpp}!conv@{conv}}
+\index{conv@{conv}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily char conv\mbox{[}8\mbox{]}}
+
+Number to string conversion \mbox{\Hypertarget{screen_8cpp_acfbeb0a7b94e085a51d11ebbd84e1720}\label{screen_8cpp_acfbeb0a7b94e085a51d11ebbd84e1720}} 
+\index{screen.\+cpp@{screen.\+cpp}!current\+Menu@{current\+Menu}}
+\index{current\+Menu@{current\+Menu}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{current\+Menu}{currentMenu}}
+{\footnotesize\ttfamily \hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t} current\+Menu = lcd\+\_\+home\+\_\+menu}
+
+\mbox{\Hypertarget{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}\label{screen_8cpp_a0a8996337f840233c0f7106c5ae01eb1}} 
+\index{screen.\+cpp@{screen.\+cpp}!current\+Menu\+View\+Offset@{current\+Menu\+View\+Offset}}
+\index{current\+Menu\+View\+Offset@{current\+Menu\+View\+Offset}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{current\+Menu\+View\+Offset}{currentMenuViewOffset}}
+{\footnotesize\ttfamily uint8\+\_\+t current\+Menu\+View\+Offset =0}
+
+\mbox{\Hypertarget{screen_8cpp_aa56ab567ff60605413e177d5bf025709}\label{screen_8cpp_aa56ab567ff60605413e177d5bf025709}} 
+\index{screen.\+cpp@{screen.\+cpp}!encoder\+Position@{encoder\+Position}}
+\index{encoder\+Position@{encoder\+Position}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{encoder\+Position}{encoderPosition}}
+{\footnotesize\ttfamily int8\+\_\+t encoder\+Position}
+
+\mbox{\Hypertarget{screen_8cpp_a09240d0929ffbae4a52a8e9e177892c4}\label{screen_8cpp_a09240d0929ffbae4a52a8e9e177892c4}} 
+\index{screen.\+cpp@{screen.\+cpp}!last\+Status\+Update\+Time@{last\+Status\+Update\+Time}}
+\index{last\+Status\+Update\+Time@{last\+Status\+Update\+Time}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{last\+Status\+Update\+Time}{lastStatusUpdateTime}}
+{\footnotesize\ttfamily unsigned long last\+Status\+Update\+Time = 0}
+
+\mbox{\Hypertarget{screen_8cpp_ae2328649a34b19cad320968ac63a02be}\label{screen_8cpp_ae2328649a34b19cad320968ac63a02be}} 
+\index{screen.\+cpp@{screen.\+cpp}!lcd\+Draw\+Update@{lcd\+Draw\+Update}}
+\index{lcd\+Draw\+Update@{lcd\+Draw\+Update}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{lcd\+Draw\+Update}{lcdDrawUpdate}}
+{\footnotesize\ttfamily uint8\+\_\+t lcd\+Draw\+Update = 2}
+
+\mbox{\Hypertarget{screen_8cpp_a769496d17723ad0c64469326d62ff2e4}\label{screen_8cpp_a769496d17723ad0c64469326d62ff2e4}} 
+\index{screen.\+cpp@{screen.\+cpp}!prev\+Encoder\+Position@{prev\+Encoder\+Position}}
+\index{prev\+Encoder\+Position@{prev\+Encoder\+Position}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{prev\+Encoder\+Position}{prevEncoderPosition}}
+{\footnotesize\ttfamily uint16\+\_\+t prev\+Encoder\+Position}
+
+\mbox{\Hypertarget{screen_8cpp_abd0ed6748e0b429f612377cdb904e195}\label{screen_8cpp_abd0ed6748e0b429f612377cdb904e195}} 
+\index{screen.\+cpp@{screen.\+cpp}!prev\+Menu@{prev\+Menu}}
+\index{prev\+Menu@{prev\+Menu}!screen.\+cpp@{screen.\+cpp}}
+\subsubsection{\texorpdfstring{prev\+Menu}{prevMenu}}
+{\footnotesize\ttfamily \hyperlink{screen_8cpp_acae3d0800e51fd42af88b4696be46dbc}{menu\+Func\+\_\+t} prev\+Menu =N\+U\+LL}
+

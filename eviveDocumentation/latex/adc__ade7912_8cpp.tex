@@ -1,0 +1,469 @@
+\hypertarget{adc__ade7912_8cpp}{}\section{adc\+\_\+ade7912.\+cpp File Reference}
+\label{adc__ade7912_8cpp}\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+{\ttfamily \#include \char`\"{}adc\+\_\+ade7912.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$S\+P\+I.\+h$>$}\newline
+Include dependency graph for adc\+\_\+ade7912.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{adc__ade7912_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a928bcd4ed1ca26fa864fe5516efa2b20}{\+\_\+\+\_\+\+D\+E\+B\+U\+G\+\_\+\+\_\+}~/$\ast$ comment this line to disable debugging messages over serial console$\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a648b0028b2d583c98486a76199416f11}{A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed}~5600000
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a91c03f45fad418499be6ef64f89ef004}{A\+D\+C\+\_\+\+S\+P\+I\+Mode}~S\+P\+I\+\_\+\+M\+O\+D\+E3
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a6fadc2ad8338d6a2e4f3ac6d0971d147}{A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order}~M\+S\+B\+F\+I\+R\+ST
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ae824ce5041dcfc8fab07db26d92bed1a}{A\+D\+E791\+X\+\_\+\+R\+E\+AD}~0x04
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_abe1ca139563d3bcc95eba04f66104a2f}{A\+D\+E791\+X\+\_\+\+W\+R\+I\+TE}~0x00
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_aae19a88b094dc60d64cde2ee9fa25a82}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+I\+WV}~0x00    /$\ast$ Instantaneous value of Current I. $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a2595bb3524b25fc04ace35f1b64a9503}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V1\+WV}~0x01    /$\ast$ Instantaneous value of Voltage V1 $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a421196cc93a772d755386cc63d956058}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V2\+WV}~0x02    /$\ast$ Instantaneous value of Voltage V2 $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a005510038cb9e659d3cc46b77ca7b05b}{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V1\+WV}~0.\+006485
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ab5fbdbb621476b1cea43416bdb388f2f}{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V\+I\+M\+WV}~0.\+0011901
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ad940d0375658ffda7c9617a31eecd066}{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V\+I\+M\+WV}~369226
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ae4963eb1e32715796b800cef2ef1b9c1}{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+I\+WV}~0.\+0005921
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a019f1b24f0ce199f6abbeb87ece444be}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+A\+D\+C\+\_\+\+C\+RC}~0x04    /$\ast$ C\+R\+C value of I\+W\+V, V1\+W\+V, and V2\+W\+V registers. See the A\+D\+C Output Values C\+R\+C section for details $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a458879b1596e7475ecc1577f66df6edd}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+T\+R\+L\+\_\+\+C\+RC}~0x05    /$\ast$ C\+R\+C value of configuration registers. See the C\+R\+C of Configuration Registers  for details. $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ab71bd7f8670bf8a07cf67516caf24105}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+N\+T\+\_\+\+S\+N\+A\+P\+S\+H\+OT}~0x07    /$\ast$ Snapshot value of the counter used in synchronization operation. $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a0c29d7cbf2a41e78e3c9077518349dc9}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG}~0x08    /$\ast$ Configuration register. See Table 15 for details $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a2ea3134b396f50410ae83169de617484}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S0}~0x09    /$\ast$ Status register $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a6b4bb546735a6d79bed61217029a7879}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+L\+O\+CK}~0x0\+A    /$\ast$ Memory protection register $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a1f3442caa1b75871aa3d6d5cc5aaecce}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+N\+AP}~0x0\+B    /$\ast$ Synchronization register $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a48364e887ddfc2b1fbc6f751455a35cc}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R0}~0x0\+C    /$\ast$ Contains the least significant eight bits of the internal synchronization counter $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_abc18079e2d749005ab2ebd87a137256a}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R1}~0x0\+D    /$\ast$ C\+O\+U\+N\+T\+E\+R1\mbox{[}3\+:0\mbox{]} bits contain the most significant four bits of the internal synchronization counter $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a5f97116e3b5e115efcc705e7457ccc4c}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+E\+M\+I\+\_\+\+C\+T\+RL}~0x0\+E    /$\ast$ E\+M\+I control register. $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_abf3acbe054652772a4699559b5f34ffb}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S1}~0x0\+F    /$\ast$ Status register $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a0f643aaab342fe5b4a478c86a97af576}{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+OS}~0x18    /$\ast$ Temperature sensor offset $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a40ba59f566b24b6af2619e88dfd8d1c2}{C\+L\+K\+O\+U\+T\+\_\+\+EN}~0x01
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ab0994e65f0697b9a950408aa70661c05}{P\+W\+R\+D\+W\+N\+\_\+\+EN}~0x04    /$\ast$ Shuts down the dc-\/to-\/dc converter. When P\+W\+R\+D\+W\+N\+\_\+\+E\+N = 0, the default value, the $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ab65710fd84d2ec1c6fbc8640a211798f}{T\+E\+M\+P\+\_\+\+EN}~0x08    /$\ast$ This bit selects the second voltage channel measurement. $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ab3ad3e354a0bcce30df478191b4274be}{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+8\+K\+HZ}~0x00    /$\ast$ These bits select the A\+D\+C output frequency to 8khz. $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_ada89709dbecef765f9c2c857fb1e8f3c}{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+4\+K\+HZ}~0x10    /$\ast$ These bits select the A\+D\+C output frequency.\+4khz $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a6cded5f4eb0131bdaae4acaeb102e8ce}{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+2\+K\+HZ}~0x20    /$\ast$ These bits select the A\+D\+C output frequency.\+2khz $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_addeb6c35c00c7d64b75f4804ab2b1ab5}{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+1\+K\+HZ}~0x30    /$\ast$ These bits select the A\+D\+C output frequency.\+1khz $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a44ce91b21ba90d3e602cd88d0745449c}{S\+W\+R\+ST}~0x40    /$\ast$ When this bit is set to 1, a software reset is initiated. This bit clears itself to 0 after $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a84909b16209480034c40276c4f84f975}{BW}~0x80    /$\ast$ Selects the bandwidth of the digital low-\/pass filter of the A\+D\+C. When B\+W = 0, the $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_afb576c7e4d3eb9b0f50d5832a33c03ab}{R\+E\+S\+E\+T\+\_\+\+ON}~0x00
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a7911cb236515abe353bd67e106ac9f42}{C\+R\+C\+\_\+\+S\+T\+AT}~0x01
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a23d7fbd041e7b3cf6411f5657a407509}{I\+C\+\_\+\+P\+R\+OT}~0x02
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_a00de8f7e0b615f88335573ba3909583d}{L\+O\+C\+K\+ED}~0x\+C\+A    /$\ast$locks configuration register writing $\ast$/
+\item 
+\#define \hyperlink{adc__ade7912_8cpp_af0591d953a49374b660c9de8964825fe}{U\+N\+L\+O\+C\+K\+ED}~0x9\+C    /$\ast$unlocks configuration register writing $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+P\+I\+Settings \hyperlink{adc__ade7912_8cpp_a6e282878908dfc70b0e096ab94893e4c}{A\+D\+C\+Setting} (\hyperlink{adc__ade7912_8cpp_a648b0028b2d583c98486a76199416f11}{A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed}, \hyperlink{adc__ade7912_8cpp_a6fadc2ad8338d6a2e4f3ac6d0971d147}{A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order}, \hyperlink{adc__ade7912_8cpp_a91c03f45fad418499be6ef64f89ef004}{A\+D\+C\+\_\+\+S\+P\+I\+Mode})
+\item 
+void \hyperlink{adc__ade7912_8cpp_abaa846e601783713a554511c65d2483e}{ade791x\+\_\+init} (void)
+\item 
+long \hyperlink{adc__ade7912_8cpp_ab569d6a0623c5bc2d5d533039d0c0ba8}{ade791x\+\_\+read\+\_\+v1} (void)
+\item 
+long \hyperlink{adc__ade7912_8cpp_af5c75312693c9440235984d3e957cf50}{ade791x\+\_\+read\+\_\+vim} (void)
+\item 
+long \hyperlink{adc__ade7912_8cpp_abfd6f5b2f23600bab05c678c18a07e11}{ade791x\+\_\+read\+\_\+im} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{adc__ade7912_8cpp_a756cae76def7243c3eacb5b61f53140c}{S\+P\+I\+\_\+\+A\+D\+C\+\_\+\+SS} = 35
+\item 
+int \hyperlink{adc__ade7912_8cpp_ab562e31ec876b5ebe51ce8850adc0ac3}{A\+D\+C\+\_\+\+R\+DY} = 32
+\item 
+long \hyperlink{adc__ade7912_8cpp_a628c0d61f9b8b333b14175e52ab9e652}{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V1\+WV} = 387161
+\item 
+long \hyperlink{adc__ade7912_8cpp_a2d44f589aae32f70c56cca3d02649b6c}{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+I\+WV} = 369226
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{adc__ade7912_8cpp_a928bcd4ed1ca26fa864fe5516efa2b20}\label{adc__ade7912_8cpp_a928bcd4ed1ca26fa864fe5516efa2b20}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!\+\_\+\+\_\+\+D\+E\+B\+U\+G\+\_\+\+\_\+@{\+\_\+\+\_\+\+D\+E\+B\+U\+G\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+D\+E\+B\+U\+G\+\_\+\+\_\+@{\+\_\+\+\_\+\+D\+E\+B\+U\+G\+\_\+\+\_\+}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+D\+E\+B\+U\+G\+\_\+\+\_\+}{\_\_DEBUG\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+D\+E\+B\+U\+G\+\_\+\+\_\+~/$\ast$ comment this line to disable debugging messages over serial console$\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_addeb6c35c00c7d64b75f4804ab2b1ab5}\label{adc__ade7912_8cpp_addeb6c35c00c7d64b75f4804ab2b1ab5}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+1\+K\+HZ@{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+1\+K\+HZ}}
+\index{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+1\+K\+HZ@{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+1\+K\+HZ}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+1\+K\+HZ}{ADC\_FREQ\_1KHZ}}
+{\footnotesize\ttfamily \#define A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+1\+K\+HZ~0x30    /$\ast$ These bits select the A\+D\+C output frequency.\+1khz $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a6cded5f4eb0131bdaae4acaeb102e8ce}\label{adc__ade7912_8cpp_a6cded5f4eb0131bdaae4acaeb102e8ce}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+2\+K\+HZ@{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+2\+K\+HZ}}
+\index{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+2\+K\+HZ@{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+2\+K\+HZ}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+2\+K\+HZ}{ADC\_FREQ\_2KHZ}}
+{\footnotesize\ttfamily \#define A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+2\+K\+HZ~0x20    /$\ast$ These bits select the A\+D\+C output frequency.\+2khz $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ada89709dbecef765f9c2c857fb1e8f3c}\label{adc__ade7912_8cpp_ada89709dbecef765f9c2c857fb1e8f3c}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+4\+K\+HZ@{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+4\+K\+HZ}}
+\index{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+4\+K\+HZ@{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+4\+K\+HZ}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+4\+K\+HZ}{ADC\_FREQ\_4KHZ}}
+{\footnotesize\ttfamily \#define A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+4\+K\+HZ~0x10    /$\ast$ These bits select the A\+D\+C output frequency.\+4khz $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ab3ad3e354a0bcce30df478191b4274be}\label{adc__ade7912_8cpp_ab3ad3e354a0bcce30df478191b4274be}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+8\+K\+HZ@{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+8\+K\+HZ}}
+\index{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+8\+K\+HZ@{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+8\+K\+HZ}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+8\+K\+HZ}{ADC\_FREQ\_8KHZ}}
+{\footnotesize\ttfamily \#define A\+D\+C\+\_\+\+F\+R\+E\+Q\+\_\+8\+K\+HZ~0x00    /$\ast$ These bits select the A\+D\+C output frequency to 8khz. $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a6fadc2ad8338d6a2e4f3ac6d0971d147}\label{adc__ade7912_8cpp_a6fadc2ad8338d6a2e4f3ac6d0971d147}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order@{A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order}}
+\index{A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order@{A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order}{ADC\_SPIDataOrder}}
+{\footnotesize\ttfamily \#define A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order~M\+S\+B\+F\+I\+R\+ST}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a648b0028b2d583c98486a76199416f11}\label{adc__ade7912_8cpp_a648b0028b2d583c98486a76199416f11}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed@{A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed}}
+\index{A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed@{A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed}{ADC\_SPIMaxSpeed}}
+{\footnotesize\ttfamily \#define A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed~5600000}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a91c03f45fad418499be6ef64f89ef004}\label{adc__ade7912_8cpp_a91c03f45fad418499be6ef64f89ef004}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+\_\+\+S\+P\+I\+Mode@{A\+D\+C\+\_\+\+S\+P\+I\+Mode}}
+\index{A\+D\+C\+\_\+\+S\+P\+I\+Mode@{A\+D\+C\+\_\+\+S\+P\+I\+Mode}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+S\+P\+I\+Mode}{ADC\_SPIMode}}
+{\footnotesize\ttfamily \#define A\+D\+C\+\_\+\+S\+P\+I\+Mode~S\+P\+I\+\_\+\+M\+O\+D\+E3}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ae4963eb1e32715796b800cef2ef1b9c1}\label{adc__ade7912_8cpp_ae4963eb1e32715796b800cef2ef1b9c1}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+I\+WV@{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+I\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+I\+WV@{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+I\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+I\+WV}{ADE791X\_MUL\_IWV}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+I\+WV~0.\+0005921}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a005510038cb9e659d3cc46b77ca7b05b}\label{adc__ade7912_8cpp_a005510038cb9e659d3cc46b77ca7b05b}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V1\+WV@{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V1\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V1\+WV@{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V1\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V1\+WV}{ADE791X\_MUL\_V1WV}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V1\+WV~0.\+006485}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ab5fbdbb621476b1cea43416bdb388f2f}\label{adc__ade7912_8cpp_ab5fbdbb621476b1cea43416bdb388f2f}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V\+I\+M\+WV@{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V\+I\+M\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V\+I\+M\+WV@{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V\+I\+M\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V\+I\+M\+WV}{ADE791X\_MUL\_VIMWV}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+M\+U\+L\+\_\+\+V\+I\+M\+WV~0.\+0011901}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ad940d0375658ffda7c9617a31eecd066}\label{adc__ade7912_8cpp_ad940d0375658ffda7c9617a31eecd066}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V\+I\+M\+WV@{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V\+I\+M\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V\+I\+M\+WV@{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V\+I\+M\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V\+I\+M\+WV}{ADE791X\_OFFSET\_VIMWV}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V\+I\+M\+WV~369226}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ae824ce5041dcfc8fab07db26d92bed1a}\label{adc__ade7912_8cpp_ae824ce5041dcfc8fab07db26d92bed1a}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+AD@{A\+D\+E791\+X\+\_\+\+R\+E\+AD}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+AD@{A\+D\+E791\+X\+\_\+\+R\+E\+AD}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+AD}{ADE791X\_READ}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+AD~0x04}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a019f1b24f0ce199f6abbeb87ece444be}\label{adc__ade7912_8cpp_a019f1b24f0ce199f6abbeb87ece444be}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+A\+D\+C\+\_\+\+C\+RC@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+A\+D\+C\+\_\+\+C\+RC}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+A\+D\+C\+\_\+\+C\+RC@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+A\+D\+C\+\_\+\+C\+RC}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+A\+D\+C\+\_\+\+C\+RC}{ADE791X\_REG\_ADC\_CRC}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+A\+D\+C\+\_\+\+C\+RC~0x04    /$\ast$ C\+R\+C value of I\+W\+V, V1\+W\+V, and V2\+W\+V registers. See the A\+D\+C Output Values C\+R\+C section for details $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ab71bd7f8670bf8a07cf67516caf24105}\label{adc__ade7912_8cpp_ab71bd7f8670bf8a07cf67516caf24105}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+N\+T\+\_\+\+S\+N\+A\+P\+S\+H\+OT@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+N\+T\+\_\+\+S\+N\+A\+P\+S\+H\+OT}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+N\+T\+\_\+\+S\+N\+A\+P\+S\+H\+OT@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+N\+T\+\_\+\+S\+N\+A\+P\+S\+H\+OT}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+N\+T\+\_\+\+S\+N\+A\+P\+S\+H\+OT}{ADE791X\_REG\_CNT\_SNAPSHOT}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+N\+T\+\_\+\+S\+N\+A\+P\+S\+H\+OT~0x07    /$\ast$ Snapshot value of the counter used in synchronization operation. $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a0c29d7cbf2a41e78e3c9077518349dc9}\label{adc__ade7912_8cpp_a0c29d7cbf2a41e78e3c9077518349dc9}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG}{ADE791X\_REG\_CONFIG}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+F\+IG~0x08    /$\ast$ Configuration register. See Table 15 for details $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a48364e887ddfc2b1fbc6f751455a35cc}\label{adc__ade7912_8cpp_a48364e887ddfc2b1fbc6f751455a35cc}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R0@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R0}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R0@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R0}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R0}{ADE791X\_REG\_COUNTER0}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R0~0x0\+C    /$\ast$ Contains the least significant eight bits of the internal synchronization counter $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_abc18079e2d749005ab2ebd87a137256a}\label{adc__ade7912_8cpp_abc18079e2d749005ab2ebd87a137256a}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R1@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R1}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R1@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R1}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R1}{ADE791X\_REG\_COUNTER1}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+O\+U\+N\+T\+E\+R1~0x0\+D    /$\ast$ C\+O\+U\+N\+T\+E\+R1\mbox{[}3\+:0\mbox{]} bits contain the most significant four bits of the internal synchronization counter $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a458879b1596e7475ecc1577f66df6edd}\label{adc__ade7912_8cpp_a458879b1596e7475ecc1577f66df6edd}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+T\+R\+L\+\_\+\+C\+RC@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+T\+R\+L\+\_\+\+C\+RC}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+T\+R\+L\+\_\+\+C\+RC@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+T\+R\+L\+\_\+\+C\+RC}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+T\+R\+L\+\_\+\+C\+RC}{ADE791X\_REG\_CTRL\_CRC}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+C\+T\+R\+L\+\_\+\+C\+RC~0x05    /$\ast$ C\+R\+C value of configuration registers. See the C\+R\+C of Configuration Registers  for details. $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a5f97116e3b5e115efcc705e7457ccc4c}\label{adc__ade7912_8cpp_a5f97116e3b5e115efcc705e7457ccc4c}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+E\+M\+I\+\_\+\+C\+T\+RL@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+E\+M\+I\+\_\+\+C\+T\+RL}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+E\+M\+I\+\_\+\+C\+T\+RL@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+E\+M\+I\+\_\+\+C\+T\+RL}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+E\+M\+I\+\_\+\+C\+T\+RL}{ADE791X\_REG\_EMI\_CTRL}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+E\+M\+I\+\_\+\+C\+T\+RL~0x0\+E    /$\ast$ E\+M\+I control register. $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_aae19a88b094dc60d64cde2ee9fa25a82}\label{adc__ade7912_8cpp_aae19a88b094dc60d64cde2ee9fa25a82}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+I\+WV@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+I\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+I\+WV@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+I\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+I\+WV}{ADE791X\_REG\_IWV}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+I\+WV~0x00    /$\ast$ Instantaneous value of Current I. $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a6b4bb546735a6d79bed61217029a7879}\label{adc__ade7912_8cpp_a6b4bb546735a6d79bed61217029a7879}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+L\+O\+CK@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+L\+O\+CK}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+L\+O\+CK@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+L\+O\+CK}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+L\+O\+CK}{ADE791X\_REG\_LOCK}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+L\+O\+CK~0x0\+A    /$\ast$ Memory protection register $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a2ea3134b396f50410ae83169de617484}\label{adc__ade7912_8cpp_a2ea3134b396f50410ae83169de617484}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S0@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S0}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S0@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S0}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S0}{ADE791X\_REG\_STATUS0}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S0~0x09    /$\ast$ Status register $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_abf3acbe054652772a4699559b5f34ffb}\label{adc__ade7912_8cpp_abf3acbe054652772a4699559b5f34ffb}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S1@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S1}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S1@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S1}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S1}{ADE791X\_REG\_STATUS1}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S1~0x0\+F    /$\ast$ Status register $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a1f3442caa1b75871aa3d6d5cc5aaecce}\label{adc__ade7912_8cpp_a1f3442caa1b75871aa3d6d5cc5aaecce}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+N\+AP@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+N\+AP}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+N\+AP@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+N\+AP}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+N\+AP}{ADE791X\_REG\_SYNC\_SNAP}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+N\+AP~0x0\+B    /$\ast$ Synchronization register $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a0f643aaab342fe5b4a478c86a97af576}\label{adc__ade7912_8cpp_a0f643aaab342fe5b4a478c86a97af576}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+OS@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+OS}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+OS@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+OS}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+OS}{ADE791X\_REG\_TEMPOS}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+OS~0x18    /$\ast$ Temperature sensor offset $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a2595bb3524b25fc04ace35f1b64a9503}\label{adc__ade7912_8cpp_a2595bb3524b25fc04ace35f1b64a9503}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V1\+WV@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V1\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V1\+WV@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V1\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V1\+WV}{ADE791X\_REG\_V1WV}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V1\+WV~0x01    /$\ast$ Instantaneous value of Voltage V1 $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a421196cc93a772d755386cc63d956058}\label{adc__ade7912_8cpp_a421196cc93a772d755386cc63d956058}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V2\+WV@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V2\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V2\+WV@{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V2\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V2\+WV}{ADE791X\_REG\_V2WV}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+R\+E\+G\+\_\+\+V2\+WV~0x02    /$\ast$ Instantaneous value of Voltage V2 $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_abe1ca139563d3bcc95eba04f66104a2f}\label{adc__ade7912_8cpp_abe1ca139563d3bcc95eba04f66104a2f}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+W\+R\+I\+TE@{A\+D\+E791\+X\+\_\+\+W\+R\+I\+TE}}
+\index{A\+D\+E791\+X\+\_\+\+W\+R\+I\+TE@{A\+D\+E791\+X\+\_\+\+W\+R\+I\+TE}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+W\+R\+I\+TE}{ADE791X\_WRITE}}
+{\footnotesize\ttfamily \#define A\+D\+E791\+X\+\_\+\+W\+R\+I\+TE~0x00}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a84909b16209480034c40276c4f84f975}\label{adc__ade7912_8cpp_a84909b16209480034c40276c4f84f975}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!BW@{BW}}
+\index{BW@{BW}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{BW}{BW}}
+{\footnotesize\ttfamily \#define BW~0x80    /$\ast$ Selects the bandwidth of the digital low-\/pass filter of the A\+D\+C. When B\+W = 0, the $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a40ba59f566b24b6af2619e88dfd8d1c2}\label{adc__ade7912_8cpp_a40ba59f566b24b6af2619e88dfd8d1c2}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!C\+L\+K\+O\+U\+T\+\_\+\+EN@{C\+L\+K\+O\+U\+T\+\_\+\+EN}}
+\index{C\+L\+K\+O\+U\+T\+\_\+\+EN@{C\+L\+K\+O\+U\+T\+\_\+\+EN}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{C\+L\+K\+O\+U\+T\+\_\+\+EN}{CLKOUT\_EN}}
+{\footnotesize\ttfamily \#define C\+L\+K\+O\+U\+T\+\_\+\+EN~0x01}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a7911cb236515abe353bd67e106ac9f42}\label{adc__ade7912_8cpp_a7911cb236515abe353bd67e106ac9f42}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!C\+R\+C\+\_\+\+S\+T\+AT@{C\+R\+C\+\_\+\+S\+T\+AT}}
+\index{C\+R\+C\+\_\+\+S\+T\+AT@{C\+R\+C\+\_\+\+S\+T\+AT}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{C\+R\+C\+\_\+\+S\+T\+AT}{CRC\_STAT}}
+{\footnotesize\ttfamily \#define C\+R\+C\+\_\+\+S\+T\+AT~0x01}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a23d7fbd041e7b3cf6411f5657a407509}\label{adc__ade7912_8cpp_a23d7fbd041e7b3cf6411f5657a407509}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!I\+C\+\_\+\+P\+R\+OT@{I\+C\+\_\+\+P\+R\+OT}}
+\index{I\+C\+\_\+\+P\+R\+OT@{I\+C\+\_\+\+P\+R\+OT}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{I\+C\+\_\+\+P\+R\+OT}{IC\_PROT}}
+{\footnotesize\ttfamily \#define I\+C\+\_\+\+P\+R\+OT~0x02}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a00de8f7e0b615f88335573ba3909583d}\label{adc__ade7912_8cpp_a00de8f7e0b615f88335573ba3909583d}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!L\+O\+C\+K\+ED@{L\+O\+C\+K\+ED}}
+\index{L\+O\+C\+K\+ED@{L\+O\+C\+K\+ED}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{L\+O\+C\+K\+ED}{LOCKED}}
+{\footnotesize\ttfamily \#define L\+O\+C\+K\+ED~0x\+C\+A    /$\ast$locks configuration register writing $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ab0994e65f0697b9a950408aa70661c05}\label{adc__ade7912_8cpp_ab0994e65f0697b9a950408aa70661c05}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!P\+W\+R\+D\+W\+N\+\_\+\+EN@{P\+W\+R\+D\+W\+N\+\_\+\+EN}}
+\index{P\+W\+R\+D\+W\+N\+\_\+\+EN@{P\+W\+R\+D\+W\+N\+\_\+\+EN}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{P\+W\+R\+D\+W\+N\+\_\+\+EN}{PWRDWN\_EN}}
+{\footnotesize\ttfamily \#define P\+W\+R\+D\+W\+N\+\_\+\+EN~0x04    /$\ast$ Shuts down the dc-\/to-\/dc converter. When P\+W\+R\+D\+W\+N\+\_\+\+E\+N = 0, the default value, the $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_afb576c7e4d3eb9b0f50d5832a33c03ab}\label{adc__ade7912_8cpp_afb576c7e4d3eb9b0f50d5832a33c03ab}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!R\+E\+S\+E\+T\+\_\+\+ON@{R\+E\+S\+E\+T\+\_\+\+ON}}
+\index{R\+E\+S\+E\+T\+\_\+\+ON@{R\+E\+S\+E\+T\+\_\+\+ON}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{R\+E\+S\+E\+T\+\_\+\+ON}{RESET\_ON}}
+{\footnotesize\ttfamily \#define R\+E\+S\+E\+T\+\_\+\+ON~0x00}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a44ce91b21ba90d3e602cd88d0745449c}\label{adc__ade7912_8cpp_a44ce91b21ba90d3e602cd88d0745449c}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!S\+W\+R\+ST@{S\+W\+R\+ST}}
+\index{S\+W\+R\+ST@{S\+W\+R\+ST}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{S\+W\+R\+ST}{SWRST}}
+{\footnotesize\ttfamily \#define S\+W\+R\+ST~0x40    /$\ast$ When this bit is set to 1, a software reset is initiated. This bit clears itself to 0 after $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_ab65710fd84d2ec1c6fbc8640a211798f}\label{adc__ade7912_8cpp_ab65710fd84d2ec1c6fbc8640a211798f}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!T\+E\+M\+P\+\_\+\+EN@{T\+E\+M\+P\+\_\+\+EN}}
+\index{T\+E\+M\+P\+\_\+\+EN@{T\+E\+M\+P\+\_\+\+EN}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+M\+P\+\_\+\+EN}{TEMP\_EN}}
+{\footnotesize\ttfamily \#define T\+E\+M\+P\+\_\+\+EN~0x08    /$\ast$ This bit selects the second voltage channel measurement. $\ast$/}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_af0591d953a49374b660c9de8964825fe}\label{adc__ade7912_8cpp_af0591d953a49374b660c9de8964825fe}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!U\+N\+L\+O\+C\+K\+ED@{U\+N\+L\+O\+C\+K\+ED}}
+\index{U\+N\+L\+O\+C\+K\+ED@{U\+N\+L\+O\+C\+K\+ED}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{U\+N\+L\+O\+C\+K\+ED}{UNLOCKED}}
+{\footnotesize\ttfamily \#define U\+N\+L\+O\+C\+K\+ED~0x9\+C    /$\ast$unlocks configuration register writing $\ast$/}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{adc__ade7912_8cpp_a6e282878908dfc70b0e096ab94893e4c}\label{adc__ade7912_8cpp_a6e282878908dfc70b0e096ab94893e4c}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+Setting@{A\+D\+C\+Setting}}
+\index{A\+D\+C\+Setting@{A\+D\+C\+Setting}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+Setting()}{ADCSetting()}}
+{\footnotesize\ttfamily S\+P\+I\+Settings A\+D\+C\+Setting (\begin{DoxyParamCaption}\item[{\hyperlink{adc__ade7912_8cpp_a648b0028b2d583c98486a76199416f11}{A\+D\+C\+\_\+\+S\+P\+I\+Max\+Speed}}]{,  }\item[{\hyperlink{adc__ade7912_8cpp_a6fadc2ad8338d6a2e4f3ac6d0971d147}{A\+D\+C\+\_\+\+S\+P\+I\+Data\+Order}}]{,  }\item[{\hyperlink{adc__ade7912_8cpp_a91c03f45fad418499be6ef64f89ef004}{A\+D\+C\+\_\+\+S\+P\+I\+Mode}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{adc__ade7912_8cpp_a6e282878908dfc70b0e096ab94893e4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{adc__ade7912_8cpp_abaa846e601783713a554511c65d2483e}\label{adc__ade7912_8cpp_abaa846e601783713a554511c65d2483e}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!ade791x\+\_\+init@{ade791x\+\_\+init}}
+\index{ade791x\+\_\+init@{ade791x\+\_\+init}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{ade791x\+\_\+init()}{ade791x\_init()}}
+{\footnotesize\ttfamily void ade791x\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{adc__ade7912_8cpp_abaa846e601783713a554511c65d2483e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{adc__ade7912_8cpp_abfd6f5b2f23600bab05c678c18a07e11}\label{adc__ade7912_8cpp_abfd6f5b2f23600bab05c678c18a07e11}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!ade791x\+\_\+read\+\_\+im@{ade791x\+\_\+read\+\_\+im}}
+\index{ade791x\+\_\+read\+\_\+im@{ade791x\+\_\+read\+\_\+im}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{ade791x\+\_\+read\+\_\+im()}{ade791x\_read\_im()}}
+{\footnotesize\ttfamily long ade791x\+\_\+read\+\_\+im (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{adc__ade7912_8cpp_abfd6f5b2f23600bab05c678c18a07e11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{adc__ade7912_8cpp_abfd6f5b2f23600bab05c678c18a07e11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{adc__ade7912_8cpp_ab569d6a0623c5bc2d5d533039d0c0ba8}\label{adc__ade7912_8cpp_ab569d6a0623c5bc2d5d533039d0c0ba8}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!ade791x\+\_\+read\+\_\+v1@{ade791x\+\_\+read\+\_\+v1}}
+\index{ade791x\+\_\+read\+\_\+v1@{ade791x\+\_\+read\+\_\+v1}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{ade791x\+\_\+read\+\_\+v1()}{ade791x\_read\_v1()}}
+{\footnotesize\ttfamily long ade791x\+\_\+read\+\_\+v1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{adc__ade7912_8cpp_ab569d6a0623c5bc2d5d533039d0c0ba8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{adc__ade7912_8cpp_ab569d6a0623c5bc2d5d533039d0c0ba8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{adc__ade7912_8cpp_af5c75312693c9440235984d3e957cf50}\label{adc__ade7912_8cpp_af5c75312693c9440235984d3e957cf50}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!ade791x\+\_\+read\+\_\+vim@{ade791x\+\_\+read\+\_\+vim}}
+\index{ade791x\+\_\+read\+\_\+vim@{ade791x\+\_\+read\+\_\+vim}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{ade791x\+\_\+read\+\_\+vim()}{ade791x\_read\_vim()}}
+{\footnotesize\ttfamily long ade791x\+\_\+read\+\_\+vim (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{adc__ade7912_8cpp_af5c75312693c9440235984d3e957cf50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{adc__ade7912_8cpp_af5c75312693c9440235984d3e957cf50_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{adc__ade7912_8cpp_ab562e31ec876b5ebe51ce8850adc0ac3}\label{adc__ade7912_8cpp_ab562e31ec876b5ebe51ce8850adc0ac3}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+C\+\_\+\+R\+DY@{A\+D\+C\+\_\+\+R\+DY}}
+\index{A\+D\+C\+\_\+\+R\+DY@{A\+D\+C\+\_\+\+R\+DY}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+R\+DY}{ADC\_RDY}}
+{\footnotesize\ttfamily int A\+D\+C\+\_\+\+R\+DY = 32}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a2d44f589aae32f70c56cca3d02649b6c}\label{adc__ade7912_8cpp_a2d44f589aae32f70c56cca3d02649b6c}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+I\+WV@{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+I\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+I\+WV@{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+I\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+I\+WV}{ADE791X\_OFFSET\_IWV}}
+{\footnotesize\ttfamily long A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+I\+WV = 369226}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a628c0d61f9b8b333b14175e52ab9e652}\label{adc__ade7912_8cpp_a628c0d61f9b8b333b14175e52ab9e652}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V1\+WV@{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V1\+WV}}
+\index{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V1\+WV@{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V1\+WV}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V1\+WV}{ADE791X\_OFFSET\_V1WV}}
+{\footnotesize\ttfamily long A\+D\+E791\+X\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+V1\+WV = 387161}
+
+\mbox{\Hypertarget{adc__ade7912_8cpp_a756cae76def7243c3eacb5b61f53140c}\label{adc__ade7912_8cpp_a756cae76def7243c3eacb5b61f53140c}} 
+\index{adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}!S\+P\+I\+\_\+\+A\+D\+C\+\_\+\+SS@{S\+P\+I\+\_\+\+A\+D\+C\+\_\+\+SS}}
+\index{S\+P\+I\+\_\+\+A\+D\+C\+\_\+\+SS@{S\+P\+I\+\_\+\+A\+D\+C\+\_\+\+SS}!adc\+\_\+ade7912.\+cpp@{adc\+\_\+ade7912.\+cpp}}
+\subsubsection{\texorpdfstring{S\+P\+I\+\_\+\+A\+D\+C\+\_\+\+SS}{SPI\_ADC\_SS}}
+{\footnotesize\ttfamily int S\+P\+I\+\_\+\+A\+D\+C\+\_\+\+SS = 35}
+

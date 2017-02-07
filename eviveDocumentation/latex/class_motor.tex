@@ -1,0 +1,408 @@
+\hypertarget{class_motor}{}\section{Motor Class Reference}
+\label{class_motor}\index{Motor@{Motor}}
+
+
+{\ttfamily \#include $<$motor.\+h$>$}
+
+
+
+Collaboration diagram for Motor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_motor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_motor_af6106b4c506411265c5face762b6c004}{Motor} ()
+\item 
+\hyperlink{class_motor_af7bad7a60264d47a368216d72704d838}{Motor} (int Dir1, int Dir2, int Pwm)
+\item 
+void \hyperlink{class_motor_a6726cda4183f9b9f4fd3d8af52d9e87d}{attach\+Motor} (int Dir1, int Dir2, int Pwm)
+\item 
+void \hyperlink{class_motor_a81fada8275a8cd70805a9808314e7bee}{move\+Motor} (int Pwm)
+\item 
+void \hyperlink{class_motor_a06b855952ba7034f260063b6d94c4b3a}{move\+Motor} (int Dir1, int Dir2, int Pwm)
+\item 
+void \hyperlink{class_motor_a17eb92ef52d3cb10bc9f6b88b7c34dcc}{stop\+Motor} ()
+\item 
+void \hyperlink{class_motor_ad94e80f3e3918fa6aed53744f3339d0c}{lock\+Motor} ()
+\item 
+void \hyperlink{class_motor_a76845764c398bb11a880080b010e6119}{free\+Motor} ()
+\item 
+void \hyperlink{class_motor_a468d680ba9e35742dacbb05028944cb3}{set\+Mean\+Speed} (int Speed)
+\item 
+void \hyperlink{class_motor_a72a29fd8773b5bfea30afc063d879072}{set\+Motor\+Speed} (int Speed)
+\item 
+void \hyperlink{class_motor_af6e0f394e5d028bdd8cf9ce5e0fed919}{set\+Motor\+Speed} (int Dir1, int Dir2, int Speed)
+\item 
+void \hyperlink{class_motor_aea0ccda5c88406ca40b2d2283eab9114}{change\+P\+WM} (int Pwm)
+\item 
+void \hyperlink{class_motor_a6b966366a7a184ae6b3c3227f5d57213}{change\+Speed} (int Speed)
+\item 
+int \hyperlink{class_motor_a0d8f99a56a3e07f49630e3024be91048}{get\+Direction} ()
+\item 
+int \hyperlink{class_motor_a17a9259b14a7e71ae625f47ec8ef0178}{is\+Free} ()
+\item 
+int \hyperlink{class_motor_a7429cc5bd67dd69077008674eda80f2d}{is\+Locked} ()
+\item 
+int \hyperlink{class_motor_a4d03ea62bd9f5579d4fbe16d10462962}{get\+Speed} ()
+\item 
+int \hyperlink{class_motor_accde7c9759aaef803f9d5d6d4ec229e6}{get\+P\+WM} ()
+\item 
+void \hyperlink{class_motor_aba12da45ff90906b5ad4f2a224d5317d}{start\+Smoothly} (int Speed)
+\item 
+void \hyperlink{class_motor_af69697d5adb51106f4352c481d67fedd}{stop\+Smoothly} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_motor_a73a58a00e5e1872c5ffec018fe975957}{dir1\+\_\+pin}
+\item 
+int \hyperlink{class_motor_adea12227392cb7a5ffe5e1878d870a9f}{dir2\+\_\+pin}
+\item 
+int \hyperlink{class_motor_a140443a1dcef9aef92dbfc5a8190b2a4}{pwm\+\_\+pin}
+\item 
+int \hyperlink{class_motor_abbca15c5ddfd452cd6a470710205afa0}{dir1}
+\item 
+int \hyperlink{class_motor_abb107a945dceecc4173bf7053ea8be07}{dir2}
+\item 
+int \hyperlink{class_motor_aef307daeabd4eee18f890b0df79c5b2b}{pwm}
+\item 
+int \hyperlink{class_motor_a6425f6db2380fbc7291d6866bef0b5d2}{mean\+\_\+speed}
+\item 
+float \hyperlink{class_motor_aee22669add18744bbddbd2bb267bce13}{speed}
+\item 
+int \hyperlink{class_motor_a330fe27cdd9c7fecdc1c5c7a35525f55}{damping}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_motor_af6106b4c506411265c5face762b6c004}\label{class_motor_af6106b4c506411265c5face762b6c004}} 
+\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{Motor()}{Motor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Motor\+::\+Motor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_motor_af6106b4c506411265c5face762b6c004_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_af7bad7a60264d47a368216d72704d838}\label{class_motor_af7bad7a60264d47a368216d72704d838}} 
+\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{Motor()}{Motor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Motor\+::\+Motor (\begin{DoxyParamCaption}\item[{int}]{Dir1,  }\item[{int}]{Dir2,  }\item[{int}]{Pwm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_motor_af7bad7a60264d47a368216d72704d838_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_motor_a6726cda4183f9b9f4fd3d8af52d9e87d}\label{class_motor_a6726cda4183f9b9f4fd3d8af52d9e87d}} 
+\index{Motor@{Motor}!attach\+Motor@{attach\+Motor}}
+\index{attach\+Motor@{attach\+Motor}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{attach\+Motor()}{attachMotor()}}
+{\footnotesize\ttfamily void Motor\+::attach\+Motor (\begin{DoxyParamCaption}\item[{int}]{Dir1,  }\item[{int}]{Dir2,  }\item[{int}]{Pwm }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_a6726cda4183f9b9f4fd3d8af52d9e87d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_aea0ccda5c88406ca40b2d2283eab9114}\label{class_motor_aea0ccda5c88406ca40b2d2283eab9114}} 
+\index{Motor@{Motor}!change\+P\+WM@{change\+P\+WM}}
+\index{change\+P\+WM@{change\+P\+WM}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{change\+P\+W\+M()}{changePWM()}}
+{\footnotesize\ttfamily void Motor\+::change\+P\+WM (\begin{DoxyParamCaption}\item[{int}]{Pwm }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_aea0ccda5c88406ca40b2d2283eab9114_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a6b966366a7a184ae6b3c3227f5d57213}\label{class_motor_a6b966366a7a184ae6b3c3227f5d57213}} 
+\index{Motor@{Motor}!change\+Speed@{change\+Speed}}
+\index{change\+Speed@{change\+Speed}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{change\+Speed()}{changeSpeed()}}
+{\footnotesize\ttfamily void Motor\+::change\+Speed (\begin{DoxyParamCaption}\item[{int}]{Speed }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_motor_a6b966366a7a184ae6b3c3227f5d57213_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_motor_a6b966366a7a184ae6b3c3227f5d57213_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a76845764c398bb11a880080b010e6119}\label{class_motor_a76845764c398bb11a880080b010e6119}} 
+\index{Motor@{Motor}!free\+Motor@{free\+Motor}}
+\index{free\+Motor@{free\+Motor}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{free\+Motor()}{freeMotor()}}
+{\footnotesize\ttfamily void Motor\+::free\+Motor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_a0d8f99a56a3e07f49630e3024be91048}\label{class_motor_a0d8f99a56a3e07f49630e3024be91048}} 
+\index{Motor@{Motor}!get\+Direction@{get\+Direction}}
+\index{get\+Direction@{get\+Direction}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{get\+Direction()}{getDirection()}}
+{\footnotesize\ttfamily int Motor\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_motor_a0d8f99a56a3e07f49630e3024be91048_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_accde7c9759aaef803f9d5d6d4ec229e6}\label{class_motor_accde7c9759aaef803f9d5d6d4ec229e6}} 
+\index{Motor@{Motor}!get\+P\+WM@{get\+P\+WM}}
+\index{get\+P\+WM@{get\+P\+WM}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{get\+P\+W\+M()}{getPWM()}}
+{\footnotesize\ttfamily int Motor\+::get\+P\+WM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_motor_accde7c9759aaef803f9d5d6d4ec229e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a4d03ea62bd9f5579d4fbe16d10462962}\label{class_motor_a4d03ea62bd9f5579d4fbe16d10462962}} 
+\index{Motor@{Motor}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily int Motor\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_motor_a4d03ea62bd9f5579d4fbe16d10462962_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a17a9259b14a7e71ae625f47ec8ef0178}\label{class_motor_a17a9259b14a7e71ae625f47ec8ef0178}} 
+\index{Motor@{Motor}!is\+Free@{is\+Free}}
+\index{is\+Free@{is\+Free}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{is\+Free()}{isFree()}}
+{\footnotesize\ttfamily int Motor\+::is\+Free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_motor_a17a9259b14a7e71ae625f47ec8ef0178_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a7429cc5bd67dd69077008674eda80f2d}\label{class_motor_a7429cc5bd67dd69077008674eda80f2d}} 
+\index{Motor@{Motor}!is\+Locked@{is\+Locked}}
+\index{is\+Locked@{is\+Locked}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{is\+Locked()}{isLocked()}}
+{\footnotesize\ttfamily int Motor\+::is\+Locked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_motor_a7429cc5bd67dd69077008674eda80f2d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_ad94e80f3e3918fa6aed53744f3339d0c}\label{class_motor_ad94e80f3e3918fa6aed53744f3339d0c}} 
+\index{Motor@{Motor}!lock\+Motor@{lock\+Motor}}
+\index{lock\+Motor@{lock\+Motor}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{lock\+Motor()}{lockMotor()}}
+{\footnotesize\ttfamily void Motor\+::lock\+Motor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_motor_ad94e80f3e3918fa6aed53744f3339d0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a81fada8275a8cd70805a9808314e7bee}\label{class_motor_a81fada8275a8cd70805a9808314e7bee}} 
+\index{Motor@{Motor}!move\+Motor@{move\+Motor}}
+\index{move\+Motor@{move\+Motor}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{move\+Motor()}{moveMotor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Motor\+::move\+Motor (\begin{DoxyParamCaption}\item[{int}]{Pwm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_motor_a81fada8275a8cd70805a9808314e7bee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_a81fada8275a8cd70805a9808314e7bee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a06b855952ba7034f260063b6d94c4b3a}\label{class_motor_a06b855952ba7034f260063b6d94c4b3a}} 
+\index{Motor@{Motor}!move\+Motor@{move\+Motor}}
+\index{move\+Motor@{move\+Motor}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{move\+Motor()}{moveMotor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Motor\+::move\+Motor (\begin{DoxyParamCaption}\item[{int}]{Dir1,  }\item[{int}]{Dir2,  }\item[{int}]{Pwm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_motor_a06b855952ba7034f260063b6d94c4b3a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a468d680ba9e35742dacbb05028944cb3}\label{class_motor_a468d680ba9e35742dacbb05028944cb3}} 
+\index{Motor@{Motor}!set\+Mean\+Speed@{set\+Mean\+Speed}}
+\index{set\+Mean\+Speed@{set\+Mean\+Speed}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{set\+Mean\+Speed()}{setMeanSpeed()}}
+{\footnotesize\ttfamily void Motor\+::set\+Mean\+Speed (\begin{DoxyParamCaption}\item[{int}]{Speed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_a72a29fd8773b5bfea30afc063d879072}\label{class_motor_a72a29fd8773b5bfea30afc063d879072}} 
+\index{Motor@{Motor}!set\+Motor\+Speed@{set\+Motor\+Speed}}
+\index{set\+Motor\+Speed@{set\+Motor\+Speed}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{set\+Motor\+Speed()}{setMotorSpeed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Motor\+::set\+Motor\+Speed (\begin{DoxyParamCaption}\item[{int}]{Speed }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_a72a29fd8773b5bfea30afc063d879072_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_af6e0f394e5d028bdd8cf9ce5e0fed919}\label{class_motor_af6e0f394e5d028bdd8cf9ce5e0fed919}} 
+\index{Motor@{Motor}!set\+Motor\+Speed@{set\+Motor\+Speed}}
+\index{set\+Motor\+Speed@{set\+Motor\+Speed}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{set\+Motor\+Speed()}{setMotorSpeed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Motor\+::set\+Motor\+Speed (\begin{DoxyParamCaption}\item[{int}]{Dir1,  }\item[{int}]{Dir2,  }\item[{int}]{Speed }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_af6e0f394e5d028bdd8cf9ce5e0fed919_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_aba12da45ff90906b5ad4f2a224d5317d}\label{class_motor_aba12da45ff90906b5ad4f2a224d5317d}} 
+\index{Motor@{Motor}!start\+Smoothly@{start\+Smoothly}}
+\index{start\+Smoothly@{start\+Smoothly}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{start\+Smoothly()}{startSmoothly()}}
+{\footnotesize\ttfamily void Motor\+::start\+Smoothly (\begin{DoxyParamCaption}\item[{int}]{Speed }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_aba12da45ff90906b5ad4f2a224d5317d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_a17eb92ef52d3cb10bc9f6b88b7c34dcc}\label{class_motor_a17eb92ef52d3cb10bc9f6b88b7c34dcc}} 
+\index{Motor@{Motor}!stop\+Motor@{stop\+Motor}}
+\index{stop\+Motor@{stop\+Motor}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{stop\+Motor()}{stopMotor()}}
+{\footnotesize\ttfamily void Motor\+::stop\+Motor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_motor_a17eb92ef52d3cb10bc9f6b88b7c34dcc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_motor_af69697d5adb51106f4352c481d67fedd}\label{class_motor_af69697d5adb51106f4352c481d67fedd}} 
+\index{Motor@{Motor}!stop\+Smoothly@{stop\+Smoothly}}
+\index{stop\+Smoothly@{stop\+Smoothly}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{stop\+Smoothly()}{stopSmoothly()}}
+{\footnotesize\ttfamily void Motor\+::stop\+Smoothly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_af69697d5adb51106f4352c481d67fedd_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_motor_a330fe27cdd9c7fecdc1c5c7a35525f55}\label{class_motor_a330fe27cdd9c7fecdc1c5c7a35525f55}} 
+\index{Motor@{Motor}!damping@{damping}}
+\index{damping@{damping}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{damping}{damping}}
+{\footnotesize\ttfamily int Motor\+::damping}
+
+\mbox{\Hypertarget{class_motor_abbca15c5ddfd452cd6a470710205afa0}\label{class_motor_abbca15c5ddfd452cd6a470710205afa0}} 
+\index{Motor@{Motor}!dir1@{dir1}}
+\index{dir1@{dir1}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{dir1}{dir1}}
+{\footnotesize\ttfamily int Motor\+::dir1}
+
+\mbox{\Hypertarget{class_motor_a73a58a00e5e1872c5ffec018fe975957}\label{class_motor_a73a58a00e5e1872c5ffec018fe975957}} 
+\index{Motor@{Motor}!dir1\+\_\+pin@{dir1\+\_\+pin}}
+\index{dir1\+\_\+pin@{dir1\+\_\+pin}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{dir1\+\_\+pin}{dir1\_pin}}
+{\footnotesize\ttfamily int Motor\+::dir1\+\_\+pin}
+
+\mbox{\Hypertarget{class_motor_abb107a945dceecc4173bf7053ea8be07}\label{class_motor_abb107a945dceecc4173bf7053ea8be07}} 
+\index{Motor@{Motor}!dir2@{dir2}}
+\index{dir2@{dir2}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{dir2}{dir2}}
+{\footnotesize\ttfamily int Motor\+::dir2}
+
+\mbox{\Hypertarget{class_motor_adea12227392cb7a5ffe5e1878d870a9f}\label{class_motor_adea12227392cb7a5ffe5e1878d870a9f}} 
+\index{Motor@{Motor}!dir2\+\_\+pin@{dir2\+\_\+pin}}
+\index{dir2\+\_\+pin@{dir2\+\_\+pin}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{dir2\+\_\+pin}{dir2\_pin}}
+{\footnotesize\ttfamily int Motor\+::dir2\+\_\+pin}
+
+\mbox{\Hypertarget{class_motor_a6425f6db2380fbc7291d6866bef0b5d2}\label{class_motor_a6425f6db2380fbc7291d6866bef0b5d2}} 
+\index{Motor@{Motor}!mean\+\_\+speed@{mean\+\_\+speed}}
+\index{mean\+\_\+speed@{mean\+\_\+speed}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{mean\+\_\+speed}{mean\_speed}}
+{\footnotesize\ttfamily int Motor\+::mean\+\_\+speed}
+
+\mbox{\Hypertarget{class_motor_aef307daeabd4eee18f890b0df79c5b2b}\label{class_motor_aef307daeabd4eee18f890b0df79c5b2b}} 
+\index{Motor@{Motor}!pwm@{pwm}}
+\index{pwm@{pwm}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{pwm}{pwm}}
+{\footnotesize\ttfamily int Motor\+::pwm}
+
+\mbox{\Hypertarget{class_motor_a140443a1dcef9aef92dbfc5a8190b2a4}\label{class_motor_a140443a1dcef9aef92dbfc5a8190b2a4}} 
+\index{Motor@{Motor}!pwm\+\_\+pin@{pwm\+\_\+pin}}
+\index{pwm\+\_\+pin@{pwm\+\_\+pin}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{pwm\+\_\+pin}{pwm\_pin}}
+{\footnotesize\ttfamily int Motor\+::pwm\+\_\+pin}
+
+\mbox{\Hypertarget{class_motor_aee22669add18744bbddbd2bb267bce13}\label{class_motor_aee22669add18744bbddbd2bb267bce13}} 
+\index{Motor@{Motor}!speed@{speed}}
+\index{speed@{speed}!Motor@{Motor}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Motor\+::speed}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{motor_8h}{motor.\+h}\item 
+\hyperlink{motor_8cpp}{motor.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="Motor::stopSmoothly" name="Motor::stopSmoothly">
+<area shape="rect" id="node2" href="$class_motor.html#a4d03ea62bd9f5579d4fbe16d10462962" title="Motor::getSpeed" alt="" coords="208,5,327,32"/>
+<area shape="rect" id="node3" href="$class_motor.html#a6b966366a7a184ae6b3c3227f5d57213" title="Motor::changeSpeed" alt="" coords="196,56,339,83"/>
+<area shape="rect" id="node5" href="$class_motor.html#ad94e80f3e3918fa6aed53744f3339d0c" title="Motor::lockMotor" alt="" coords="207,107,327,133"/>
+<area shape="rect" id="node4" href="$class_motor.html#aea0ccda5c88406ca40b2d2283eab9114" title="Motor::changePWM" alt="" coords="387,56,525,83"/>
+</map>

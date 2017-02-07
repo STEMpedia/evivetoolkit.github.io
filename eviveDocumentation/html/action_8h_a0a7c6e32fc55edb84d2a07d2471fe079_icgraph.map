@@ -1,0 +1,10 @@
+<map id="actionAdd" name="actionAdd">
+<area shape="rect" id="node2" href="$motor_8h.html#a4ad9639dfcff0a9210935a370924c942" title="addMotor1" alt="" coords="153,5,236,32"/>
+<area shape="rect" id="node4" href="$motor_8h.html#ae06000112295c81330c349eda7d35bde" title="addMotor2" alt="" coords="153,56,236,83"/>
+<area shape="rect" id="node5" href="$servo_control_8h.html#a76684cdf76b20e542ae135611879ca81" title="addServo1" alt="" coords="153,107,236,133"/>
+<area shape="rect" id="node7" href="$servo_control_8h.html#a68d47464b285ad832b81a06240cd9925" title="addServo2" alt="" coords="153,157,236,184"/>
+<area shape="rect" id="node8" href="$stepper_8h.html#aa38f67a3eb6c6e1002cbd68923ecd796" title="addStepper" alt="" coords="151,208,239,235"/>
+<area shape="rect" id="node9" href="$user_defined_functions_8h.html#a714c9d30d819ec2da53304551c378110" title="add_user_def_fun" alt="" coords="133,259,256,285"/>
+<area shape="rect" id="node3" href="$motor_8h.html#ac83e62443d040580d7ccaf0bdd17ae7e" title="addMotor12" alt="" coords="304,44,395,71"/>
+<area shape="rect" id="node6" href="$servo_control_8h.html#a06ab8145bdf0330867d1969de5d04d21" title="addServo12" alt="" coords="305,120,394,147"/>
+</map>

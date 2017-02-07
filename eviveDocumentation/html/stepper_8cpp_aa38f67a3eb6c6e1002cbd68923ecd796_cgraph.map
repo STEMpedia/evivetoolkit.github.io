@@ -1,0 +1,10 @@
+<map id="addStepper" name="addStepper">
+<area shape="rect" id="node2" href="$class_stepper.html#a3f68ee9b26d4076133ebfe070ec0b37c" title="Stepper::attachStepper" alt="" coords="141,5,297,32"/>
+<area shape="rect" id="node3" href="$class_stepper.html#a89a1f8b30656437bba8732721d5671e2" title="Stepper::setSpeed" alt="" coords="154,56,285,83"/>
+<area shape="rect" id="node4" href="$action_8cpp.html#a462fcfe09d5b0eed6afad76cd5ee64d7" title="actionAdd" alt="" coords="179,107,259,133"/>
+<area shape="rect" id="node5" href="$stepper_8cpp.html#a47f69a184715cc5d2acdeef0043b0a24" title="controlStepper" alt="" coords="166,157,273,184"/>
+<area shape="rect" id="node6" href="$class_button.html#a5f5c0d23ab0e5387b861e68019a7e85d" title="Button::read" alt="" coords="373,81,467,108"/>
+<area shape="rect" id="node7" href="$class_slide_switch.html#a5c9f61ec4369f17e176d948ad74fc3ab" title="SlideSwitch::readPin1" alt="" coords="345,132,495,159"/>
+<area shape="rect" id="node8" href="$class_stepper.html#a23f1ada8f077bcb8691009648cf29f27" title="Stepper::step" alt="" coords="370,183,470,209"/>
+<area shape="rect" id="node9" href="$class_slide_switch.html#ada186df3375d7dcd7dac6470c9832830" title="SlideSwitch::readPin2" alt="" coords="345,233,495,260"/>
+</map>

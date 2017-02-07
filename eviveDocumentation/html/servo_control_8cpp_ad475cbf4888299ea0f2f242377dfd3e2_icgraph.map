@@ -1,0 +1,5 @@
+<map id="controlServo" name="controlServo">
+<area shape="rect" id="node2" href="$servo_control_8h.html#a76684cdf76b20e542ae135611879ca81" title="addServo1" alt="" coords="147,5,229,32"/>
+<area shape="rect" id="node4" href="$servo_control_8h.html#a68d47464b285ad832b81a06240cd9925" title="addServo2" alt="" coords="147,56,229,83"/>
+<area shape="rect" id="node3" href="$servo_control_8h.html#a06ab8145bdf0330867d1969de5d04d21" title="addServo12" alt="" coords="277,31,367,57"/>
+</map>

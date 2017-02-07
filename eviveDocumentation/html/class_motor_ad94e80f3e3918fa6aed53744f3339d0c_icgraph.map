@@ -1,0 +1,4 @@
+<map id="Motor::lockMotor" name="Motor::lockMotor">
+<area shape="rect" id="node2" href="$class_motor.html#a17eb92ef52d3cb10bc9f6b88b7c34dcc" title="Motor::stopMotor" alt="" coords="184,5,305,32"/>
+<area shape="rect" id="node3" href="$class_motor.html#af69697d5adb51106f4352c481d67fedd" title="Motor::stopSmoothly" alt="" coords="173,56,316,83"/>
+</map>

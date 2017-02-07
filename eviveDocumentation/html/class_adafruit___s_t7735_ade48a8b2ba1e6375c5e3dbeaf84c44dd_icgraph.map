@@ -1,0 +1,17 @@
+<map id="Adafruit_ST7735::setAddrWindow" name="Adafruit_ST7735::setAddrWindow">
+<area shape="rect" id="node2" href="$class_adafruit___s_t7735.html#af22a5ba7282850793f4943ba2d682af0" title="Adafruit_ST7735::drawPixel" alt="" coords="224,5,405,32"/>
+<area shape="rect" id="node3" href="$class_adafruit___s_t7735.html#a38de2e08911db493eb243ce2691e9c3a" title="Adafruit_ST7735::drawFast\lVLine" alt="" coords="225,57,404,98"/>
+<area shape="rect" id="node4" href="$class_adafruit___s_t7735.html#ab2b8eb320bd19305c09b35be6d55d37e" title="Adafruit_ST7735::drawFast\lHLine" alt="" coords="225,122,404,163"/>
+<area shape="rect" id="node5" href="$class_adafruit___s_t7735.html#a3556265c5b017cd2cdceb1f34e9bc421" title="Adafruit_ST7735::fillRect" alt="" coords="233,188,397,215"/>
+<area shape="rect" id="node6" href="$class_adafruit___s_t7735.html#af732d3d78239687718bb117de99418ca" title="Adafruit_ST7735::fillScreen" alt="" coords="453,108,632,135"/>
+<area shape="rect" id="node10" href="$screen_implementation_8h.html#a38b1833672a8137bc88b0dd5672cd3f8" title="batteryUpdate" alt="" coords="491,163,594,189"/>
+<area shape="rect" id="node11" href="$screen_implementation_8h.html#af1fa449cd5ccc125ba9af9147b83d615" title="vvrUpdate" alt="" coords="504,213,581,240"/>
+<area shape="rect" id="node12" href="$screen_implementation_8h.html#ac587a5031315079a2a0170ec9d6aae5e" title="lcd_implementation\l_clear_menu" alt="" coords="475,273,610,314"/>
+<area shape="rect" id="node7" href="$screen_implementation_8h.html#a6922c3700b60556d83533cf8a41133a9" title="lcd_implementation\l_clear_full" alt="" coords="680,39,815,81"/>
+<area shape="rect" id="node8" href="$screen_implementation_8h.html#a549b2576ed0410b4a8ecc5a1cf67bd8c" title="evive_oscilloscope" alt="" coords="683,105,811,132"/>
+<area shape="rect" id="node9" href="$screen_implementation_8h.html#a2fe91ca8669227b8f13e44e01fa609f3" title="lcd_implementation\l_dac_template" alt="" coords="680,157,815,198"/>
+<area shape="rect" id="node13" href="$screen_8h.html#a310b61cd41fbc836ed6a78d4deb8e7dd" title="lcd_update" alt="" coords="705,223,790,249"/>
+<area shape="rect" id="node15" href="$screen_implementation_8h.html#a7ba1eab2349a7b954feff9aee5155f89" title="lcd_control_status\l_template" alt="" coords="683,274,811,315"/>
+<area shape="rect" id="node16" href="$screen_implementation_8h.html#a943be3b2d4985761a33c2d8982519ff7" title="lcd_sensing_status\l_template" alt="" coords="680,339,815,381"/>
+<area shape="rect" id="node14" href="$evive_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="863,223,909,249"/>
+</map>

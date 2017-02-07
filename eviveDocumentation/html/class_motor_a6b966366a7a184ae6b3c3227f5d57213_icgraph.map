@@ -1,0 +1,4 @@
+<map id="Motor::changeSpeed" name="Motor::changeSpeed">
+<area shape="rect" id="node2" href="$class_motor.html#aba12da45ff90906b5ad4f2a224d5317d" title="Motor::startSmoothly" alt="" coords="196,5,340,32"/>
+<area shape="rect" id="node3" href="$class_motor.html#af69697d5adb51106f4352c481d67fedd" title="Motor::stopSmoothly" alt="" coords="197,56,339,83"/>
+</map>

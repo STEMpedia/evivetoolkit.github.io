@@ -1,0 +1,4 @@
+<map id="Motor::setMotorSpeed" name="Motor::setMotorSpeed">
+<area shape="rect" id="node2" href="$class_motor.html#a81fada8275a8cd70805a9808314e7bee" title="Motor::moveMotor" alt="" coords="204,5,331,32"/>
+<area shape="rect" id="node3" href="$class_motor.html#aea0ccda5c88406ca40b2d2283eab9114" title="Motor::changePWM" alt="" coords="379,5,517,32"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="evive.h" name="evive.h">
+<area shape="rect" id="node11" href="$fastio_8h.html" title="fastio.h" alt="" coords="901,80,965,107"/>
+<area shape="rect" id="node13" href="$_adafruit___g_f_x_8h.html" title="Adafruit_GFX.h" alt="" coords="1090,155,1199,181"/>
+<area shape="rect" id="node15" href="$_adafruit___s_t7735_8h.html" title="Adafruit_ST7735.h" alt="" coords="989,80,1117,107"/>
+<area shape="rect" id="node18" href="$configuration_8h.html" title="configuration.h" alt="" coords="1406,80,1513,107"/>
+<area shape="rect" id="node19" href="$evive_pins_8h.html" title="evivePins.h" alt="" coords="1537,80,1624,107"/>
+<area shape="rect" id="node20" href="$language_8h.html" title="language.h" alt="" coords="1649,80,1734,107"/>
+<area shape="rect" id="node21" href="$language__en_8h.html" title="language_en.h" alt="" coords="1430,155,1537,181"/>
+<area shape="rect" id="node22" href="$bitmaps_8h.html" title="bitmaps.h" alt="" coords="1809,80,1888,107"/>
+<area shape="rect" id="node23" href="$screen_8h.html" title="screen.h" alt="" coords="1913,80,1985,107"/>
+<area shape="rect" id="node24" href="$status_8h.html" title="status.h" alt="" coords="2577,155,2646,181"/>
+<area shape="rect" id="node25" href="$navkey_8h.html" title="navkey.h" alt="" coords="2009,80,2083,107"/>
+<area shape="rect" id="node26" href="$button_8h.html" title="button.h" alt="" coords="2234,80,2303,107"/>
+<area shape="rect" id="node27" href="$potentiometer_8h.html" title="potentiometer.h" alt="" coords="2327,80,2439,107"/>
+<area shape="rect" id="node28" href="$slide_switch_8h.html" title="slideSwitch.h" alt="" coords="2463,80,2562,107"/>
+<area shape="rect" id="node29" href="$set_pin_mode_8h.html" title="setPinMode.h" alt="" coords="2107,80,2209,107"/>
+<area shape="rect" id="node30" href="$motor_8h.html" title="motor.h" alt="" coords="2661,80,2727,107"/>
+<area shape="rect" id="node31" href="$servo_control_8h.html" title="servoControl.h" alt="" coords="2751,80,2855,107"/>
+<area shape="rect" id="node33" href="$stepper_8h.html" title="stepper.h" alt="" coords="2880,80,2956,107"/>
+<area shape="rect" id="node34" href="$action_8h.html" title="action.h" alt="" coords="2980,80,3048,107"/>
+<area shape="rect" id="node35" href="$adc__ade7912_8h.html" title="adc_ade7912.h" alt="" coords="3072,80,3183,107"/>
+<area shape="rect" id="node36" href="$dac___m_c_p4725_8h.html" title="dac_MCP4725.h" alt="" coords="3207,80,3325,107"/>
+<area shape="rect" id="node37" href="$user_defined_functions_8h.html" title="userDefinedFunctions.h" alt="" coords="3349,80,3508,107"/>
+</map>

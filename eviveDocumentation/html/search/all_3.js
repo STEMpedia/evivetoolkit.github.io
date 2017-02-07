@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['callbackfunc',['callbackFunc',['../screen_8cpp.html#aff8e2f756c699b0b678bd60b9f27961a',1,'screen.cpp']]],
+  ['ch0_5fmode',['ch0_mode',['../screen_implementation_8h.html#ab0281227262a58858f9de80db0d10c18',1,'screenImplementation.h']]],
+  ['ch0_5foff',['ch0_off',['../screen_implementation_8h.html#a3deaa7d22e4a01dddf1e185ce0dd5219',1,'screenImplementation.h']]],
+  ['ch1_5fmode',['ch1_mode',['../screen_implementation_8h.html#a91ee9713ca377bff7a71b552fa9406d2',1,'screenImplementation.h']]],
+  ['ch1_5foff',['ch1_off',['../screen_implementation_8h.html#a69b2b3d021542d7557b5c73c85d7db55',1,'screenImplementation.h']]],
+  ['ch1color',['CH1COLOR',['../screen_implementation_8h.html#ad31718a110fe2d6fcc913e6555505904',1,'screenImplementation.h']]],
+  ['ch2color',['CH2COLOR',['../screen_implementation_8h.html#acfdedb1dab193473929b366ce8fe80f6',1,'screenImplementation.h']]],
+  ['changepwm',['changePWM',['../class_motor.html#aea0ccda5c88406ca40b2d2283eab9114',1,'Motor']]],
+  ['changespeed',['changeSpeed',['../class_motor.html#a6b966366a7a184ae6b3c3227f5d57213',1,'Motor']]],
+  ['clkout_5fen',['CLKOUT_EN',['../adc__ade7912_8cpp.html#a40ba59f566b24b6af2619e88dfd8d1c2',1,'adc_ade7912.cpp']]],
+  ['color565',['Color565',['../class_adafruit___s_t7735.html#aef9c4f90acb18082a51b18490feb3c0b',1,'Adafruit_ST7735']]],
+  ['configuration_2eh',['configuration.h',['../configuration_8h.html',1,'']]],
+  ['contains',['contains',['../class_adafruit___g_f_x___button.html#aa5fb594cf6f9cd4c1815a7c1011b5830',1,'Adafruit_GFX_Button']]],
+  ['controlmotor',['controlMotor',['../motor_8cpp.html#a21bb51b10a12a5fced9990bacbb927d9',1,'motor.cpp']]],
+  ['controlservo',['controlServo',['../servo_control_8cpp.html#ad475cbf4888299ea0f2f242377dfd3e2',1,'controlServo():&#160;servoControl.cpp'],['../servo_control_8h.html#ad475cbf4888299ea0f2f242377dfd3e2',1,'controlServo():&#160;servoControl.cpp']]],
+  ['controlstepper',['controlStepper',['../stepper_8cpp.html#a47f69a184715cc5d2acdeef0043b0a24',1,'controlStepper():&#160;stepper.cpp'],['../stepper_8h.html#a47f69a184715cc5d2acdeef0043b0a24',1,'controlStepper():&#160;stepper.cpp']]],
+  ['conv',['conv',['../screen_8cpp.html#a243ef3aabc6f19f53e52ec67709d5cfa',1,'screen.cpp']]],
+  ['convertmillivolttopixel',['ConvertMilliVoltToPixel',['../screen_implementation_8h.html#a39da2b231ead6cb03d8f838b84e42827',1,'screenImplementation.h']]],
+  ['count',['COUNT',['../configuration_8h.html#adb0aba55d8ae1f1021336187e5fdc34d',1,'configuration.h']]],
+  ['cp437',['cp437',['../class_adafruit___g_f_x.html#a6d447fe274e3f0ff12f12afa538d0afe',1,'Adafruit_GFX']]],
+  ['crc_5fstat',['CRC_STAT',['../adc__ade7912_8cpp.html#a7911cb236515abe353bd67e106ac9f42',1,'adc_ade7912.cpp']]],
+  ['currentmenu',['currentMenu',['../screen_8cpp.html#acfbeb0a7b94e085a51d11ebbd84e1720',1,'screen.cpp']]],
+  ['currentmenuviewoffset',['currentMenuViewOffset',['../screen_8cpp.html#a0a8996337f840233c0f7106c5ae01eb1',1,'screen.cpp']]],
+  ['cursor_5fx',['cursor_x',['../class_adafruit___g_f_x.html#a8f8983cea8d81a7c8e9d05eef36318e2',1,'Adafruit_GFX']]],
+  ['cursor_5fy',['cursor_y',['../class_adafruit___g_f_x.html#aebe0a38f6e6fd59cb81620c4696286c9',1,'Adafruit_GFX']]]
+];

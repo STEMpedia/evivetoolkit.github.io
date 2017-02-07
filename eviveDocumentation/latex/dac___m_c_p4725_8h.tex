@@ -1,0 +1,202 @@
+\hypertarget{dac___m_c_p4725_8h}{}\section{dac\+\_\+\+M\+C\+P4725.\+h File Reference}
+\label{dac___m_c_p4725_8h}\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+{\ttfamily \#include \char`\"{}evive.\+h\char`\"{}}\newline
+Include dependency graph for dac\+\_\+\+M\+C\+P4725.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dac___m_c_p4725_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dac___m_c_p4725_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classdac___m_c_p4725}{dac\+\_\+\+M\+C\+P4725}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{dac___m_c_p4725_8h_a21ed13e3cc594fb4cf90ad6fd1a8cc17}{M\+C\+P4725\+\_\+\+A\+D\+DR}~0x62
+\item 
+\#define \hyperlink{dac___m_c_p4725_8h_afb0ec1ab5722c9f6c3711150fde33f45}{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+AC}~(0x40)
+\item 
+\#define \hyperlink{dac___m_c_p4725_8h_aff4ea08029d942c239d2b0ad1eca9295}{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+A\+C\+E\+E\+P\+R\+OM}~(0x60)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{dac___m_c_p4725_8h_a1d22c246dfa438c5adb11c38c3e3c15a}{set\+Frequency\+Amplitude} ()
+\item 
+void \hyperlink{dac___m_c_p4725_8h_a52a06dac4bc5c4acce1f8c3fe3ef6208}{generate\+Sine\+Wave} ()
+\item 
+void \hyperlink{dac___m_c_p4725_8h_adf0324bd291a4d35d562c5647d31b97a}{generate\+Square\+Wave} ()
+\item 
+void \hyperlink{dac___m_c_p4725_8h_a98156f080f9438093e5ba712f8768a6f}{generate\+Traingular\+Wave} ()
+\item 
+void \hyperlink{dac___m_c_p4725_8h_aa7f28e7c063a420070e67a531d0a2a22}{generate\+Sawtooth\+Wave\+Up} ()
+\item 
+void \hyperlink{dac___m_c_p4725_8h_a427d5fcf06a10d10dac32e4de4cead23}{generate\+Sawtooth\+Wave\+Down} ()
+\item 
+void \hyperlink{dac___m_c_p4725_8h_af0da4a04a963b417d79f6f296b32fa45}{generate\+Analog\+Output} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdac___m_c_p4725}{dac\+\_\+\+M\+C\+P4725} \hyperlink{dac___m_c_p4725_8h_a7971c209fc00a8c5d8c6b2ff577bbc25}{dac}
+\item 
+uint16\+\_\+t \hyperlink{dac___m_c_p4725_8h_ade26a9703d9d6ea9c466d0e40aefca32}{increment}
+\item 
+uint16\+\_\+t \hyperlink{dac___m_c_p4725_8h_abfb62f03267f72c2d8216580b95ad512}{old\+Increment}
+\item 
+float \hyperlink{dac___m_c_p4725_8h_a31bef58f966d97b1ace9bd3a58ffd9a6}{amplitude}
+\item 
+float \hyperlink{dac___m_c_p4725_8h_a197f7fec41b7c0bfbf3a8809e1f341a4}{old\+Amplitude}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_a21ed13e3cc594fb4cf90ad6fd1a8cc17}\label{dac___m_c_p4725_8h_a21ed13e3cc594fb4cf90ad6fd1a8cc17}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!M\+C\+P4725\+\_\+\+A\+D\+DR@{M\+C\+P4725\+\_\+\+A\+D\+DR}}
+\index{M\+C\+P4725\+\_\+\+A\+D\+DR@{M\+C\+P4725\+\_\+\+A\+D\+DR}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{M\+C\+P4725\+\_\+\+A\+D\+DR}{MCP4725\_ADDR}}
+{\footnotesize\ttfamily \#define M\+C\+P4725\+\_\+\+A\+D\+DR~0x62}
+
+\mbox{\Hypertarget{dac___m_c_p4725_8h_afb0ec1ab5722c9f6c3711150fde33f45}\label{dac___m_c_p4725_8h_afb0ec1ab5722c9f6c3711150fde33f45}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+AC@{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+AC}}
+\index{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+AC@{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+AC}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+AC}{MCP4726\_CMD\_WRITEDAC}}
+{\footnotesize\ttfamily \#define M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+AC~(0x40)}
+
+\mbox{\Hypertarget{dac___m_c_p4725_8h_aff4ea08029d942c239d2b0ad1eca9295}\label{dac___m_c_p4725_8h_aff4ea08029d942c239d2b0ad1eca9295}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+A\+C\+E\+E\+P\+R\+OM@{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+A\+C\+E\+E\+P\+R\+OM}}
+\index{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+A\+C\+E\+E\+P\+R\+OM@{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+A\+C\+E\+E\+P\+R\+OM}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+A\+C\+E\+E\+P\+R\+OM}{MCP4726\_CMD\_WRITEDACEEPROM}}
+{\footnotesize\ttfamily \#define M\+C\+P4726\+\_\+\+C\+M\+D\+\_\+\+W\+R\+I\+T\+E\+D\+A\+C\+E\+E\+P\+R\+OM~(0x60)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_af0da4a04a963b417d79f6f296b32fa45}\label{dac___m_c_p4725_8h_af0da4a04a963b417d79f6f296b32fa45}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!generate\+Analog\+Output@{generate\+Analog\+Output}}
+\index{generate\+Analog\+Output@{generate\+Analog\+Output}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{generate\+Analog\+Output()}{generateAnalogOutput()}}
+{\footnotesize\ttfamily void generate\+Analog\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dac___m_c_p4725_8h_af0da4a04a963b417d79f6f296b32fa45_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_a427d5fcf06a10d10dac32e4de4cead23}\label{dac___m_c_p4725_8h_a427d5fcf06a10d10dac32e4de4cead23}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!generate\+Sawtooth\+Wave\+Down@{generate\+Sawtooth\+Wave\+Down}}
+\index{generate\+Sawtooth\+Wave\+Down@{generate\+Sawtooth\+Wave\+Down}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{generate\+Sawtooth\+Wave\+Down()}{generateSawtoothWaveDown()}}
+{\footnotesize\ttfamily void generate\+Sawtooth\+Wave\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dac___m_c_p4725_8h_a427d5fcf06a10d10dac32e4de4cead23_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_aa7f28e7c063a420070e67a531d0a2a22}\label{dac___m_c_p4725_8h_aa7f28e7c063a420070e67a531d0a2a22}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!generate\+Sawtooth\+Wave\+Up@{generate\+Sawtooth\+Wave\+Up}}
+\index{generate\+Sawtooth\+Wave\+Up@{generate\+Sawtooth\+Wave\+Up}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{generate\+Sawtooth\+Wave\+Up()}{generateSawtoothWaveUp()}}
+{\footnotesize\ttfamily void generate\+Sawtooth\+Wave\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dac___m_c_p4725_8h_aa7f28e7c063a420070e67a531d0a2a22_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_a52a06dac4bc5c4acce1f8c3fe3ef6208}\label{dac___m_c_p4725_8h_a52a06dac4bc5c4acce1f8c3fe3ef6208}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!generate\+Sine\+Wave@{generate\+Sine\+Wave}}
+\index{generate\+Sine\+Wave@{generate\+Sine\+Wave}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{generate\+Sine\+Wave()}{generateSineWave()}}
+{\footnotesize\ttfamily void generate\+Sine\+Wave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{dac___m_c_p4725_8h_a52a06dac4bc5c4acce1f8c3fe3ef6208_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_adf0324bd291a4d35d562c5647d31b97a}\label{dac___m_c_p4725_8h_adf0324bd291a4d35d562c5647d31b97a}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!generate\+Square\+Wave@{generate\+Square\+Wave}}
+\index{generate\+Square\+Wave@{generate\+Square\+Wave}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{generate\+Square\+Wave()}{generateSquareWave()}}
+{\footnotesize\ttfamily void generate\+Square\+Wave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dac___m_c_p4725_8h_adf0324bd291a4d35d562c5647d31b97a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_a98156f080f9438093e5ba712f8768a6f}\label{dac___m_c_p4725_8h_a98156f080f9438093e5ba712f8768a6f}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!generate\+Traingular\+Wave@{generate\+Traingular\+Wave}}
+\index{generate\+Traingular\+Wave@{generate\+Traingular\+Wave}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{generate\+Traingular\+Wave()}{generateTraingularWave()}}
+{\footnotesize\ttfamily void generate\+Traingular\+Wave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dac___m_c_p4725_8h_a98156f080f9438093e5ba712f8768a6f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_a1d22c246dfa438c5adb11c38c3e3c15a}\label{dac___m_c_p4725_8h_a1d22c246dfa438c5adb11c38c3e3c15a}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!set\+Frequency\+Amplitude@{set\+Frequency\+Amplitude}}
+\index{set\+Frequency\+Amplitude@{set\+Frequency\+Amplitude}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{set\+Frequency\+Amplitude()}{setFrequencyAmplitude()}}
+{\footnotesize\ttfamily void set\+Frequency\+Amplitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{dac___m_c_p4725_8h_a31bef58f966d97b1ace9bd3a58ffd9a6}\label{dac___m_c_p4725_8h_a31bef58f966d97b1ace9bd3a58ffd9a6}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!amplitude@{amplitude}}
+\index{amplitude@{amplitude}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{amplitude}{amplitude}}
+{\footnotesize\ttfamily float amplitude}
+
+\mbox{\Hypertarget{dac___m_c_p4725_8h_a7971c209fc00a8c5d8c6b2ff577bbc25}\label{dac___m_c_p4725_8h_a7971c209fc00a8c5d8c6b2ff577bbc25}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!dac@{dac}}
+\index{dac@{dac}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{dac}{dac}}
+{\footnotesize\ttfamily \hyperlink{classdac___m_c_p4725}{dac\+\_\+\+M\+C\+P4725} dac}
+
+\mbox{\Hypertarget{dac___m_c_p4725_8h_ade26a9703d9d6ea9c466d0e40aefca32}\label{dac___m_c_p4725_8h_ade26a9703d9d6ea9c466d0e40aefca32}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!increment@{increment}}
+\index{increment@{increment}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{increment}{increment}}
+{\footnotesize\ttfamily uint16\+\_\+t increment}
+
+\mbox{\Hypertarget{dac___m_c_p4725_8h_a197f7fec41b7c0bfbf3a8809e1f341a4}\label{dac___m_c_p4725_8h_a197f7fec41b7c0bfbf3a8809e1f341a4}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!old\+Amplitude@{old\+Amplitude}}
+\index{old\+Amplitude@{old\+Amplitude}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{old\+Amplitude}{oldAmplitude}}
+{\footnotesize\ttfamily float old\+Amplitude}
+
+\mbox{\Hypertarget{dac___m_c_p4725_8h_abfb62f03267f72c2d8216580b95ad512}\label{dac___m_c_p4725_8h_abfb62f03267f72c2d8216580b95ad512}} 
+\index{dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}!old\+Increment@{old\+Increment}}
+\index{old\+Increment@{old\+Increment}!dac\+\_\+\+M\+C\+P4725.\+h@{dac\+\_\+\+M\+C\+P4725.\+h}}
+\subsubsection{\texorpdfstring{old\+Increment}{oldIncrement}}
+{\footnotesize\ttfamily uint16\+\_\+t old\+Increment}
+

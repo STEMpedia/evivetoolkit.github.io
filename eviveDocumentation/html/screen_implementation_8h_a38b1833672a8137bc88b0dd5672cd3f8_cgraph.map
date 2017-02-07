@@ -1,0 +1,4 @@
+<map id="batteryUpdate" name="batteryUpdate">
+<area shape="rect" id="node2" href="$class_adafruit___s_t7735.html#a3556265c5b017cd2cdceb1f34e9bc421" title="Adafruit_ST7735::fillRect" alt="" coords="156,13,320,39"/>
+<area shape="rect" id="node3" href="$class_adafruit___s_t7735.html#ade48a8b2ba1e6375c5e3dbeaf84c44dd" title="Adafruit_ST7735::setAddr\lWindow" alt="" coords="368,5,539,47"/>
+</map>

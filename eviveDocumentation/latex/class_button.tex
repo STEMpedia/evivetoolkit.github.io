@@ -1,0 +1,125 @@
+\hypertarget{class_button}{}\section{Button Class Reference}
+\label{class_button}\index{Button@{Button}}
+
+
+{\ttfamily \#include $<$button.\+h$>$}
+
+
+
+Collaboration diagram for Button\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_button__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_button_a62bf06885bb7e8e8e10320394469142e}{Button} (uint8\+\_\+t pin)
+\item 
+\hyperlink{class_button_ad61b19bac87236f03f72f5debce40057}{Button} (uint8\+\_\+t pin, uint32\+\_\+t db\+Time)
+\item 
+\hyperlink{class_button_afed59e35f623f232ae04a892127a0738}{Button} (uint8\+\_\+t pin, uint8\+\_\+t pu\+Enable, uint8\+\_\+t invert, uint32\+\_\+t db\+Time)
+\item 
+uint8\+\_\+t \hyperlink{class_button_a5f5c0d23ab0e5387b861e68019a7e85d}{read} ()
+\item 
+uint8\+\_\+t \hyperlink{class_button_adc52c28d5eecbb08818e4a701e346fb0}{is\+Pressed} ()
+\item 
+uint8\+\_\+t \hyperlink{class_button_a7bf938a70dee91015b044e434fc9499b}{is\+Released} ()
+\item 
+uint8\+\_\+t \hyperlink{class_button_a3496a1689b2b2f5635d5c7716f38ec43}{was\+Pressed} ()
+\item 
+uint8\+\_\+t \hyperlink{class_button_a79164a7fd70f08cb8c3930e8c06b9190}{was\+Released} ()
+\item 
+uint8\+\_\+t \hyperlink{class_button_a11b97b9e73881e876724ddeedac716f9}{pressed\+For} (uint32\+\_\+t ms)
+\item 
+uint8\+\_\+t \hyperlink{class_button_a805e542eaf9976b7c1afaf3dfecc13a5}{released\+For} (uint32\+\_\+t ms)
+\item 
+uint32\+\_\+t \hyperlink{class_button_a6880ef962e03d55216d79217e7473bd2}{last\+Change} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_button_a62bf06885bb7e8e8e10320394469142e}\label{class_button_a62bf06885bb7e8e8e10320394469142e}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_ad61b19bac87236f03f72f5debce40057}\label{class_button_ad61b19bac87236f03f72f5debce40057}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint32\+\_\+t}]{db\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_afed59e35f623f232ae04a892127a0738}\label{class_button_afed59e35f623f232ae04a892127a0738}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin,  }\item[{uint8\+\_\+t}]{pu\+Enable,  }\item[{uint8\+\_\+t}]{invert,  }\item[{uint32\+\_\+t}]{db\+Time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_button_adc52c28d5eecbb08818e4a701e346fb0}\label{class_button_adc52c28d5eecbb08818e4a701e346fb0}} 
+\index{Button@{Button}!is\+Pressed@{is\+Pressed}}
+\index{is\+Pressed@{is\+Pressed}!Button@{Button}}
+\subsubsection{\texorpdfstring{is\+Pressed()}{isPressed()}}
+{\footnotesize\ttfamily uint8\+\_\+t Button\+::is\+Pressed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a7bf938a70dee91015b044e434fc9499b}\label{class_button_a7bf938a70dee91015b044e434fc9499b}} 
+\index{Button@{Button}!is\+Released@{is\+Released}}
+\index{is\+Released@{is\+Released}!Button@{Button}}
+\subsubsection{\texorpdfstring{is\+Released()}{isReleased()}}
+{\footnotesize\ttfamily uint8\+\_\+t Button\+::is\+Released (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a6880ef962e03d55216d79217e7473bd2}\label{class_button_a6880ef962e03d55216d79217e7473bd2}} 
+\index{Button@{Button}!last\+Change@{last\+Change}}
+\index{last\+Change@{last\+Change}!Button@{Button}}
+\subsubsection{\texorpdfstring{last\+Change()}{lastChange()}}
+{\footnotesize\ttfamily uint32\+\_\+t Button\+::last\+Change (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a11b97b9e73881e876724ddeedac716f9}\label{class_button_a11b97b9e73881e876724ddeedac716f9}} 
+\index{Button@{Button}!pressed\+For@{pressed\+For}}
+\index{pressed\+For@{pressed\+For}!Button@{Button}}
+\subsubsection{\texorpdfstring{pressed\+For()}{pressedFor()}}
+{\footnotesize\ttfamily uint8\+\_\+t Button\+::pressed\+For (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a5f5c0d23ab0e5387b861e68019a7e85d}\label{class_button_a5f5c0d23ab0e5387b861e68019a7e85d}} 
+\index{Button@{Button}!read@{read}}
+\index{read@{read}!Button@{Button}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Button\+::read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_button_a5f5c0d23ab0e5387b861e68019a7e85d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_button_a805e542eaf9976b7c1afaf3dfecc13a5}\label{class_button_a805e542eaf9976b7c1afaf3dfecc13a5}} 
+\index{Button@{Button}!released\+For@{released\+For}}
+\index{released\+For@{released\+For}!Button@{Button}}
+\subsubsection{\texorpdfstring{released\+For()}{releasedFor()}}
+{\footnotesize\ttfamily uint8\+\_\+t Button\+::released\+For (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a3496a1689b2b2f5635d5c7716f38ec43}\label{class_button_a3496a1689b2b2f5635d5c7716f38ec43}} 
+\index{Button@{Button}!was\+Pressed@{was\+Pressed}}
+\index{was\+Pressed@{was\+Pressed}!Button@{Button}}
+\subsubsection{\texorpdfstring{was\+Pressed()}{wasPressed()}}
+{\footnotesize\ttfamily uint8\+\_\+t Button\+::was\+Pressed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a79164a7fd70f08cb8c3930e8c06b9190}\label{class_button_a79164a7fd70f08cb8c3930e8c06b9190}} 
+\index{Button@{Button}!was\+Released@{was\+Released}}
+\index{was\+Released@{was\+Released}!Button@{Button}}
+\subsubsection{\texorpdfstring{was\+Released()}{wasReleased()}}
+{\footnotesize\ttfamily uint8\+\_\+t Button\+::was\+Released (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{button_8h}{button.\+h}\item 
+\hyperlink{button_8cpp}{button.\+cpp}\end{DoxyCompactItemize}

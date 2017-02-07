@@ -1,0 +1,8 @@
+<map id="lcd_sensing_status_template" name="lcd_sensing_status_template">
+<area shape="rect" id="node2" href="$adc__ade7912_8cpp.html#abaa846e601783713a554511c65d2483e" title="ade791x_init" alt="" coords="230,5,325,32"/>
+<area shape="rect" id="node3" href="$class_adafruit___g_f_x.html#a59178a0e0c845a14a39b457c43567dd9" title="Adafruit_GFX::setTextColor" alt="" coords="188,56,367,83"/>
+<area shape="rect" id="node4" href="$screen_implementation_8h.html#ac587a5031315079a2a0170ec9d6aae5e" title="lcd_implementation\l_clear_menu" alt="" coords="210,107,345,149"/>
+<area shape="rect" id="node7" href="$class_adafruit___g_f_x.html#aaf96a40cad0f34dd8ec73494b3866c33" title="Adafruit_GFX::setCursor" alt="" coords="196,173,359,200"/>
+<area shape="rect" id="node5" href="$class_adafruit___s_t7735.html#a3556265c5b017cd2cdceb1f34e9bc421" title="Adafruit_ST7735::fillRect" alt="" coords="415,115,579,141"/>
+<area shape="rect" id="node6" href="$class_adafruit___s_t7735.html#ade48a8b2ba1e6375c5e3dbeaf84c44dd" title="Adafruit_ST7735::setAddr\lWindow" alt="" coords="627,107,797,149"/>
+</map>

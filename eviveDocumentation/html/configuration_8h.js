@@ -1,0 +1,26 @@
+var configuration_8h =
+[
+    [ "_CAT", "configuration_8h.html#ad3ed965b0e243f120437707efe9cc869", null ],
+    [ "BAUDRATE", "configuration_8h.html#a734bbab06e1a9fd2e5522db0221ff6e3", null ],
+    [ "BIT", "configuration_8h.html#a9324af3841c9f8dc1cd392e6864540e4", null ],
+    [ "COUNT", "configuration_8h.html#adb0aba55d8ae1f1021336187e5fdc34d", null ],
+    [ "DEGREES", "configuration_8h.html#a547115f88e27975e18e9ed16e4b1a6c0", null ],
+    [ "DISABLED", "configuration_8h.html#a5ee24bcd15ed3697bf727b49363b57c1", null ],
+    [ "ENABLED", "configuration_8h.html#a89bcf2f04699595f85d2da474321e18a", null ],
+    [ "MIN_TIME1", "configuration_8h.html#adb8639138efd3812885c61d2c42f745e", null ],
+    [ "MIN_TIME2", "configuration_8h.html#a1a3227238a0a16f494c395eef396807f", null ],
+    [ "MIN_TIME3", "configuration_8h.html#aeb86ed0dae1570c7184f5fddd7ba31e6", null ],
+    [ "MIN_TIME5", "configuration_8h.html#a6d33f7b8ca27e6b8bbcaf5fefdf2c9b7", null ],
+    [ "RADIANS", "configuration_8h.html#ab827a07c64d61d077e09efb4a6e25dd7", null ],
+    [ "SCREEN", "configuration_8h.html#a7de8a5ba14702b7bf2f6558903b1d3fb", null ],
+    [ "SENSING", "configuration_8h.html#a0fb4e12ab398263e7183b1521320dbd2", null ],
+    [ "SET_BIT", "configuration_8h.html#a0aa680425e532b9265303f8dfb06e145", null ],
+    [ "SWITCH_ENABLED_", "configuration_8h.html#a30e290e214278daa86e8166eecb42213", null ],
+    [ "SWITCH_ENABLED_0", "configuration_8h.html#affb281be82e167618f00571670bc208b", null ],
+    [ "SWITCH_ENABLED_1", "configuration_8h.html#af8308639c130e20578411057f61cad15", null ],
+    [ "TEST", "configuration_8h.html#aeba91f5ab6ef3697ed4ac480eaa19cde", null ],
+    [ "PS_128", "configuration_8h.html#a1a65bcfdfa559d20645453aca170466b", null ],
+    [ "PS_16", "configuration_8h.html#a0f19aef7325ef708cf22efe648db0c44", null ],
+    [ "PS_32", "configuration_8h.html#a45cb1a3e93c6c2d657e8e616f2308f27", null ],
+    [ "PS_64", "configuration_8h.html#a0c7cf8508f9acad9f6ba054fa1b3d4d0", null ]
+];

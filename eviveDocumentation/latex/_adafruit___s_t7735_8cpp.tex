@@ -1,0 +1,98 @@
+\hypertarget{_adafruit___s_t7735_8cpp}{}\section{Adafruit\+\_\+\+S\+T7735.\+cpp File Reference}
+\label{_adafruit___s_t7735_8cpp}\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+{\ttfamily \#include \char`\"{}Adafruit\+\_\+\+S\+T7735.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}pins\+\_\+arduino.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}wiring\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$S\+P\+I.\+h$>$}\newline
+Include dependency graph for Adafruit\+\_\+\+S\+T7735.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_adafruit___s_t7735_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_adafruit___s_t7735_8cpp_a62249e384b997229a3e2ae74ade334e2}{D\+E\+L\+AY}~0x80
+\item 
+\#define \hyperlink{_adafruit___s_t7735_8cpp_ab30e6bd24448245df1d60a3e1c4ddbdf}{M\+A\+D\+C\+T\+L\+\_\+\+MY}~0x80
+\item 
+\#define \hyperlink{_adafruit___s_t7735_8cpp_a6d18ed48efb3186877a07d0e81155453}{M\+A\+D\+C\+T\+L\+\_\+\+MX}~0x40
+\item 
+\#define \hyperlink{_adafruit___s_t7735_8cpp_adc23a239d2b6976d53254ef4fc5d1713}{M\+A\+D\+C\+T\+L\+\_\+\+MV}~0x20
+\item 
+\#define \hyperlink{_adafruit___s_t7735_8cpp_a9ecee6d3131d3b4f750b94d5766b998a}{M\+A\+D\+C\+T\+L\+\_\+\+ML}~0x10
+\item 
+\#define \hyperlink{_adafruit___s_t7735_8cpp_acc1e55b52f8a56b7719ab147308a1668}{M\+A\+D\+C\+T\+L\+\_\+\+R\+GB}~0x00
+\item 
+\#define \hyperlink{_adafruit___s_t7735_8cpp_a659f0d6f0c258a3d91f882a59dfa76f5}{M\+A\+D\+C\+T\+L\+\_\+\+B\+GR}~0x08
+\item 
+\#define \hyperlink{_adafruit___s_t7735_8cpp_a6f8b9fad1b5db52b70960b389056f0dd}{M\+A\+D\+C\+T\+L\+\_\+\+MH}~0x04
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{_adafruit___s_t7735_8cpp_ac7770e102c0ce9b4f7833f646ab5c6c6}{swapcolor} (uint16\+\_\+t x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_a62249e384b997229a3e2ae74ade334e2}\label{_adafruit___s_t7735_8cpp_a62249e384b997229a3e2ae74ade334e2}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!D\+E\+L\+AY@{D\+E\+L\+AY}}
+\index{D\+E\+L\+AY@{D\+E\+L\+AY}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{D\+E\+L\+AY}{DELAY}}
+{\footnotesize\ttfamily \#define D\+E\+L\+AY~0x80}
+
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_a659f0d6f0c258a3d91f882a59dfa76f5}\label{_adafruit___s_t7735_8cpp_a659f0d6f0c258a3d91f882a59dfa76f5}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!M\+A\+D\+C\+T\+L\+\_\+\+B\+GR@{M\+A\+D\+C\+T\+L\+\_\+\+B\+GR}}
+\index{M\+A\+D\+C\+T\+L\+\_\+\+B\+GR@{M\+A\+D\+C\+T\+L\+\_\+\+B\+GR}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+D\+C\+T\+L\+\_\+\+B\+GR}{MADCTL\_BGR}}
+{\footnotesize\ttfamily \#define M\+A\+D\+C\+T\+L\+\_\+\+B\+GR~0x08}
+
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_a6f8b9fad1b5db52b70960b389056f0dd}\label{_adafruit___s_t7735_8cpp_a6f8b9fad1b5db52b70960b389056f0dd}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!M\+A\+D\+C\+T\+L\+\_\+\+MH@{M\+A\+D\+C\+T\+L\+\_\+\+MH}}
+\index{M\+A\+D\+C\+T\+L\+\_\+\+MH@{M\+A\+D\+C\+T\+L\+\_\+\+MH}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+D\+C\+T\+L\+\_\+\+MH}{MADCTL\_MH}}
+{\footnotesize\ttfamily \#define M\+A\+D\+C\+T\+L\+\_\+\+MH~0x04}
+
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_a9ecee6d3131d3b4f750b94d5766b998a}\label{_adafruit___s_t7735_8cpp_a9ecee6d3131d3b4f750b94d5766b998a}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!M\+A\+D\+C\+T\+L\+\_\+\+ML@{M\+A\+D\+C\+T\+L\+\_\+\+ML}}
+\index{M\+A\+D\+C\+T\+L\+\_\+\+ML@{M\+A\+D\+C\+T\+L\+\_\+\+ML}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+D\+C\+T\+L\+\_\+\+ML}{MADCTL\_ML}}
+{\footnotesize\ttfamily \#define M\+A\+D\+C\+T\+L\+\_\+\+ML~0x10}
+
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_adc23a239d2b6976d53254ef4fc5d1713}\label{_adafruit___s_t7735_8cpp_adc23a239d2b6976d53254ef4fc5d1713}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!M\+A\+D\+C\+T\+L\+\_\+\+MV@{M\+A\+D\+C\+T\+L\+\_\+\+MV}}
+\index{M\+A\+D\+C\+T\+L\+\_\+\+MV@{M\+A\+D\+C\+T\+L\+\_\+\+MV}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+D\+C\+T\+L\+\_\+\+MV}{MADCTL\_MV}}
+{\footnotesize\ttfamily \#define M\+A\+D\+C\+T\+L\+\_\+\+MV~0x20}
+
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_a6d18ed48efb3186877a07d0e81155453}\label{_adafruit___s_t7735_8cpp_a6d18ed48efb3186877a07d0e81155453}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!M\+A\+D\+C\+T\+L\+\_\+\+MX@{M\+A\+D\+C\+T\+L\+\_\+\+MX}}
+\index{M\+A\+D\+C\+T\+L\+\_\+\+MX@{M\+A\+D\+C\+T\+L\+\_\+\+MX}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+D\+C\+T\+L\+\_\+\+MX}{MADCTL\_MX}}
+{\footnotesize\ttfamily \#define M\+A\+D\+C\+T\+L\+\_\+\+MX~0x40}
+
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_ab30e6bd24448245df1d60a3e1c4ddbdf}\label{_adafruit___s_t7735_8cpp_ab30e6bd24448245df1d60a3e1c4ddbdf}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!M\+A\+D\+C\+T\+L\+\_\+\+MY@{M\+A\+D\+C\+T\+L\+\_\+\+MY}}
+\index{M\+A\+D\+C\+T\+L\+\_\+\+MY@{M\+A\+D\+C\+T\+L\+\_\+\+MY}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+D\+C\+T\+L\+\_\+\+MY}{MADCTL\_MY}}
+{\footnotesize\ttfamily \#define M\+A\+D\+C\+T\+L\+\_\+\+MY~0x80}
+
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_acc1e55b52f8a56b7719ab147308a1668}\label{_adafruit___s_t7735_8cpp_acc1e55b52f8a56b7719ab147308a1668}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!M\+A\+D\+C\+T\+L\+\_\+\+R\+GB@{M\+A\+D\+C\+T\+L\+\_\+\+R\+GB}}
+\index{M\+A\+D\+C\+T\+L\+\_\+\+R\+GB@{M\+A\+D\+C\+T\+L\+\_\+\+R\+GB}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+D\+C\+T\+L\+\_\+\+R\+GB}{MADCTL\_RGB}}
+{\footnotesize\ttfamily \#define M\+A\+D\+C\+T\+L\+\_\+\+R\+GB~0x00}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_adafruit___s_t7735_8cpp_ac7770e102c0ce9b4f7833f646ab5c6c6}\label{_adafruit___s_t7735_8cpp_ac7770e102c0ce9b4f7833f646ab5c6c6}} 
+\index{Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}!swapcolor@{swapcolor}}
+\index{swapcolor@{swapcolor}!Adafruit\+\_\+\+S\+T7735.\+cpp@{Adafruit\+\_\+\+S\+T7735.\+cpp}}
+\subsubsection{\texorpdfstring{swapcolor()}{swapcolor()}}
+{\footnotesize\ttfamily uint16\+\_\+t swapcolor (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

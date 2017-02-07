@@ -1,0 +1,5 @@
+<map id="controlMotor" name="controlMotor">
+<area shape="rect" id="node2" href="$motor_8h.html#a4ad9639dfcff0a9210935a370924c942" title="addMotor1" alt="" coords="148,5,231,32"/>
+<area shape="rect" id="node4" href="$motor_8h.html#ae06000112295c81330c349eda7d35bde" title="addMotor2" alt="" coords="148,56,231,83"/>
+<area shape="rect" id="node3" href="$motor_8h.html#ac83e62443d040580d7ccaf0bdd17ae7e" title="addMotor12" alt="" coords="279,31,369,57"/>
+</map>

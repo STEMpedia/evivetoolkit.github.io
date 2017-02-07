@@ -1,0 +1,262 @@
+\hypertarget{fastio_8h}{}\section{fastio.\+h File Reference}
+\label{fastio_8h}\index{fastio.\+h@{fastio.\+h}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+Include dependency graph for fastio.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=128pt]{fastio_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fastio_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(P\+IN)~(1 $<$$<$ P\+IN)
+\item 
+\#define \hyperlink{fastio_8h_a716f4ca15267c9a5d479514a1de83018}{\+\_\+\+R\+E\+AD}(IO)~((bool)(D\+IO \#\# IO \#\# \+\_\+\+R\+P\+O\+RT \& \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN)))
+\begin{DoxyCompactList}\small\item\em Read a pin. \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a88a478c1c95843f4c1804565a372bff5}{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+NC}(IO,  v)~do \{ if (v) \{D\+IO \#\#  IO \#\# \+\_\+\+W\+P\+O\+RT $\vert$= \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \} else \{D\+IO \#\#  IO \#\# \+\_\+\+W\+P\+O\+RT \&= $\sim$\hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \}; \} while (0)
+\begin{DoxyCompactList}\small\item\em write to a pin \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_ad6ab057720212dc555e890df11287661}{\+\_\+\+W\+R\+I\+T\+E\+\_\+C}(IO,  v)
+\item 
+\#define \hyperlink{fastio_8h_acb82a1ce7f87b692abfb5e41d6810f2b}{\+\_\+\+W\+R\+I\+TE}(IO,  v)~do \{  if (\&(D\+IO \#\#  IO \#\# \+\_\+\+R\+P\+O\+RT) $>$= (uint8\+\_\+t $\ast$)0x100) \{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C(\+I\+O, v); \} else \{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+C(\+I\+O, v); \}; \} while (0)
+\item 
+\#define \hyperlink{fastio_8h_ac80afd6e46adcab936eb01031e25043c}{\+\_\+\+T\+O\+G\+G\+LE}(IO)~do \{D\+IO \#\#  IO \#\# \+\_\+\+R\+P\+O\+RT = \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \} while (0)
+\begin{DoxyCompactList}\small\item\em toggle a pin \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_ab76d0856bcf266de49269a05b96fb79b}{\+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT}(IO)~do \{D\+IO \#\#  IO \#\# \+\_\+\+D\+DR \&= $\sim$\hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \} while (0)
+\begin{DoxyCompactList}\small\item\em set pin as input \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_affb369f6db19ae9eab9a4c440b19c6d0}{\+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO)~do \{D\+IO \#\#  IO \#\# \+\_\+\+D\+DR $\vert$=  \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \} while (0)
+\begin{DoxyCompactList}\small\item\em set pin as output \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a81799334b3ecca1e9822f2c5e0c808ff}{\+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT}(IO)~((D\+IO \#\# IO \#\# \+\_\+\+D\+DR \& \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN)) == 0)
+\begin{DoxyCompactList}\small\item\em check if pin is an input \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a145970250cd701164115c116682ddcd4}{\+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO)~((D\+IO \#\# IO \#\# \+\_\+\+D\+DR \& \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN)) != 0)
+\begin{DoxyCompactList}\small\item\em check if pin is an output \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a112b39c4d1665c68bddcb9ffbfceb338}{\+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER}(IO)~((D\+IO \#\# IO \#\# \+\_\+\+P\+WM)
+\begin{DoxyCompactList}\small\item\em check if pin is an timer \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a9716cca366b99de7c0d101eeab24c967}{R\+E\+AD}(IO)~\hyperlink{fastio_8h_a716f4ca15267c9a5d479514a1de83018}{\+\_\+\+R\+E\+AD}(IO)
+\begin{DoxyCompactList}\small\item\em Read a pin wrapper. \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a3d38c0667426652d3fa2eb62f23e1591}{W\+R\+I\+TE}(IO,  v)~\hyperlink{fastio_8h_acb82a1ce7f87b692abfb5e41d6810f2b}{\+\_\+\+W\+R\+I\+TE}(IO, v)
+\begin{DoxyCompactList}\small\item\em Write to a pin wrapper. \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_af060bb41ede214a91d237e63f3e080d4}{T\+O\+G\+G\+LE}(IO)~\hyperlink{fastio_8h_ac80afd6e46adcab936eb01031e25043c}{\+\_\+\+T\+O\+G\+G\+LE}(IO)
+\begin{DoxyCompactList}\small\item\em toggle a pin wrapper \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_afa76df25ccdb2d113a057c8c305399cc}{S\+E\+T\+\_\+\+I\+N\+P\+UT}(IO)~\hyperlink{fastio_8h_ab76d0856bcf266de49269a05b96fb79b}{\+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT}(IO)
+\begin{DoxyCompactList}\small\item\em set pin as input wrapper \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a4bdb8759f0e85e88956ac23262e0916b}{S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO)~\hyperlink{fastio_8h_affb369f6db19ae9eab9a4c440b19c6d0}{\+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO)
+\begin{DoxyCompactList}\small\item\em set pin as output wrapper \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a8239afa0238afc5ccad6202f14dde224}{G\+E\+T\+\_\+\+I\+N\+P\+UT}(IO)~\hyperlink{fastio_8h_a81799334b3ecca1e9822f2c5e0c808ff}{\+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT}(IO)
+\begin{DoxyCompactList}\small\item\em check if pin is an input wrapper \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_af2d22ed088f7f41f71de346dbeae57fc}{G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO)~\hyperlink{fastio_8h_a145970250cd701164115c116682ddcd4}{\+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO)
+\begin{DoxyCompactList}\small\item\em check if pin is an output wrapper \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_a6677860179177fbef7e1804fe5691654}{G\+E\+T\+\_\+\+T\+I\+M\+ER}(IO)~\hyperlink{fastio_8h_a112b39c4d1665c68bddcb9ffbfceb338}{\+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER}(IO)
+\begin{DoxyCompactList}\small\item\em check if pin is an timer wrapper \end{DoxyCompactList}\item 
+\#define \hyperlink{fastio_8h_aff3c3548e2c4c94fc369f266aae74539}{O\+U\+T\+\_\+\+W\+R\+I\+TE}(IO,  v)~\{ \hyperlink{fastio_8h_a4bdb8759f0e85e88956ac23262e0916b}{S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO); \hyperlink{fastio_8h_a3d38c0667426652d3fa2eb62f23e1591}{W\+R\+I\+TE}(IO, v); \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{fastio_8h_a81799334b3ecca1e9822f2c5e0c808ff}\label{fastio_8h_a81799334b3ecca1e9822f2c5e0c808ff}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT@{\+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT}}
+\index{\+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT@{\+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT}{\_GET\_INPUT}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~((D\+IO \#\# IO \#\# \+\_\+\+D\+DR \& \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN)) == 0)}
+
+
+
+check if pin is an input 
+
+\mbox{\Hypertarget{fastio_8h_a145970250cd701164115c116682ddcd4}\label{fastio_8h_a145970250cd701164115c116682ddcd4}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT@{\+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}}
+\index{\+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT@{\+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}{\_GET\_OUTPUT}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~((D\+IO \#\# IO \#\# \+\_\+\+D\+DR \& \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN)) != 0)}
+
+
+
+check if pin is an output 
+
+\mbox{\Hypertarget{fastio_8h_a112b39c4d1665c68bddcb9ffbfceb338}\label{fastio_8h_a112b39c4d1665c68bddcb9ffbfceb338}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER@{\+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER}}
+\index{\+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER@{\+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER}{\_GET\_TIMER}}
+{\footnotesize\ttfamily \#define \+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~((D\+IO \#\# IO \#\# \+\_\+\+P\+WM)}
+
+
+
+check if pin is an timer 
+
+\mbox{\Hypertarget{fastio_8h_a716f4ca15267c9a5d479514a1de83018}\label{fastio_8h_a716f4ca15267c9a5d479514a1de83018}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+R\+E\+AD@{\+\_\+\+R\+E\+AD}}
+\index{\+\_\+\+R\+E\+AD@{\+\_\+\+R\+E\+AD}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+R\+E\+AD}{\_READ}}
+{\footnotesize\ttfamily \#define \+\_\+\+R\+E\+AD(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~((bool)(D\+IO \#\# IO \#\# \+\_\+\+R\+P\+O\+RT \& \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN)))}
+
+
+
+Read a pin. 
+
+\mbox{\Hypertarget{fastio_8h_ab76d0856bcf266de49269a05b96fb79b}\label{fastio_8h_ab76d0856bcf266de49269a05b96fb79b}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT@{\+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT}}
+\index{\+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT@{\+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT}{\_SET\_INPUT}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~do \{D\+IO \#\#  IO \#\# \+\_\+\+D\+DR \&= $\sim$\hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \} while (0)}
+
+
+
+set pin as input 
+
+\mbox{\Hypertarget{fastio_8h_affb369f6db19ae9eab9a4c440b19c6d0}\label{fastio_8h_affb369f6db19ae9eab9a4c440b19c6d0}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT@{\+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}}
+\index{\+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT@{\+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}{\_SET\_OUTPUT}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~do \{D\+IO \#\#  IO \#\# \+\_\+\+D\+DR $\vert$=  \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \} while (0)}
+
+
+
+set pin as output 
+
+\mbox{\Hypertarget{fastio_8h_ac80afd6e46adcab936eb01031e25043c}\label{fastio_8h_ac80afd6e46adcab936eb01031e25043c}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+T\+O\+G\+G\+LE@{\+\_\+\+T\+O\+G\+G\+LE}}
+\index{\+\_\+\+T\+O\+G\+G\+LE@{\+\_\+\+T\+O\+G\+G\+LE}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+T\+O\+G\+G\+LE}{\_TOGGLE}}
+{\footnotesize\ttfamily \#define \+\_\+\+T\+O\+G\+G\+LE(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~do \{D\+IO \#\#  IO \#\# \+\_\+\+R\+P\+O\+RT = \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \} while (0)}
+
+
+
+toggle a pin 
+
+\mbox{\Hypertarget{fastio_8h_acb82a1ce7f87b692abfb5e41d6810f2b}\label{fastio_8h_acb82a1ce7f87b692abfb5e41d6810f2b}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+W\+R\+I\+TE@{\+\_\+\+W\+R\+I\+TE}}
+\index{\+\_\+\+W\+R\+I\+TE@{\+\_\+\+W\+R\+I\+TE}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+W\+R\+I\+TE}{\_WRITE}}
+{\footnotesize\ttfamily \#define \+\_\+\+W\+R\+I\+TE(\begin{DoxyParamCaption}\item[{}]{IO,  }\item[{}]{v }\end{DoxyParamCaption})~do \{  if (\&(D\+IO \#\#  IO \#\# \+\_\+\+R\+P\+O\+RT) $>$= (uint8\+\_\+t $\ast$)0x100) \{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C(\+I\+O, v); \} else \{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+C(\+I\+O, v); \}; \} while (0)}
+
+\mbox{\Hypertarget{fastio_8h_ad6ab057720212dc555e890df11287661}\label{fastio_8h_ad6ab057720212dc555e890df11287661}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+W\+R\+I\+T\+E\+\_\+C@{\+\_\+\+W\+R\+I\+T\+E\+\_\+C}}
+\index{\+\_\+\+W\+R\+I\+T\+E\+\_\+C@{\+\_\+\+W\+R\+I\+T\+E\+\_\+C}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+W\+R\+I\+T\+E\+\_\+C}{\_WRITE\_C}}
+{\footnotesize\ttfamily \#define \+\_\+\+W\+R\+I\+T\+E\+\_\+C(\begin{DoxyParamCaption}\item[{}]{IO,  }\item[{}]{v }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \textcolor{keywordflow}{if} (v) \{ \(\backslash\)
+                                         CRITICAL\_SECTION\_START; \(\backslash\)
+                                         \{DIO ##  IO ## \_WPORT |= \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{MASK}(DIO ## IO ## \_PIN); \} \(\backslash\)
+                                         CRITICAL\_SECTION\_END; \(\backslash\)
+                                       \} \(\backslash\)
+                                       else \{ \(\backslash\)
+                                         CRITICAL\_SECTION\_START; \(\backslash\)
+                                         \{DIO ##  IO ## \_WPORT &= ~\hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{MASK}(DIO ## IO ## \_PIN); \} \(\backslash\)
+                                         CRITICAL\_SECTION\_END; \(\backslash\)
+                                       \} \(\backslash\)
+                                     \} \(\backslash\)
+                                     while (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{fastio_8h_a88a478c1c95843f4c1804565a372bff5}\label{fastio_8h_a88a478c1c95843f4c1804565a372bff5}} 
+\index{fastio.\+h@{fastio.\+h}!\+\_\+\+W\+R\+I\+T\+E\+\_\+\+NC@{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+NC}}
+\index{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+NC@{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+NC}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+W\+R\+I\+T\+E\+\_\+\+NC}{\_WRITE\_NC}}
+{\footnotesize\ttfamily \#define \+\_\+\+W\+R\+I\+T\+E\+\_\+\+NC(\begin{DoxyParamCaption}\item[{}]{IO,  }\item[{}]{v }\end{DoxyParamCaption})~do \{ if (v) \{D\+IO \#\#  IO \#\# \+\_\+\+W\+P\+O\+RT $\vert$= \hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \} else \{D\+IO \#\#  IO \#\# \+\_\+\+W\+P\+O\+RT \&= $\sim$\hyperlink{fastio_8h_ade838261e182e0f4ce159183a526f4c4}{M\+A\+SK}(D\+IO \#\# IO \#\# \+\_\+\+P\+IN); \}; \} while (0)}
+
+
+
+write to a pin 
+
+\mbox{\Hypertarget{fastio_8h_a8239afa0238afc5ccad6202f14dde224}\label{fastio_8h_a8239afa0238afc5ccad6202f14dde224}} 
+\index{fastio.\+h@{fastio.\+h}!G\+E\+T\+\_\+\+I\+N\+P\+UT@{G\+E\+T\+\_\+\+I\+N\+P\+UT}}
+\index{G\+E\+T\+\_\+\+I\+N\+P\+UT@{G\+E\+T\+\_\+\+I\+N\+P\+UT}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{G\+E\+T\+\_\+\+I\+N\+P\+UT}{GET\_INPUT}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+I\+N\+P\+UT(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~\hyperlink{fastio_8h_a81799334b3ecca1e9822f2c5e0c808ff}{\+\_\+\+G\+E\+T\+\_\+\+I\+N\+P\+UT}(IO)}
+
+
+
+check if pin is an input wrapper 
+
+\mbox{\Hypertarget{fastio_8h_af2d22ed088f7f41f71de346dbeae57fc}\label{fastio_8h_af2d22ed088f7f41f71de346dbeae57fc}} 
+\index{fastio.\+h@{fastio.\+h}!G\+E\+T\+\_\+\+O\+U\+T\+P\+UT@{G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}}
+\index{G\+E\+T\+\_\+\+O\+U\+T\+P\+UT@{G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}{GET\_OUTPUT}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+O\+U\+T\+P\+UT(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~\hyperlink{fastio_8h_a145970250cd701164115c116682ddcd4}{\+\_\+\+G\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO)}
+
+
+
+check if pin is an output wrapper 
+
+\mbox{\Hypertarget{fastio_8h_a6677860179177fbef7e1804fe5691654}\label{fastio_8h_a6677860179177fbef7e1804fe5691654}} 
+\index{fastio.\+h@{fastio.\+h}!G\+E\+T\+\_\+\+T\+I\+M\+ER@{G\+E\+T\+\_\+\+T\+I\+M\+ER}}
+\index{G\+E\+T\+\_\+\+T\+I\+M\+ER@{G\+E\+T\+\_\+\+T\+I\+M\+ER}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{G\+E\+T\+\_\+\+T\+I\+M\+ER}{GET\_TIMER}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+T\+I\+M\+ER(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~\hyperlink{fastio_8h_a112b39c4d1665c68bddcb9ffbfceb338}{\+\_\+\+G\+E\+T\+\_\+\+T\+I\+M\+ER}(IO)}
+
+
+
+check if pin is an timer wrapper 
+
+\mbox{\Hypertarget{fastio_8h_ade838261e182e0f4ce159183a526f4c4}\label{fastio_8h_ade838261e182e0f4ce159183a526f4c4}} 
+\index{fastio.\+h@{fastio.\+h}!M\+A\+SK@{M\+A\+SK}}
+\index{M\+A\+SK@{M\+A\+SK}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+SK}{MASK}}
+{\footnotesize\ttfamily \#define M\+A\+SK(\begin{DoxyParamCaption}\item[{}]{P\+IN }\end{DoxyParamCaption})~(1 $<$$<$ P\+IN)}
+
+\mbox{\Hypertarget{fastio_8h_aff3c3548e2c4c94fc369f266aae74539}\label{fastio_8h_aff3c3548e2c4c94fc369f266aae74539}} 
+\index{fastio.\+h@{fastio.\+h}!O\+U\+T\+\_\+\+W\+R\+I\+TE@{O\+U\+T\+\_\+\+W\+R\+I\+TE}}
+\index{O\+U\+T\+\_\+\+W\+R\+I\+TE@{O\+U\+T\+\_\+\+W\+R\+I\+TE}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{O\+U\+T\+\_\+\+W\+R\+I\+TE}{OUT\_WRITE}}
+{\footnotesize\ttfamily \#define O\+U\+T\+\_\+\+W\+R\+I\+TE(\begin{DoxyParamCaption}\item[{}]{IO,  }\item[{}]{v }\end{DoxyParamCaption})~\{ \hyperlink{fastio_8h_a4bdb8759f0e85e88956ac23262e0916b}{S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO); \hyperlink{fastio_8h_a3d38c0667426652d3fa2eb62f23e1591}{W\+R\+I\+TE}(IO, v); \}}
+
+\mbox{\Hypertarget{fastio_8h_a9716cca366b99de7c0d101eeab24c967}\label{fastio_8h_a9716cca366b99de7c0d101eeab24c967}} 
+\index{fastio.\+h@{fastio.\+h}!R\+E\+AD@{R\+E\+AD}}
+\index{R\+E\+AD@{R\+E\+AD}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+AD}{READ}}
+{\footnotesize\ttfamily \#define R\+E\+AD(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~\hyperlink{fastio_8h_a716f4ca15267c9a5d479514a1de83018}{\+\_\+\+R\+E\+AD}(IO)}
+
+
+
+Read a pin wrapper. 
+
+\mbox{\Hypertarget{fastio_8h_afa76df25ccdb2d113a057c8c305399cc}\label{fastio_8h_afa76df25ccdb2d113a057c8c305399cc}} 
+\index{fastio.\+h@{fastio.\+h}!S\+E\+T\+\_\+\+I\+N\+P\+UT@{S\+E\+T\+\_\+\+I\+N\+P\+UT}}
+\index{S\+E\+T\+\_\+\+I\+N\+P\+UT@{S\+E\+T\+\_\+\+I\+N\+P\+UT}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+T\+\_\+\+I\+N\+P\+UT}{SET\_INPUT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+I\+N\+P\+UT(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~\hyperlink{fastio_8h_ab76d0856bcf266de49269a05b96fb79b}{\+\_\+\+S\+E\+T\+\_\+\+I\+N\+P\+UT}(IO)}
+
+
+
+set pin as input wrapper 
+
+\mbox{\Hypertarget{fastio_8h_a4bdb8759f0e85e88956ac23262e0916b}\label{fastio_8h_a4bdb8759f0e85e88956ac23262e0916b}} 
+\index{fastio.\+h@{fastio.\+h}!S\+E\+T\+\_\+\+O\+U\+T\+P\+UT@{S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}}
+\index{S\+E\+T\+\_\+\+O\+U\+T\+P\+UT@{S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}{SET\_OUTPUT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+O\+U\+T\+P\+UT(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~\hyperlink{fastio_8h_affb369f6db19ae9eab9a4c440b19c6d0}{\+\_\+\+S\+E\+T\+\_\+\+O\+U\+T\+P\+UT}(IO)}
+
+
+
+set pin as output wrapper 
+
+\mbox{\Hypertarget{fastio_8h_af060bb41ede214a91d237e63f3e080d4}\label{fastio_8h_af060bb41ede214a91d237e63f3e080d4}} 
+\index{fastio.\+h@{fastio.\+h}!T\+O\+G\+G\+LE@{T\+O\+G\+G\+LE}}
+\index{T\+O\+G\+G\+LE@{T\+O\+G\+G\+LE}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{T\+O\+G\+G\+LE}{TOGGLE}}
+{\footnotesize\ttfamily \#define T\+O\+G\+G\+LE(\begin{DoxyParamCaption}\item[{}]{IO }\end{DoxyParamCaption})~\hyperlink{fastio_8h_ac80afd6e46adcab936eb01031e25043c}{\+\_\+\+T\+O\+G\+G\+LE}(IO)}
+
+
+
+toggle a pin wrapper 
+
+\mbox{\Hypertarget{fastio_8h_a3d38c0667426652d3fa2eb62f23e1591}\label{fastio_8h_a3d38c0667426652d3fa2eb62f23e1591}} 
+\index{fastio.\+h@{fastio.\+h}!W\+R\+I\+TE@{W\+R\+I\+TE}}
+\index{W\+R\+I\+TE@{W\+R\+I\+TE}!fastio.\+h@{fastio.\+h}}
+\subsubsection{\texorpdfstring{W\+R\+I\+TE}{WRITE}}
+{\footnotesize\ttfamily \#define W\+R\+I\+TE(\begin{DoxyParamCaption}\item[{}]{IO,  }\item[{}]{v }\end{DoxyParamCaption})~\hyperlink{fastio_8h_acb82a1ce7f87b692abfb5e41d6810f2b}{\+\_\+\+W\+R\+I\+TE}(IO, v)}
+
+
+
+Write to a pin wrapper. 
+

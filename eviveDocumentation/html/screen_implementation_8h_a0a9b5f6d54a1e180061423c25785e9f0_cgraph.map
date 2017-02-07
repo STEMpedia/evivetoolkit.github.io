@@ -1,0 +1,6 @@
+<map id="lcd_implementation_control_status_servo" name="lcd_implementation_control_status_servo">
+<area shape="rect" id="node2" href="$class_adafruit___g_f_x.html#a59178a0e0c845a14a39b457c43567dd9" title="Adafruit_GFX::setTextColor" alt="" coords="201,5,380,32"/>
+<area shape="rect" id="node3" href="$servo_control_8cpp.html#a087480f9ff82919f7f4b859e007b9195" title="prevValueServo2" alt="" coords="232,56,349,83"/>
+<area shape="rect" id="node4" href="$class_adafruit___g_f_x.html#aaf96a40cad0f34dd8ec73494b3866c33" title="Adafruit_GFX::setCursor" alt="" coords="209,107,372,133"/>
+<area shape="rect" id="node5" href="$servo_control_8cpp.html#aaae2e0c1f630d844780cad0748d36653" title="prevValueServo1" alt="" coords="232,157,349,184"/>
+</map>

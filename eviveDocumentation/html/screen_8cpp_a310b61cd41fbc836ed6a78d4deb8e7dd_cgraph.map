@@ -1,0 +1,6 @@
+<map id="lcd_update" name="lcd_update">
+<area shape="rect" id="node2" href="$navkey_8cpp.html#a3b3101601f6d9205dd3749367e84dcc5" title="navKeyUpdate" alt="" coords="153,5,259,32"/>
+<area shape="rect" id="node3" href="$screen_implementation_8h.html#ac587a5031315079a2a0170ec9d6aae5e" title="lcd_implementation\l_clear_menu" alt="" coords="139,57,273,98"/>
+<area shape="rect" id="node4" href="$class_adafruit___s_t7735.html#a3556265c5b017cd2cdceb1f34e9bc421" title="Adafruit_ST7735::fillRect" alt="" coords="321,64,485,91"/>
+<area shape="rect" id="node5" href="$class_adafruit___s_t7735.html#ade48a8b2ba1e6375c5e3dbeaf84c44dd" title="Adafruit_ST7735::setAddr\lWindow" alt="" coords="533,57,704,98"/>
+</map>

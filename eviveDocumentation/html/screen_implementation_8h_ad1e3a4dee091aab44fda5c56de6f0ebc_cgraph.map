@@ -1,0 +1,5 @@
+<map id="lcd_implementation_control_status_motor" name="lcd_implementation_control_status_motor">
+<area shape="rect" id="node2" href="$class_adafruit___g_f_x.html#a59178a0e0c845a14a39b457c43567dd9" title="Adafruit_GFX::setTextColor" alt="" coords="204,5,383,32"/>
+<area shape="rect" id="node3" href="$class_adafruit___g_f_x.html#aaf96a40cad0f34dd8ec73494b3866c33" title="Adafruit_GFX::setCursor" alt="" coords="212,56,375,83"/>
+<area shape="rect" id="node4" href="$class_motor.html#accde7c9759aaef803f9d5d6d4ec229e6" title="Motor::getPWM" alt="" coords="236,107,351,133"/>
+</map>

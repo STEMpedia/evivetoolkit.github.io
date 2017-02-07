@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['radians',['RADIANS',['../configuration_8h.html#ab827a07c64d61d077e09efb4a6e25dd7',1,'configuration.h']]],
+  ['range0',['range0',['../screen_implementation_8h.html#a43291297bd89bd8ee3e417dcceffa1cb',1,'screenImplementation.h']]],
+  ['range1',['range1',['../screen_implementation_8h.html#a06152df96daa5c3180a8232155a86b0a',1,'screenImplementation.h']]],
+  ['range_5fmax_5fch0',['RANGE_MAX_CH0',['../screen_implementation_8h.html#a3dcf8050f2a5f0d26b70bf5a21b5f9b1',1,'screenImplementation.h']]],
+  ['range_5fmax_5fch1',['RANGE_MAX_CH1',['../screen_implementation_8h.html#a30aa47f4e19bdc222262fa77da1ac745',1,'screenImplementation.h']]],
+  ['range_5fmin',['RANGE_MIN',['../screen_implementation_8h.html#a3c983eeadd733105fb0fea8729a9f2db',1,'screenImplementation.h']]],
+  ['ranges',['Ranges',['../screen_implementation_8h.html#a26dd00c43dfb2671e22136597b045003',1,'screenImplementation.h']]],
+  ['rate',['rate',['../screen_implementation_8h.html#aff4035249a7f89b6607e156630957192',1,'screenImplementation.h']]],
+  ['rate_5fmax',['RATE_MAX',['../screen_implementation_8h.html#ab86d4993e2e4313522d98699d392b0f2',1,'screenImplementation.h']]],
+  ['rate_5fmin',['RATE_MIN',['../screen_implementation_8h.html#a924cb0c4d5e07440ce096af9d63830ea',1,'screenImplementation.h']]],
+  ['rates',['Rates',['../screen_implementation_8h.html#abf14a549f3c67c6fd2f5f4bb38b8aadb',1,'screenImplementation.h']]],
+  ['read',['read',['../class_button.html#a5f5c0d23ab0e5387b861e68019a7e85d',1,'Button::read()'],['../fastio_8h.html#a9716cca366b99de7c0d101eeab24c967',1,'READ():&#160;fastio.h']]],
+  ['readpin1',['readPin1',['../class_slide_switch.html#a5c9f61ec4369f17e176d948ad74fc3ab',1,'SlideSwitch']]],
+  ['readpin2',['readPin2',['../class_slide_switch.html#ada186df3375d7dcd7dac6470c9832830',1,'SlideSwitch']]],
+  ['releasedfor',['releasedFor',['../class_button.html#a805e542eaf9976b7c1afaf3dfecc13a5',1,'Button']]],
+  ['reset_5fon',['RESET_ON',['../adc__ade7912_8cpp.html#afb576c7e4d3eb9b0f50d5832a33c03ab',1,'adc_ade7912.cpp']]],
+  ['rotation',['rotation',['../class_adafruit___g_f_x.html#a37a479d28fb11906ce516e983b1af926',1,'Adafruit_GFX']]]
+];

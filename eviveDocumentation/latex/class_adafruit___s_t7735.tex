@@ -1,0 +1,228 @@
+\hypertarget{class_adafruit___s_t7735}{}\section{Adafruit\+\_\+\+S\+T7735 Class Reference}
+\label{class_adafruit___s_t7735}\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+
+
+{\ttfamily \#include $<$Adafruit\+\_\+\+S\+T7735.\+h$>$}
+
+
+
+Inheritance diagram for Adafruit\+\_\+\+S\+T7735\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_adafruit___s_t7735__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Adafruit\+\_\+\+S\+T7735\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_adafruit___s_t7735__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_adafruit___s_t7735_a920ee9f984e79dcddc6a60e306d9b446}{Adafruit\+\_\+\+S\+T7735} (int8\+\_\+t CS, int8\+\_\+t RS, int8\+\_\+t S\+ID, int8\+\_\+t S\+C\+LK, int8\+\_\+t R\+ST=-\/1)
+\item 
+\hyperlink{class_adafruit___s_t7735_aa1a91d0c5e8c2a28dbddffccea27dc9b}{Adafruit\+\_\+\+S\+T7735} (int8\+\_\+t CS, int8\+\_\+t RS, int8\+\_\+t R\+ST=-\/1)
+\item 
+void \hyperlink{class_adafruit___s_t7735_a71d8744ce7a27cd978ec64616d2ddae4}{initB} (void)
+\item 
+void \hyperlink{class_adafruit___s_t7735_a416b7a2b4748a90f8a33028522fa7504}{initR} (uint8\+\_\+t options=\hyperlink{_adafruit___s_t7735_8h_a8482c50b5e4da7ef9cc27ec7f16aa374}{I\+N\+I\+T\+R\+\_\+\+G\+R\+E\+E\+N\+T\+AB})
+\item 
+void \hyperlink{class_adafruit___s_t7735_ade48a8b2ba1e6375c5e3dbeaf84c44dd}{set\+Addr\+Window} (uint8\+\_\+t x0, uint8\+\_\+t y0, uint8\+\_\+t x1, uint8\+\_\+t y1)
+\item 
+void \hyperlink{class_adafruit___s_t7735_ac7e7977e3d664360f7f991cd7ae01035}{push\+Color} (uint16\+\_\+t color)
+\item 
+void \hyperlink{class_adafruit___s_t7735_af732d3d78239687718bb117de99418ca}{fill\+Screen} (uint16\+\_\+t color)
+\item 
+void \hyperlink{class_adafruit___s_t7735_af22a5ba7282850793f4943ba2d682af0}{draw\+Pixel} (int16\+\_\+t x, int16\+\_\+t y, uint16\+\_\+t color)
+\item 
+void \hyperlink{class_adafruit___s_t7735_a38de2e08911db493eb243ce2691e9c3a}{draw\+Fast\+V\+Line} (int16\+\_\+t x, int16\+\_\+t y, int16\+\_\+t h, uint16\+\_\+t color)
+\item 
+void \hyperlink{class_adafruit___s_t7735_ab2b8eb320bd19305c09b35be6d55d37e}{draw\+Fast\+H\+Line} (int16\+\_\+t x, int16\+\_\+t y, int16\+\_\+t w, uint16\+\_\+t color)
+\item 
+void \hyperlink{class_adafruit___s_t7735_a3556265c5b017cd2cdceb1f34e9bc421}{fill\+Rect} (int16\+\_\+t x, int16\+\_\+t y, int16\+\_\+t w, int16\+\_\+t h, uint16\+\_\+t color)
+\item 
+void \hyperlink{class_adafruit___s_t7735_aae15fa049e0aff62d58d8773182a87de}{set\+Rotation} (uint8\+\_\+t r)
+\item 
+void \hyperlink{class_adafruit___s_t7735_a2c7ac7e15a2b867273d4ddee5dde11c5}{invert\+Display} (boolean \hyperlink{dac___m_c_p4725_8cpp_ac2e790a754ca79a6e539135dc35f4fc0}{i})
+\item 
+uint16\+\_\+t \hyperlink{class_adafruit___s_t7735_aef9c4f90acb18082a51b18490feb3c0b}{Color565} (uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\item 
+void \hyperlink{class_adafruit___s_t7735_ac945c3d179185563dc2bfae09ac35375}{sleep} (void)
+\item 
+void \hyperlink{class_adafruit___s_t7735_aba13f16e02307bca2b422a8b8e16b754}{wake} (void)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_adafruit___s_t7735_a920ee9f984e79dcddc6a60e306d9b446}\label{class_adafruit___s_t7735_a920ee9f984e79dcddc6a60e306d9b446}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{Adafruit\+\_\+\+S\+T7735()}{Adafruit\_ST7735()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Adafruit\+\_\+\+S\+T7735\+::\+Adafruit\+\_\+\+S\+T7735 (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{CS,  }\item[{int8\+\_\+t}]{RS,  }\item[{int8\+\_\+t}]{S\+ID,  }\item[{int8\+\_\+t}]{S\+C\+LK,  }\item[{int8\+\_\+t}]{R\+ST = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_adafruit___s_t7735_aa1a91d0c5e8c2a28dbddffccea27dc9b}\label{class_adafruit___s_t7735_aa1a91d0c5e8c2a28dbddffccea27dc9b}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{Adafruit\+\_\+\+S\+T7735()}{Adafruit\_ST7735()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Adafruit\+\_\+\+S\+T7735\+::\+Adafruit\+\_\+\+S\+T7735 (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{CS,  }\item[{int8\+\_\+t}]{RS,  }\item[{int8\+\_\+t}]{R\+ST = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_adafruit___s_t7735_aef9c4f90acb18082a51b18490feb3c0b}\label{class_adafruit___s_t7735_aef9c4f90acb18082a51b18490feb3c0b}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!Color565@{Color565}}
+\index{Color565@{Color565}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{Color565()}{Color565()}}
+{\footnotesize\ttfamily uint16\+\_\+t Adafruit\+\_\+\+S\+T7735\+::\+Color565 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_adafruit___s_t7735_ab2b8eb320bd19305c09b35be6d55d37e}\label{class_adafruit___s_t7735_ab2b8eb320bd19305c09b35be6d55d37e}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!draw\+Fast\+H\+Line@{draw\+Fast\+H\+Line}}
+\index{draw\+Fast\+H\+Line@{draw\+Fast\+H\+Line}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{draw\+Fast\+H\+Line()}{drawFastHLine()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::draw\+Fast\+H\+Line (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y,  }\item[{int16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_t7735_ab2b8eb320bd19305c09b35be6d55d37e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___s_t7735_a38de2e08911db493eb243ce2691e9c3a}\label{class_adafruit___s_t7735_a38de2e08911db493eb243ce2691e9c3a}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!draw\+Fast\+V\+Line@{draw\+Fast\+V\+Line}}
+\index{draw\+Fast\+V\+Line@{draw\+Fast\+V\+Line}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{draw\+Fast\+V\+Line()}{drawFastVLine()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::draw\+Fast\+V\+Line (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y,  }\item[{int16\+\_\+t}]{h,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_t7735_a38de2e08911db493eb243ce2691e9c3a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___s_t7735_af22a5ba7282850793f4943ba2d682af0}\label{class_adafruit___s_t7735_af22a5ba7282850793f4943ba2d682af0}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!draw\+Pixel@{draw\+Pixel}}
+\index{draw\+Pixel@{draw\+Pixel}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{draw\+Pixel()}{drawPixel()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::draw\+Pixel (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_adafruit___g_f_x_ab7fbf72885c873266f9c7eb53b5c8896}{Adafruit\+\_\+\+G\+FX}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_t7735_af22a5ba7282850793f4943ba2d682af0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___s_t7735_a3556265c5b017cd2cdceb1f34e9bc421}\label{class_adafruit___s_t7735_a3556265c5b017cd2cdceb1f34e9bc421}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!fill\+Rect@{fill\+Rect}}
+\index{fill\+Rect@{fill\+Rect}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{fill\+Rect()}{fillRect()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::fill\+Rect (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y,  }\item[{int16\+\_\+t}]{w,  }\item[{int16\+\_\+t}]{h,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_t7735_a3556265c5b017cd2cdceb1f34e9bc421_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_t7735_a3556265c5b017cd2cdceb1f34e9bc421_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___s_t7735_af732d3d78239687718bb117de99418ca}\label{class_adafruit___s_t7735_af732d3d78239687718bb117de99418ca}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!fill\+Screen@{fill\+Screen}}
+\index{fill\+Screen@{fill\+Screen}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{fill\+Screen()}{fillScreen()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::fill\+Screen (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_t7735_af732d3d78239687718bb117de99418ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_t7735_af732d3d78239687718bb117de99418ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___s_t7735_a71d8744ce7a27cd978ec64616d2ddae4}\label{class_adafruit___s_t7735_a71d8744ce7a27cd978ec64616d2ddae4}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!initB@{initB}}
+\index{initB@{initB}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{init\+B()}{initB()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::initB (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_adafruit___s_t7735_a416b7a2b4748a90f8a33028522fa7504}\label{class_adafruit___s_t7735_a416b7a2b4748a90f8a33028522fa7504}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!initR@{initR}}
+\index{initR@{initR}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{init\+R()}{initR()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::initR (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{options = {\ttfamily \hyperlink{_adafruit___s_t7735_8h_a8482c50b5e4da7ef9cc27ec7f16aa374}{I\+N\+I\+T\+R\+\_\+\+G\+R\+E\+E\+N\+T\+AB}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_adafruit___s_t7735_a2c7ac7e15a2b867273d4ddee5dde11c5}\label{class_adafruit___s_t7735_a2c7ac7e15a2b867273d4ddee5dde11c5}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!invert\+Display@{invert\+Display}}
+\index{invert\+Display@{invert\+Display}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{invert\+Display()}{invertDisplay()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::invert\+Display (\begin{DoxyParamCaption}\item[{boolean}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_adafruit___s_t7735_ac7e7977e3d664360f7f991cd7ae01035}\label{class_adafruit___s_t7735_ac7e7977e3d664360f7f991cd7ae01035}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!push\+Color@{push\+Color}}
+\index{push\+Color@{push\+Color}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{push\+Color()}{pushColor()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::push\+Color (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_adafruit___s_t7735_ade48a8b2ba1e6375c5e3dbeaf84c44dd}\label{class_adafruit___s_t7735_ade48a8b2ba1e6375c5e3dbeaf84c44dd}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!set\+Addr\+Window@{set\+Addr\+Window}}
+\index{set\+Addr\+Window@{set\+Addr\+Window}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{set\+Addr\+Window()}{setAddrWindow()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::set\+Addr\+Window (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x0,  }\item[{uint8\+\_\+t}]{y0,  }\item[{uint8\+\_\+t}]{x1,  }\item[{uint8\+\_\+t}]{y1 }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_t7735_ade48a8b2ba1e6375c5e3dbeaf84c44dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___s_t7735_aae15fa049e0aff62d58d8773182a87de}\label{class_adafruit___s_t7735_aae15fa049e0aff62d58d8773182a87de}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::set\+Rotation (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_adafruit___s_t7735_ac945c3d179185563dc2bfae09ac35375}\label{class_adafruit___s_t7735_ac945c3d179185563dc2bfae09ac35375}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!sleep@{sleep}}
+\index{sleep@{sleep}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::sleep (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_adafruit___s_t7735_aba13f16e02307bca2b422a8b8e16b754}\label{class_adafruit___s_t7735_aba13f16e02307bca2b422a8b8e16b754}} 
+\index{Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}!wake@{wake}}
+\index{wake@{wake}!Adafruit\+\_\+\+S\+T7735@{Adafruit\+\_\+\+S\+T7735}}
+\subsubsection{\texorpdfstring{wake()}{wake()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+S\+T7735\+::wake (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_adafruit___s_t7735_8h}{Adafruit\+\_\+\+S\+T7735.\+h}\item 
+\hyperlink{_adafruit___s_t7735_8cpp}{Adafruit\+\_\+\+S\+T7735.\+cpp}\end{DoxyCompactItemize}

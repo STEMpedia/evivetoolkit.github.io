@@ -1,0 +1,80 @@
+\hypertarget{classdac___m_c_p4725}{}\section{dac\+\_\+\+M\+C\+P4725 Class Reference}
+\label{classdac___m_c_p4725}\index{dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}}
+
+
+{\ttfamily \#include $<$dac\+\_\+\+M\+C\+P4725.\+h$>$}
+
+
+
+Collaboration diagram for dac\+\_\+\+M\+C\+P4725\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classdac___m_c_p4725__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdac___m_c_p4725_a1963bacd207b3c9618485427a706bc86}{dac\+\_\+\+M\+C\+P4725} ()
+\begin{DoxyCompactList}\small\item\em Instantiates a new M\+C\+P4725 class. \end{DoxyCompactList}\item 
+void \hyperlink{classdac___m_c_p4725_ad2a4a3342f561821e76388ad3849a0a7}{begin} (uint8\+\_\+t a)
+\begin{DoxyCompactList}\small\item\em Setups the HW. \end{DoxyCompactList}\item 
+void \hyperlink{classdac___m_c_p4725_a93548cddb90bd4f58c4fc3b53516fd08}{set\+Voltage} (uint16\+\_\+t output, bool write\+E\+E\+P\+R\+OM)
+\begin{DoxyCompactList}\small\item\em Sets the output voltage to a fraction of source vref. (Value can be 0..4095) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdac___m_c_p4725_a1963bacd207b3c9618485427a706bc86}\label{classdac___m_c_p4725_a1963bacd207b3c9618485427a706bc86}} 
+\index{dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}!dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}}
+\index{dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}!dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}}
+\subsubsection{\texorpdfstring{dac\+\_\+\+M\+C\+P4725()}{dac\_MCP4725()}}
+{\footnotesize\ttfamily dac\+\_\+\+M\+C\+P4725\+::dac\+\_\+\+M\+C\+P4725 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates a new M\+C\+P4725 class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdac___m_c_p4725_ad2a4a3342f561821e76388ad3849a0a7}\label{classdac___m_c_p4725_ad2a4a3342f561821e76388ad3849a0a7}} 
+\index{dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}!begin@{begin}}
+\index{begin@{begin}!dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void dac\+\_\+\+M\+C\+P4725\+::begin (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{a }\end{DoxyParamCaption})}
+
+
+
+Setups the HW. 
+
+\mbox{\Hypertarget{classdac___m_c_p4725_a93548cddb90bd4f58c4fc3b53516fd08}\label{classdac___m_c_p4725_a93548cddb90bd4f58c4fc3b53516fd08}} 
+\index{dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}!set\+Voltage@{set\+Voltage}}
+\index{set\+Voltage@{set\+Voltage}!dac\+\_\+\+M\+C\+P4725@{dac\+\_\+\+M\+C\+P4725}}
+\subsubsection{\texorpdfstring{set\+Voltage()}{setVoltage()}}
+{\footnotesize\ttfamily void dac\+\_\+\+M\+C\+P4725\+::set\+Voltage (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{output,  }\item[{bool}]{write\+E\+E\+P\+R\+OM }\end{DoxyParamCaption})}
+
+
+
+Sets the output voltage to a fraction of source vref. (Value can be 0..4095) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em output} & The 12-\/bit value representing the relationship between the D\+AC\textquotesingle{}s input voltage and its output voltage. \\
+\hline
+\mbox{\tt in}  & {\em write\+E\+E\+P\+R\+OM} & If this value is true, \textquotesingle{}output\textquotesingle{} will also be written to the M\+C\+P4725\textquotesingle{}s internal non-\/volatile memory, meaning that the D\+AC will retain the current voltage output after power-\/down or reset. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdac___m_c_p4725_a93548cddb90bd4f58c4fc3b53516fd08_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dac___m_c_p4725_8h}{dac\+\_\+\+M\+C\+P4725.\+h}\item 
+\hyperlink{dac___m_c_p4725_8cpp}{dac\+\_\+\+M\+C\+P4725.\+cpp}\end{DoxyCompactItemize}

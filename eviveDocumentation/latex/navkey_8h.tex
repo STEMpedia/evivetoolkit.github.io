@@ -1,0 +1,200 @@
+\hypertarget{navkey_8h}{}\section{navkey.\+h File Reference}
+\label{navkey_8h}\index{navkey.\+h@{navkey.\+h}}
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+Include dependency graph for navkey.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{navkey_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{navkey_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{navkey_8h_a0ee6578784a1556cca8ee8536d68c72c}{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+L\+OW}~190
+\item 
+\#define \hyperlink{navkey_8h_ac9bea7d5fb02c0069ea174ec58acac41}{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+H\+I\+GH}~230
+\item 
+\#define \hyperlink{navkey_8h_a350b21efed721d86fdf736d9a3f64610}{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+L\+OW}~375
+\item 
+\#define \hyperlink{navkey_8h_a03d9ec7df97e10c16421a08203a14d87}{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+I\+GH}~425
+\item 
+\#define \hyperlink{navkey_8h_a28ad011255d15e879f727128b9974068}{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+OW}~565
+\item 
+\#define \hyperlink{navkey_8h_ac0c5213ff8d309878bafa501d4f1d213}{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+H\+I\+GH}~625
+\item 
+\#define \hyperlink{navkey_8h_a24cda9185e52aa8ad040e22a1ce0fbf1}{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+L\+OW}~800
+\item 
+\#define \hyperlink{navkey_8h_aa4b0f8fd9899170c038a5f2c5a0545d1}{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+I\+GH}~860
+\item 
+\#define \hyperlink{navkey_8h_a4373aa95043b5a9a99319d69bd8decb5}{N\+A\+V\+K\+E\+Y\+\_\+\+M\+O\+VE}~A11
+\item 
+\#define \hyperlink{navkey_8h_a3f3be62701b05a097a0ac161a68b66b7}{N\+A\+V\+K\+E\+Y\+\_\+\+P\+R\+E\+SS}~19
+\item 
+\#define \hyperlink{navkey_8h_a1a3227238a0a16f494c395eef396807f}{M\+I\+N\+\_\+\+T\+I\+M\+E2}~200
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{navkey_8h_a3b3101601f6d9205dd3749367e84dcc5}{nav\+Key\+Update} ()
+\item 
+void \hyperlink{navkey_8h_a2ab71bdbd82f8e745e2066bfd398cb58}{nav\+Key\+Attach\+Interrupt\+Menu\+Press} ()
+\item 
+void \hyperlink{navkey_8h_ab875abe00dedc836b5c264c29d6f431d}{nav\+Key\+Dettach\+Interrupt\+Menu\+Press} ()
+\item 
+void \hyperlink{navkey_8h_ad27cd675b9288970a481cedcb47dca1c}{nav\+Key\+Interrupt\+Center\+Press} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile bool \hyperlink{navkey_8h_a771237786d11b6b407b7797ebc6b61a7}{menu\+Press}
+\item 
+uint8\+\_\+t \hyperlink{navkey_8h_ad8cb515065450c9ef93ea8dfe6f67065}{menu\+Move}
+\item 
+unsigned long \hyperlink{navkey_8h_a8a466f49eb01770e2e952a8db1a8d61d}{last\+Key\+Move\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{navkey_8h_a1a3227238a0a16f494c395eef396807f}\label{navkey_8h_a1a3227238a0a16f494c395eef396807f}} 
+\index{navkey.\+h@{navkey.\+h}!M\+I\+N\+\_\+\+T\+I\+M\+E2@{M\+I\+N\+\_\+\+T\+I\+M\+E2}}
+\index{M\+I\+N\+\_\+\+T\+I\+M\+E2@{M\+I\+N\+\_\+\+T\+I\+M\+E2}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+N\+\_\+\+T\+I\+M\+E2}{MIN\_TIME2}}
+{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+T\+I\+M\+E2~200}
+
+\mbox{\Hypertarget{navkey_8h_a4373aa95043b5a9a99319d69bd8decb5}\label{navkey_8h_a4373aa95043b5a9a99319d69bd8decb5}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+\_\+\+M\+O\+VE@{N\+A\+V\+K\+E\+Y\+\_\+\+M\+O\+VE}}
+\index{N\+A\+V\+K\+E\+Y\+\_\+\+M\+O\+VE@{N\+A\+V\+K\+E\+Y\+\_\+\+M\+O\+VE}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+\_\+\+M\+O\+VE}{NAVKEY\_MOVE}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+\_\+\+M\+O\+VE~A11}
+
+\mbox{\Hypertarget{navkey_8h_a3f3be62701b05a097a0ac161a68b66b7}\label{navkey_8h_a3f3be62701b05a097a0ac161a68b66b7}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+\_\+\+P\+R\+E\+SS@{N\+A\+V\+K\+E\+Y\+\_\+\+P\+R\+E\+SS}}
+\index{N\+A\+V\+K\+E\+Y\+\_\+\+P\+R\+E\+SS@{N\+A\+V\+K\+E\+Y\+\_\+\+P\+R\+E\+SS}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+\_\+\+P\+R\+E\+SS}{NAVKEY\_PRESS}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+\_\+\+P\+R\+E\+SS~19}
+
+\mbox{\Hypertarget{navkey_8h_ac0c5213ff8d309878bafa501d4f1d213}\label{navkey_8h_ac0c5213ff8d309878bafa501d4f1d213}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+H\+I\+GH@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+H\+I\+GH}}
+\index{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+H\+I\+GH@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+H\+I\+GH}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+H\+I\+GH}{NAVKEYMOVE\_DOWN\_HIGH}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+H\+I\+GH~625}
+
+\mbox{\Hypertarget{navkey_8h_a28ad011255d15e879f727128b9974068}\label{navkey_8h_a28ad011255d15e879f727128b9974068}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+OW@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+OW}}
+\index{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+OW@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+OW}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+OW}{NAVKEYMOVE\_DOWN\_LOW}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+D\+O\+W\+N\+\_\+\+L\+OW~565}
+
+\mbox{\Hypertarget{navkey_8h_aa4b0f8fd9899170c038a5f2c5a0545d1}\label{navkey_8h_aa4b0f8fd9899170c038a5f2c5a0545d1}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+I\+GH@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+I\+GH}}
+\index{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+I\+GH@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+I\+GH}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+I\+GH}{NAVKEYMOVE\_LEFT\_HIGH}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+I\+GH~860}
+
+\mbox{\Hypertarget{navkey_8h_a24cda9185e52aa8ad040e22a1ce0fbf1}\label{navkey_8h_a24cda9185e52aa8ad040e22a1ce0fbf1}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+L\+OW@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+L\+OW}}
+\index{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+L\+OW@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+L\+OW}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+L\+OW}{NAVKEYMOVE\_LEFT\_LOW}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+L\+E\+F\+T\+\_\+\+L\+OW~800}
+
+\mbox{\Hypertarget{navkey_8h_a03d9ec7df97e10c16421a08203a14d87}\label{navkey_8h_a03d9ec7df97e10c16421a08203a14d87}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+I\+GH@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+I\+GH}}
+\index{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+I\+GH@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+I\+GH}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+I\+GH}{NAVKEYMOVE\_RIGHT\_HIGH}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+I\+GH~425}
+
+\mbox{\Hypertarget{navkey_8h_a350b21efed721d86fdf736d9a3f64610}\label{navkey_8h_a350b21efed721d86fdf736d9a3f64610}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+L\+OW@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+L\+OW}}
+\index{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+L\+OW@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+L\+OW}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+L\+OW}{NAVKEYMOVE\_RIGHT\_LOW}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+L\+OW~375}
+
+\mbox{\Hypertarget{navkey_8h_ac9bea7d5fb02c0069ea174ec58acac41}\label{navkey_8h_ac9bea7d5fb02c0069ea174ec58acac41}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+H\+I\+GH@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+H\+I\+GH}}
+\index{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+H\+I\+GH@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+H\+I\+GH}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+H\+I\+GH}{NAVKEYMOVE\_UP\_HIGH}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+H\+I\+GH~230}
+
+\mbox{\Hypertarget{navkey_8h_a0ee6578784a1556cca8ee8536d68c72c}\label{navkey_8h_a0ee6578784a1556cca8ee8536d68c72c}} 
+\index{navkey.\+h@{navkey.\+h}!N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+L\+OW@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+L\+OW}}
+\index{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+L\+OW@{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+L\+OW}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+L\+OW}{NAVKEYMOVE\_UP\_LOW}}
+{\footnotesize\ttfamily \#define N\+A\+V\+K\+E\+Y\+M\+O\+V\+E\+\_\+\+U\+P\+\_\+\+L\+OW~190}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{navkey_8h_a2ab71bdbd82f8e745e2066bfd398cb58}\label{navkey_8h_a2ab71bdbd82f8e745e2066bfd398cb58}} 
+\index{navkey.\+h@{navkey.\+h}!nav\+Key\+Attach\+Interrupt\+Menu\+Press@{nav\+Key\+Attach\+Interrupt\+Menu\+Press}}
+\index{nav\+Key\+Attach\+Interrupt\+Menu\+Press@{nav\+Key\+Attach\+Interrupt\+Menu\+Press}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{nav\+Key\+Attach\+Interrupt\+Menu\+Press()}{navKeyAttachInterruptMenuPress()}}
+{\footnotesize\ttfamily void nav\+Key\+Attach\+Interrupt\+Menu\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{navkey_8h_a2ab71bdbd82f8e745e2066bfd398cb58_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{navkey_8h_ab875abe00dedc836b5c264c29d6f431d}\label{navkey_8h_ab875abe00dedc836b5c264c29d6f431d}} 
+\index{navkey.\+h@{navkey.\+h}!nav\+Key\+Dettach\+Interrupt\+Menu\+Press@{nav\+Key\+Dettach\+Interrupt\+Menu\+Press}}
+\index{nav\+Key\+Dettach\+Interrupt\+Menu\+Press@{nav\+Key\+Dettach\+Interrupt\+Menu\+Press}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{nav\+Key\+Dettach\+Interrupt\+Menu\+Press()}{navKeyDettachInterruptMenuPress()}}
+{\footnotesize\ttfamily void nav\+Key\+Dettach\+Interrupt\+Menu\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{navkey_8h_ad27cd675b9288970a481cedcb47dca1c}\label{navkey_8h_ad27cd675b9288970a481cedcb47dca1c}} 
+\index{navkey.\+h@{navkey.\+h}!nav\+Key\+Interrupt\+Center\+Press@{nav\+Key\+Interrupt\+Center\+Press}}
+\index{nav\+Key\+Interrupt\+Center\+Press@{nav\+Key\+Interrupt\+Center\+Press}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{nav\+Key\+Interrupt\+Center\+Press()}{navKeyInterruptCenterPress()}}
+{\footnotesize\ttfamily void nav\+Key\+Interrupt\+Center\+Press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{navkey_8h_ad27cd675b9288970a481cedcb47dca1c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{navkey_8h_a3b3101601f6d9205dd3749367e84dcc5}\label{navkey_8h_a3b3101601f6d9205dd3749367e84dcc5}} 
+\index{navkey.\+h@{navkey.\+h}!nav\+Key\+Update@{nav\+Key\+Update}}
+\index{nav\+Key\+Update@{nav\+Key\+Update}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{nav\+Key\+Update()}{navKeyUpdate()}}
+{\footnotesize\ttfamily void nav\+Key\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{navkey_8h_a3b3101601f6d9205dd3749367e84dcc5_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{navkey_8h_a8a466f49eb01770e2e952a8db1a8d61d}\label{navkey_8h_a8a466f49eb01770e2e952a8db1a8d61d}} 
+\index{navkey.\+h@{navkey.\+h}!last\+Key\+Move\+Time@{last\+Key\+Move\+Time}}
+\index{last\+Key\+Move\+Time@{last\+Key\+Move\+Time}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{last\+Key\+Move\+Time}{lastKeyMoveTime}}
+{\footnotesize\ttfamily unsigned long last\+Key\+Move\+Time}
+
+\mbox{\Hypertarget{navkey_8h_ad8cb515065450c9ef93ea8dfe6f67065}\label{navkey_8h_ad8cb515065450c9ef93ea8dfe6f67065}} 
+\index{navkey.\+h@{navkey.\+h}!menu\+Move@{menu\+Move}}
+\index{menu\+Move@{menu\+Move}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{menu\+Move}{menuMove}}
+{\footnotesize\ttfamily uint8\+\_\+t menu\+Move}
+
+\mbox{\Hypertarget{navkey_8h_a771237786d11b6b407b7797ebc6b61a7}\label{navkey_8h_a771237786d11b6b407b7797ebc6b61a7}} 
+\index{navkey.\+h@{navkey.\+h}!menu\+Press@{menu\+Press}}
+\index{menu\+Press@{menu\+Press}!navkey.\+h@{navkey.\+h}}
+\subsubsection{\texorpdfstring{menu\+Press}{menuPress}}
+{\footnotesize\ttfamily volatile bool menu\+Press}
+

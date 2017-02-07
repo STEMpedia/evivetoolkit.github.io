@@ -1,0 +1,10 @@
+<map id="Potentiometer::getValue" name="Potentiometer::getValue">
+<area shape="rect" id="node2" href="$motor_8cpp.html#a21bb51b10a12a5fced9990bacbb927d9" title="controlMotor" alt="" coords="216,56,311,83"/>
+<area shape="rect" id="node6" href="$servo_control_8h.html#ad475cbf4888299ea0f2f242377dfd3e2" title="controlServo" alt="" coords="217,107,310,133"/>
+<area shape="rect" id="node3" href="$motor_8h.html#a4ad9639dfcff0a9210935a370924c942" title="addMotor1" alt="" coords="359,5,441,32"/>
+<area shape="rect" id="node5" href="$motor_8h.html#ae06000112295c81330c349eda7d35bde" title="addMotor2" alt="" coords="359,56,441,83"/>
+<area shape="rect" id="node4" href="$motor_8h.html#ac83e62443d040580d7ccaf0bdd17ae7e" title="addMotor12" alt="" coords="489,44,580,71"/>
+<area shape="rect" id="node7" href="$servo_control_8h.html#a76684cdf76b20e542ae135611879ca81" title="addServo1" alt="" coords="359,107,441,133"/>
+<area shape="rect" id="node9" href="$servo_control_8h.html#a68d47464b285ad832b81a06240cd9925" title="addServo2" alt="" coords="359,157,441,184"/>
+<area shape="rect" id="node8" href="$servo_control_8h.html#a06ab8145bdf0330867d1969de5d04d21" title="addServo12" alt="" coords="490,120,579,147"/>
+</map>

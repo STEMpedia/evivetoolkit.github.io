@@ -1,0 +1,6 @@
+<map id="lcd_implementation_clear_menu" name="lcd_implementation_clear_menu">
+<area shape="rect" id="node2" href="$screen_8h.html#a310b61cd41fbc836ed6a78d4deb8e7dd" title="lcd_update" alt="" coords="213,5,298,32"/>
+<area shape="rect" id="node4" href="$screen_implementation_8h.html#a7ba1eab2349a7b954feff9aee5155f89" title="lcd_control_status\l_template" alt="" coords="191,57,319,98"/>
+<area shape="rect" id="node5" href="$screen_implementation_8h.html#a943be3b2d4985761a33c2d8982519ff7" title="lcd_sensing_status\l_template" alt="" coords="188,122,323,163"/>
+<area shape="rect" id="node3" href="$evive_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="371,5,417,32"/>
+</map>

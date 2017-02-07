@@ -1,0 +1,11 @@
+<map id="Motor::changePWM" name="Motor::changePWM">
+<area shape="rect" id="node2" href="$class_motor.html#a81fada8275a8cd70805a9808314e7bee" title="Motor::moveMotor" alt="" coords="200,56,327,83"/>
+<area shape="rect" id="node8" href="$class_motor.html#a6b966366a7a184ae6b3c3227f5d57213" title="Motor::changeSpeed" alt="" coords="192,107,335,133"/>
+<area shape="rect" id="node3" href="$class_motor.html#a72a29fd8773b5bfea30afc063d879072" title="Motor::setMotorSpeed" alt="" coords="383,5,533,32"/>
+<area shape="rect" id="node4" href="$motor_8cpp.html#a21bb51b10a12a5fced9990bacbb927d9" title="controlMotor" alt="" coords="411,56,505,83"/>
+<area shape="rect" id="node5" href="$motor_8h.html#a4ad9639dfcff0a9210935a370924c942" title="addMotor1" alt="" coords="581,31,664,57"/>
+<area shape="rect" id="node7" href="$motor_8h.html#ae06000112295c81330c349eda7d35bde" title="addMotor2" alt="" coords="581,81,664,108"/>
+<area shape="rect" id="node6" href="$motor_8h.html#ac83e62443d040580d7ccaf0bdd17ae7e" title="addMotor12" alt="" coords="712,56,803,83"/>
+<area shape="rect" id="node9" href="$class_motor.html#aba12da45ff90906b5ad4f2a224d5317d" title="Motor::startSmoothly" alt="" coords="386,107,530,133"/>
+<area shape="rect" id="node10" href="$class_motor.html#af69697d5adb51106f4352c481d67fedd" title="Motor::stopSmoothly" alt="" coords="387,157,529,184"/>
+</map>

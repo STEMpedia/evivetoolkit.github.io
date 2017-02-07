@@ -1,0 +1,8 @@
+<map id="SlideSwitch::readPin1" name="SlideSwitch::readPin1">
+<area shape="rect" id="node2" href="$motor_8cpp.html#a21bb51b10a12a5fced9990bacbb927d9" title="controlMotor" alt="" coords="209,56,303,83"/>
+<area shape="rect" id="node6" href="$stepper_8h.html#a47f69a184715cc5d2acdeef0043b0a24" title="controlStepper" alt="" coords="203,107,309,133"/>
+<area shape="rect" id="node3" href="$motor_8h.html#a4ad9639dfcff0a9210935a370924c942" title="addMotor1" alt="" coords="360,5,443,32"/>
+<area shape="rect" id="node5" href="$motor_8h.html#ae06000112295c81330c349eda7d35bde" title="addMotor2" alt="" coords="360,56,443,83"/>
+<area shape="rect" id="node4" href="$motor_8h.html#ac83e62443d040580d7ccaf0bdd17ae7e" title="addMotor12" alt="" coords="493,31,584,57"/>
+<area shape="rect" id="node7" href="$stepper_8h.html#aa38f67a3eb6c6e1002cbd68923ecd796" title="addStepper" alt="" coords="357,107,445,133"/>
+</map>
