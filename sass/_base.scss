@@ -1,0 +1,17 @@
+body{
+	margin: 0;
+	background: $body-background-color;
+	font-family: titillium;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+*,*:after,*:before{
+	box-sizing: border-box;
+}
+
+.prototype{
+	font-family: prototype !important;
+}

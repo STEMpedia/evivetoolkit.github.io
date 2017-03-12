@@ -1,0 +1,583 @@
+.section{
+	position: relative;
+}
+
+.section-1{
+	padding-top: $nav-height-expanded;
+	background-color: #fff;
+	@include display(flex);
+	@include justify-content(space-between);
+	@include align-items(center);
+	min-height: 90vh;
+	.text-container{
+		flex-grow: 3;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		@include flex-direction(column);
+		font-size: 40px;
+		padding-left: 30px;
+		min-width: 380px;
+		.are-you-a{
+			color: $primary-color;
+		}
+		.text-changer{
+			color: #777;
+			font-weight: bold;
+			font-size: 1.5em;
+		}
+	}
+	.cover-container{
+		padding: 24px;
+		flex-grow: 1;
+		img.cover{
+			max-width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 800px){
+		height: 93vh;
+		@include flex-direction(column);
+		.text-container{
+			margin-top: 100px;
+			padding-left: 0;
+		}
+		.cover-container{
+			padding: 0;
+			img.cover{
+				width: 100%;
+				max-width: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1300px){
+		.cover-container{
+			img.cover{
+				max-height: 740px;
+			}
+		}
+	}
+}
+
+.section-lbd{
+	background-color: $primary-color;
+	color: #fff;
+	@include display(flex);
+	@include justify-content(space-around);
+	padding: 3*$p;
+	font-size: 36px;
+	font-weight: bold;
+}
+@media screen and (max-width: 800px){
+	.section-lbd{
+		padding-left: 12px;
+    padding-right: 12px;
+	}
+}
+    
+
+.section-replacing{
+	@include display(flex);
+	@include flex-direction(row);
+	@include justify-content(space-between);
+	@include align-items(stretch);
+
+	.image-wrapper, .text{
+		flex-grow: 1;
+		// width: 50%;
+	}
+	.image-wrapper{
+		overflow: hidden;
+		// @include display(flex);
+		// @include justify-content(center);
+		// @include align-items(center);
+		img{
+			min-width: 100%;
+			// min-height: 100%;
+			float: left;
+		}
+	}
+	.text{
+		font-size: 18px;
+		background-color: #232323;
+		color: #fff;
+		padding: 3*$p;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		@include flex-direction(column);
+		.title, .content{
+			// margin-left: 50px;
+			max-width: 400px;
+		}
+		.title{
+			font-size: 42px;
+			font-weight: bold;
+			margin-bottom: 24px;
+			line-height: 37px;
+			text-align: center;
+		}
+		.content{
+			text-align: justify;
+		}
+	}
+
+	@media screen and (max-width: 1250px){
+		@include flex-direction(column);
+		display: block;
+		.image-wrapper{
+			display: block;
+			img{
+				width: 100%;
+				display: block;
+			}
+		}
+		.image-wrapper, .text{
+			width: 100%;
+		}
+		.text{
+			padding: 3*$p;
+			.title, .content{
+				margin-left: 0;
+				max-width: none;
+			}
+			.title{
+				margin-bottom: $p;
+			}
+		}
+	}
+}
+
+.section-eia{
+	padding: 48px;
+	text-align: center;
+	background-color: $primary-color;
+	color: #fff;
+	font-size: 48px;
+	.title{
+		// font-size: 1.2em;
+		font-weight: bold;
+	}
+	.text{
+		font-size: 30px;
+		font-weight: normal;
+	}
+
+	@media screen and (max-width: 800px){
+		padding: $p;
+		.title{
+			font-size: 40px;
+		}
+		.text{
+			font-size: 24px;
+		}
+	}
+}
+
+.section-features{
+	background-color: $primary-color;
+	color: #fff;
+	.title{
+		font-size: 48px;
+		font-weight: bold;
+		position: relative;
+		text-align: right;
+		padding: 1*$p;
+		padding-bottom: 0;
+		padding-right: 0;
+		padding-top: 36px;
+		margin-bottom: 3*$p;
+		margin-right: 15*$p;
+		.line{
+			position: absolute;
+			right: 0;
+			bottom: -6px;
+			height: 6px;
+			width: 70px;
+			background-color: #fff;
+		}
+	}
+
+	.features{
+		position: relative;
+		@include display(flex);
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include justify-content(space-around);
+		padding-bottom: 6*$p;
+		.feature{
+			$feature-tile-height: 120px;
+			// width: 40%;
+			padding: 4*$p;
+			font-size: 30px;
+			margin: 2*$p;
+			height: $feature-tile-height;
+			width: 550px;
+			@include display(flex);
+			@include flex-direction(row);
+			@include flex-wrap(nowrap);
+			@include align-items(center);
+			@include justify-content(flex-start);
+			img{
+				width: $feature-tile-height;
+				height: $feature-tile-height;
+				margin-right: 2*$p;
+			}
+
+			.small-info{
+				font-size: 14px;
+				opacity: 0;
+				@include transition(opacity ease 300ms);
+				//text-align: justify;
+
+			}
+			.head{
+				@include transition(margin-top ease 300ms);
+				margin-top: 55px;
+			}
+
+			&:hover{
+				.head{
+					margin-top: 0;
+				}
+				.small-info{
+					opacity: 1;
+				}
+			}
+		}
+		@media screen and (max-width: 800px){
+			.feature{
+				img{
+					width: 84px;
+					height: 84px;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 800px){
+		.title{
+			margin: 0;
+			padding: 20px;
+			text-align: center;
+			font-size: 40px;
+			.line{
+				display: none;
+			}
+		}
+		.features{
+		padding-bottom: 2*$p;
+			.feature{
+				margin: 4*$p 0;
+				margin-top: 0;
+				margin-bottom: 30px;
+				padding: 2*$p;
+				.small-info{
+					opacity: 1;
+				}
+
+				.head{
+					margin-top: 0px;
+					font-size: 20px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.section-slideshow{
+	position: relative;
+	.saharan-slideshow{
+		width: 100%;
+		margin-top: -6px;
+	}
+	.saharan-slide{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		opacity: 0;
+		@include transition(opacity ease 300ms);
+		&.show{
+			opacity: 1;
+		}
+	}
+	.gallery-title{
+		font-weight: bold;
+	}
+	.gallery-text, .gallery-title{
+		color: #fff;
+	}
+	.gallery-text{
+		margin-top: -8px;
+	}
+	.dots{
+		$x: 130px;
+		// position: absolute;
+	    bottom: 0;
+	    width: 100%;
+	    height: 21px;
+	    text-align: center;
+	    height: $x;
+	    padding: 6px;
+	    @include display(flex);
+	    @include justify-content(space-around);
+	    @include align-items(center);
+	    @include flex-direction(column);
+	    background: rgba(0, 0, 0, 0.8);
+	}
+	.dot{
+		position: relative;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background: transparent;
+		border-radius: 50%;
+		margin: 0 5px;
+		border: solid 3px #fff;
+		cursor: pointer;
+		&:after{
+			content: ' ';
+			position: absolute;
+			left: 4px;
+			top: 4px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			display: inline-block;
+			background: #fff;
+			@include transition(transform ease 300ms);
+			@include transform(scale(0));
+		}
+		&.current-slide{
+			&:after{
+				@include transform(none);
+			}	
+		}
+	}
+	@media screen and (max-width: 800px){
+		.dot{
+			width: 12px;
+			height: 12px;
+			border: solid 1px #fff;
+			&:after{
+				content: ' ';
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				display: inline-block;
+				background: #fff;
+				@include transition(transform ease 300ms);
+				@include transform(scale(0));
+		}
+		}
+	}
+}
+
+.section-techspecs{
+	color: $primary-color;
+	font-size: 40px;
+	padding-bottom: 24px;
+	background-color: #fff;
+	.title{
+		font-size: 48px;
+		font-weight: bold;
+		position: relative;
+		text-align: right;
+		padding: 3*$p;
+		padding-bottom: 0;
+		padding-right: 0;
+		margin-bottom: 3*$p;
+		margin-right: 3*$p;
+		.line{
+			position: absolute;
+			right: 0;
+			bottom: -6px;
+			height: 6px;
+			width: 70px;
+			background-color: $primary-color;
+		}
+	}
+	.image-wrapper{
+		text-align: center;
+		img{
+			max-width: 100%;
+			display: inline-block;
+		}
+	}
+	.explore-more{
+		border: solid 1px #1c75bc;
+	    color: #fff;
+	    background: #1c75bc;
+	    padding: 8px 24px;
+	    font-size: 18px;
+	    border-radius: 3px;
+	    margin: auto;
+	}
+
+	@media screen and (max-width: 800px){
+		.title{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-size: 40px;
+			.line{
+				display: none;
+			}
+		}
+	}
+}
+
+.section-projects{
+	background-color: $primary-color;
+	padding: 2*$p 0 3*$p;
+
+	.title{
+		color: #fff;
+		font-size: 48px;
+		font-weight: bold;
+		padding: 2*$p;
+		text-align: center;
+	}
+
+	.content{
+		$x: 250px;
+		@include display(flex);
+		@include justify-content(center);
+		@include flex-wrap(wrap);
+		.tile{
+			position: relative;
+			width: $x;
+			height: $x - 88px + 90px;
+			overflow: hidden;
+			padding: 6px;
+			margin: $p;
+			background-color: #fff;
+			color: #232323;
+			box-sizing: content-box;
+			border-radius: 3px;
+
+			.can-be-invisible{
+				display: none;
+				padding: $p;
+				.full-instructions{
+					font-weight: normal;
+					margin-bottom: 10px;
+					display: inline-block;
+					font-size: 14px;
+				}
+			}
+			&:hover{
+				.can-be-invisible{
+					display: block;
+					position: absolute;
+					top: 0;
+					bottom: 55px;
+					left: 0;
+					right: 0;
+					background-color: #fff;
+					.text{
+						font-size: 14px;
+					}
+				}
+			}
+			.image-wrapper{
+				width: 250px;
+				height: 188px;
+				overflow: hidden;
+				margin-bottom: $p;
+				// border-radius: 3px 3px 0 0 ;
+				img{
+					width:100%;
+					height: 100%;
+				}
+			}
+
+			.text-wrapper{
+				.title{
+					font-size: 16px;
+					font-weight: bold;
+					color: #000;
+					text-align: left;
+					padding: 0;
+					margin-bottom: 10px;
+					margin-right: 10px;
+				}
+			}
+		}
+
+	}
+	.explore-moreproject{
+		border: solid 1px #fff;
+	    color: #1c75bc;
+	    background: #fff;
+	    padding: 8px 24px;
+	    font-size: 18px;
+	    border-radius: 3px;
+	    margin: auto;
+	    margin-top: 20px;
+	}
+
+	@media screen and (max-width: 800px){
+		padding: $p 0;
+		.title{
+			font-size: 40px;
+			padding: 0;
+		}
+	}
+}
+
+.section-contacts{
+	position: relative;
+	background-color: #fff;
+	color: $primary-color;
+	padding-bottom: 4*$p;
+	.title{
+		font-size: 48px;
+		font-weight: bold;
+		text-align: center;
+		padding: 3*$p 0;
+	}
+
+	.contacts{
+		@include display(flex);
+		@include justify-content(center);
+		@include flex-wrap(wrap);
+		.contact{
+			width: 280px;
+			text-align: center;
+			color: #000000;
+			margin: $p;
+			.contact-image{
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+			}
+			.social-icon{
+				margin-top: $p/2;
+				width: 40px;
+				height: 40px;
+				// border-radius: 50%;
+
+			}
+		}
+	}
+	@media screen and (max-width: 800px){
+		.title{
+			font-size: 40px;
+		}
+		.contacts{
+			.contact{
+				.contact-image{
+					width: 200px;
+					height: 200px;
+				}
+			}
+		}
+	}
+}
+
