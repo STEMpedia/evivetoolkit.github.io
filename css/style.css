@@ -229,16 +229,18 @@
 	
 		.portfolio .label-text-1 {
 			color:#fff;
+			font-weight: normal;
 			position: relative;
 			z-index:500;
-			padding:12px 0px;
+			padding:10px 0px;
 		}	
 		
 		.portfolio .label-text-2 {
 			color:#fff;
+			font-weight: normal;
 			position: relative;
 			z-index:500;
-			padding:4px 0px;
+			padding:0px 0px;
 		}
 		
 			.portfolio .text-category {
