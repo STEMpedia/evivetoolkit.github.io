@@ -85,4 +85,4 @@ setInterval(function(){
 		makerTextIndex = 0;
 	}
 	textChanger.innerHTML = makerTextList[makerTextIndex];
-},2500);
+},2000);
