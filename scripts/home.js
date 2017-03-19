@@ -12,11 +12,11 @@ window.addEventListener('scroll',function(){
 
 var galleryInfo = [
   {title:'Arduino at Heart',text:'evive is powered by Arduino MEGA 2560'},
-  {title:'Power Module',text:'evive offers multiple power outputs: a 3.3V, a 5V and a potentiometer controlled variable output'},
-  {title:'Plug and Play Hardware Interface',text:"Control motors, relays, steppers, servos, motor drivers, pneumatics using evive's inbuilt motor driver"},
+  {title:'STEM Education',text:'With evive childern can learn and build electronics circuits, robots, IoT projects and develop STEM skills'},
   {title:'Mini Oscilloscope',text:'Mini dual-channel oscilloscpe for 30V and 3A range with 24-bit isolated ADC'},
   {title:'LabVIEW Desktop interface',text:'Wirelessly control evive and log data using LINX based opensource LabVIEW interface'},
   {title:'Visual Interface',text:'Take control of evive using onscreen menu, device monitoring & plotting facilities'},
+  {title:'Learning Resources',text:"evive is opensource and has a very large online tutorials and projects repository"},
   {title:'IoT Hub',text:'WiFi, bluetooth and Xbee adapters for IoT applications'},
   {title:'Touch',text:'12 capacitive touch inputs'},
   {title:'Sense | Plot | Log',text:'24-bit ADCs based precise voltage & current sensing channels, onscreen plotting options & data logging with SD Card'},

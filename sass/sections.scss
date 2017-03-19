@@ -61,13 +61,14 @@
 }
 
 .section-lbd{
+	font-family: nasalization;
 	background-color: $primary-color;
 	color: #fff;
 	@include display(flex);
 	@include justify-content(space-around);
 	padding: 3*$p;
-	font-size: 36px;
-	font-weight: bold;
+	font-size: 30px;
+	font-weight: normal;
 }
 @media screen and (max-width: 800px){
 	.section-lbd{
